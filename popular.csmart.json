@@ -1,7 +1,10 @@
-[{
+[
+{
     "searchUUID": "craigslist.org.rss",
     "name":"craigslist.org",
     "subtitle":"RSS Search",
+    "openExternalBrowser": true,
+    "postLink": "https://post.craigslist.org",
     "loader": {
         "type":"RSS",
         "context":{
@@ -35,19 +38,7 @@
             "columnWidths":[115, 200],
             "field": "category",
             "fieldWrapper": "array",
-            "headerLayoutPanel": 1,
-            "headerLayout":{
-                "fields": {
-                    "location": {"type":"text", "selectTreeRef": "locations", "buttonStyle": "cancel", "title": "Location", "prefix": "🌎 ", "required":true, "autoSelect":"nearest"}
-                },
-                "fieldsLayout": {
-                    "type":"grid",
-                    "columns": 1,
-                    "fields": [
-                        {"f": "location", "width": 1}
-                    ]
-                }
-            }
+            "headerLayoutPanels":[{},{"layoutRef": "headerLayout"}]
         }
     },
     "fieldLayouts":{
@@ -57,8 +48,19 @@
             "cat":"locSearchPattern",
             "pattern": "${location.url}/search${location.subcode}",
             "fields": {
-                "location.subcode": {"type":"text", "prefix": "/"},
-                "subcode": { "prefix": "/"}
+                "location.subcode": { "prefix": "/"}
+            }
+        },
+        "headerLayout":{
+            "fields": {
+                "location": {"type":"text", "selectTreeRef": "locations", "buttonStyle": "cancel", "title": "Location", "prefix": "🌎 ", "required":true, "autoSelect":"nearest"}
+            },
+            "fieldsLayout": {
+                "type":"grid",
+                "columns": 1,
+                "fields": [
+                    {"f": "location", "width": 1}
+                ]
             }
         },
         "generic": {
@@ -67,8 +69,8 @@
                 "location": {"type":"text", "layoutOnChange":true, "selectTreeRef": "locations", "buttonStyle": "cancel", "title": "Location", "prefix": "🌎 ", "required":true, "autoSelect":"nearest"},
                 "category": {"type":"text", "layoutOnChange":true, "selectTreeRef": "categories", "buttonStyle": "cancel", "title": "Category", "required":true},
                 "keywords": {"type":"text", "placeholder": "keywords"},
-                "titleOnly": { "type":"boolean", "trueVal":"&srchType=T", "falseVal":"", "label": "Title Only"},
-                "hasImages": { "type":"boolean", "trueVal":"&hasPic=1", "falseVal": "", "label": "Has Image"},
+                "titleOnly": { "type":"boolean", "label": "Title Only", "falseVal": ""},
+                "hasImages": { "type":"boolean", "trueVal":"1", "falseVal": "", "prefix": "&hasPic=", "label": "Has Image"},
                 "minPrice": { "type":"numeric", "prefix": "&min_price=", "placeholder" : "Min Price"},
                 "maxPrice": { "type":"numeric", "prefix": "&max_price=", "placeholder" : "Max Price"},
                 "scrollOffset": { "type":"numeric", "prefix": "&s=", "zeroVal" : ""}
@@ -105,8 +107,8 @@
             "catName": "all for sale",
             "parent": "priceSearch",
             "pattern": "${locSearchPattern}/${category.value}?${priceSearch}"
-        }, 
-        "ssq":{"parent": "sss"}, 
+        },
+        "ssq":{"parent": "sss"},
         "sso":{"parent": "sss"},
         "cta": {
             "cat": "cta",
@@ -204,8 +206,8 @@
                     {"f": "auto_transmission", "width": 1}, {"f": "auto_bodytype", "width": 1}
                 ]
             }
-        }, 
-        "cto":{"parent": "cta"}, 
+        },
+        "cto":{"parent": "cta"},
         "ctd":{"parent": "cta"},
         "mca": {
             "cat": "mca",
@@ -232,10 +234,10 @@
                     {"f": "minDisp", "width": 1}, {"f": "maxDisp", "width": 1}
                 ]
             }
-        }, 
-        "mcy":{"parent": "mca"}, 
+        },
+        "mcy":{"parent": "mca"},
         "mcd":{"parent": "mca"},
-
+        
         "ata":{"parent":"sss"},
         "ppa":{"parent":"sss"},
         "ara":{"parent":"sss"},
@@ -279,7 +281,7 @@
         "tra":{"parent":"sss"},
         "vga":{"parent":"sss"},
         "waa":{"parent":"sss"},
-
+        
         "wan":{"parent":"waa"},
         "atq":{"parent":"ata"},
         "app":{"parent":"ppa"},
@@ -319,7 +321,7 @@
         "tag":{"parent":"taa"},
         "tro":{"parent":"tra"},
         "vgm":{"parent":"vga"},
-
+        
         "wad":{"parent":"waa"},
         "atd":{"parent":"ata"},
         "ppd":{"parent":"ppa"},
@@ -360,7 +362,7 @@
         "tad":{"parent":"taa"},
         "trb":{"parent":"tra"},
         "vgd":{"parent":"vga"},
-
+        
         "hhh":{
             "cat": "hhh",
             "catName": "housing",
@@ -453,7 +455,7 @@
                     {"label":"SQFT", "width": 2},
                     {"f": "minSqft", "width": 1}, {"f": "maxSqft", "width": 1},
                     {"label":"AVAILABILITY", "width": 2},
-                    {"f": "avail", "width": 2}, 
+                    {"f": "avail", "width": 2},
                     {"f": "catsOk", "width": 1}, {"f": "dogsOk", "width": 1},
                     {"f": "furnished", "width": 1}, {"f": "noSmoking", "width": 1},
                     {"f": "wheelchairAccess", "width": 1}, {"label":"", "width": 1},
@@ -474,7 +476,7 @@
         "sbw":{"parent": "hhh"},
         "sub":{"parent": "hhh"},
         "vac":{"parent": "hhh"},
-
+        
         "jjj":{
             "catName": "jobs",
             "parent": "generic",
@@ -497,13 +499,13 @@
                     {"f": "is_internship", "width": 1}, {"f": "is_nonprofit", "width": 1},
                     {"f": "is_telecommuting", "width": 2},
                     {"label":"EMPLOYMENT TYPE", "width": 2},
-                    {"f": "fullTime", "width": 1}, {"f": "partTime", "width": 1}, 
+                    {"f": "fullTime", "width": 1}, {"f": "partTime", "width": 1},
                     {"f": "contract", "width": 1}, {"f": "empChoice", "width": 1}
                 ]
             }
-        }, 
+        },
         "ofc": {"parent":"jjj"}, "bus": {"parent":"jjj"}, "csr": {"parent":"jjj"}, "edu": {"parent":"jjj"}, "egr": {"parent":"jjj"}, "etc": {"parent":"jjj"}, "acc": {"parent":"jjj"}, "fbh": {"parent":"jjj"}, "lab": {"parent":"jjj"}, "gov": {"parent":"jjj"}, "hea": {"parent":"jjj"}, "hum": {"parent":"jjj"}, "lgl": {"parent":"jjj"}, "mnu": {"parent":"jjj"}, "mar": {"parent":"jjj"}, "med": {"parent":"jjj"}, "npo": {"parent":"jjj"}, "rej": {"parent":"jjj"}, "ret": {"parent":"jjj"}, "sls": {"parent":"jjj"}, "spa": {"parent":"jjj"}, "sci": {"parent":"jjj"}, "sec": {"parent":"jjj"}, "trd": {"parent":"jjj"}, "sof": {"parent":"jjj"}, "sad": {"parent":"jjj"}, "tch": {"parent":"jjj"}, "trp": {"parent":"jjj"}, "tfr": {"parent":"jjj"}, "web": {"parent":"jjj"}, "wri": {"parent":"jjj"},
-
+        
         "ggg":{
             "groupTitle": "Gigs",
             "parent": "generic",
@@ -523,7 +525,7 @@
                     {"f": "paid", "width": 1}
                 ]
             }
-
+            
         },
         "cpg":{"parent":"ggg"},
         "crg":{"parent":"ggg"},
@@ -533,7 +535,7 @@
         "lbg":{"parent":"ggg"},
         "tlg":{"parent":"ggg"},
         "wrg":{"parent":"ggg"},
-
+        
         "res":{
             "parent": "generic",
             "pattern": "${locSearchPattern}/${category.value}?${generic}",
@@ -575,7 +577,7 @@
         "biz":{"parent":"bbb"},
         "trv":{"parent":"bbb"},
         "wet":{"parent":"bbb"},
-
+        
         "ccc":{
             "parent": "generic",
             "pattern": "${locSearchPattern}/${category.value}?${generic}",
@@ -607,157 +609,157 @@
             {"name":"Recent Selection", "dynamic":"recentSel", "allowSelect":false}
         ]},
         {"name":"All Categories", "groupHeader":true, "children":[
-        {"value":"sss","name":"💵 For Sale", "selectable":false, "children":[
-            {"value":"sss","owner":"sso","dealer":"ssq","name":"💵 all for sale / wanted", "children":[{"value":"ssq", "name":"💵 all for sale / wanted - dealer"},{"value":"sso", "name":"💵 all for sale / wanted - owner"}]},
-            {"name":"⚪ free stuff","value":"zip"},
-            {"name":"⚪ garage sales","value":"gms"},
-            {"value":"waa","owner":"wan","dealer":"wad","name":"❓ items wanted", "children":[{"value":"wad", "name":"❓ items wanted - dealer"},{"value":"wan", "name":"❓ items wanted - owner"}]},
-            {"value":"ata","owner":"atq","dealer":"atd","name":"🚂 antiques", "children":[{"value":"atd", "name":"🚂 antiques - dealer"},{"value":"atq", "name":"🚂 antiques - owner"}]},
-            {"value":"ppa","owner":"app","dealer":"ppd","name":"🔌 appliances", "children":[{"value":"ppd", "name":"🔌 appliances - dealer"},{"value":"app", "name":"🔌 appliances - owner"}]},
-            {"value":"ara","owner":"art","dealer":"ard","name":"🎨 arts & crafts", "children":[{"value":"ard", "name":"🎨 arts & crafts - dealer"},{"value":"art", "name":"🎨 arts & crafts - owner"}]},
-            {"value":"sna","owner":"snw","dealer":"snd","name":"⚪ atvs/utvs/snowmobiles", "children":[{"value":"snd", "name":"⚪ atvs/utvs/snowmobiles - dealer"},{"value":"snw", "name":"⚪ atvs/utvs/snowmobiles - owner"}]},
-            {"value":"pta","owner":"pts","dealer":"ptd","name":"⚪ auto parts", "children":[{"value":"ptd", "name":"⚪ auto parts - dealer"},{"value":"pts", "name":"⚪ auto parts - owner"}]},
-            {"value":"wta","owner":"wto","dealer":"wtd","name":"⚪ auto parts - wheels tires", "children":[{"value":"wtd", "name":"⚪ auto parts - wheels tires - dealer"},{"value":"wto", "name":"⚪ auto parts - wheels tires - owner"}]},
-            {"value":"ava","owner":"avo","dealer":"avd","name":"✈️ aviation", "children":[{"value":"avd", "name":"✈️ aviation - dealer"},{"value":"avo", "name":"✈️ aviation - owner"}]},
-            {"value":"baa","owner":"bab","dealer":"bad","name":"🚼 baby & kid stuff", "children":[{"value":"bad", "name":"🚼 baby & kid stuff - dealer"},{"value":"bab", "name":"🚼 baby & kid stuff - owner"}]},
-            {"name":"🔃 barter","value":"bar"},
-            {"value":"bia","owner":"bik","dealer":"bid","name":"🚲 bikes", "children":[{"value":"bid", "name":"🚲 bikes - dealer"},{"value":"bik", "name":"🚲 bikes - owner"}]},
-            {"value":"bip","owner":"bop","dealer":"bdp","name":"🚲 bike parts", "children":[{"value":"bdp", "name":"🚲 bike parts - dealer"},{"value":"bop", "name":"🚲 bike parts - owner"}]},
-            {"value":"boo","owner":"boa","dealer":"bod","name":"🚤 boats", "children":[{"value":"bod", "name":"🚤 boats - dealer"},{"value":"boa", "name":"🚤 boats - owner"}]},
-            {"value":"bpo","owner":"bpa","dealer":"bpd","name":"🚤 boat parts & accessories", "children":[{"value":"bpd", "name":"🚤 boat parts & accessories - dealer"},{"value":"bpa", "name":"🚤 boat parts & accessories - owner"}]},
-            {"value":"bka","owner":"bks","dealer":"bkd","name":"📖 books", "children":[{"value":"bkd", "name":"📖 books - dealer"},{"value":"bks", "name":"📖 books - owner"}]},
-            {"value":"bfa","owner":"bfs","dealer":"bfd","name":"📊 business", "children":[{"value":"bfd", "name":"📊 business - dealer"},{"value":"bfs", "name":"📊 business - owner"}]},
-            {"value":"cta","owner":"cto","dealer":"ctd","name":"🚘 cars & trucks", "children":[{"value":"ctd", "name":"🚘 cars & trucks - dealer"},{"value":"cto", "name":"🚘 cars & trucks - owner"}]},
-            {"value":"ema","owner":"emd","dealer":"emq","name":"📀 cds/dvd/vhs", "children":[{"value":"emq", "name":"📀 cds/dvd/vhs - dealer"},{"value":"emd", "name":"📀 cds/dvd/vhs - owner"}]},
-            {"value":"moa","owner":"mob","dealer":"mod","name":"📱 cell phones", "children":[{"value":"mod", "name":"📱 cell phones - dealer"},{"value":"mob", "name":"📱 cell phones - owner"}]},
-            {"value":"cla","owner":"clo","dealer":"cld","name":"👗 clothing & accessories", "children":[{"value":"cld", "name":"👗 clothing & accessories - dealer"},{"value":"clo", "name":"👗 clothing & accessories - owner"}]},
-            {"value":"cba","owner":"clt","dealer":"cbd","name":"⚪ collectibles", "children":[{"value":"cbd", "name":"⚪ collectibles - dealer"},{"value":"clt", "name":"⚪ collectibles - owner"}]},
-            {"value":"syp","owner":"sop","dealer":"sdp","name":"💻 computer parts", "children":[{"value":"sdp", "name":"💻 computer parts - dealer"},{"value":"sop", "name":"💻 computer parts - owner"}]},
-            {"value":"sya","owner":"sys","dealer":"syd","name":"💻 computers", "children":[{"value":"syd", "name":"💻 computers - dealer"},{"value":"sys", "name":"💻 computers - owner"}]},
-            {"value":"ela","owner":"ele","dealer":"eld","name":"📠 electronics", "children":[{"value":"eld", "name":"📠 electronics - dealer"},{"value":"ele", "name":"📠 electronics - owner"}]},
-            {"value":"gra","owner":"grd","dealer":"grq","name":"🌽 farm & garden", "children":[{"value":"grq", "name":"🌽 farm & garden - dealer"},{"value":"grd", "name":"🌽 farm & garden - owner"}]},
-            {"value":"fua","owner":"fuo","dealer":"fud","name":"⚪ furniture", "children":[{"value":"fud", "name":"⚪ furniture - dealer"},{"value":"fuo", "name":"⚪ furniture - owner"}]},
-            {"value":"foa","owner":"for","dealer":"fod","name":"⚪ general", "children":[{"value":"fod", "name":"⚪ general - dealer"},{"value":"for", "name":"⚪ general - owner"}]},
-            {"value":"hva","owner":"hvo","dealer":"hvd","name":"⚪ heavy equipment", "children":[{"value":"hvd", "name":"⚪ heavy equipment - dealer"},{"value":"hvo", "name":"⚪ heavy equipment - owner"}]},
-            {"value":"haa","owner":"hab","dealer":"had","name":"💇 health and beauty", "children":[{"value":"had", "name":"💇 health and beauty - dealer"},{"value":"hab", "name":"💇 health and beauty - owner"}]},
-            {"value":"hsa","owner":"hsh","dealer":"hsd","name":"🏠 household", "children":[{"value":"hsd", "name":"🏠 household - dealer"},{"value":"hsh", "name":"🏠 household - owner"}]},
-            {"value":"jwa","owner":"jwl","dealer":"jwd","name":"💍 jewelry", "children":[{"value":"jwd", "name":"💍 jewelry - dealer"},{"value":"jwl", "name":"💍 jewelry - owner"}]},
-            {"value":"maa","owner":"mat","dealer":"mad","name":"⚫ materials", "children":[{"value":"mad", "name":"⚫ materials - dealer"},{"value":"mat", "name":"⚫ materials - owner"}]},
-            {"value":"mpa","owner":"mpo","dealer":"mpd","name":"⚪ motorcycle parts & acc", "children":[{"value":"mpd", "name":"⚪ motorcycle parts & acc - dealer"},{"value":"mpo", "name":"⚪ motorcycle parts & acc - owner"}]},
-            {"value":"mca","owner":"mcy","dealer":"mcd","name":"⚪ motorcycles", "children":[{"value":"mcd", "name":"⚪ motorcycles - dealer"},{"value":"mcy", "name":"⚪ motorcycles - owner"}]},
-            {"value":"msa","owner":"msg","dealer":"msd","name":"🎸 music instr", "children":[{"value":"msd", "name":"🎸 music instr - dealer"},{"value":"msg", "name":"🎸 music instr - owner"}]},
-            {"value":"pha","owner":"pho","dealer":"phd","name":"📷 photo+video", "children":[{"value":"phd", "name":"📷 photo+video - dealer"},{"value":"pho", "name":"📷 photo+video - owner"}]},
-            {"value":"rva","owner":"rvs","dealer":"rvd","name":"⚪ recreational vehicles", "children":[{"value":"rvd", "name":"⚪ recreational vehicles - dealer"},{"value":"rvs", "name":"⚪ recreational vehicles - owner"}]},
-            {"value":"sga","owner":"spo","dealer":"sgd","name":"🏈 sporting", "children":[{"value":"sgd", "name":"🏈 sporting - dealer"},{"value":"spo", "name":"🏈 sporting - owner"}]},
-            {"value":"tia","owner":"tix","dealer":"tid","name":"🎫 tickets", "children":[{"value":"tid", "name":"🎫 tickets - dealer"},{"value":"tix", "name":"🎫 tickets - owner"}]},
-            {"value":"tla","owner":"tls","dealer":"tld","name":"🔨 tools", "children":[{"value":"tld", "name":"🔨 tools - dealer"},{"value":"tls", "name":"🔨 tools - owner"}]},
-            {"value":"taa","owner":"tag","dealer":"tad","name":"🎲 toys & games", "children":[{"value":"tad", "name":"🎲 toys & games - dealer"},{"value":"tag", "name":"🎲 toys & games - owner"}]},
-            {"value":"tra","owner":"tro","dealer":"trb","name":"⚪ trailers", "children":[{"value":"trb", "name":"⚪ trailers - dealer"},{"value":"tro", "name":"⚪ trailers - owner"}]},
+            {"value":"sss","name":"💵 For Sale", "selectable":false, "children":[
+                {"value":"sss","owner":"sso","dealer":"ssq","name":"💵 all for sale / wanted", "children":[{"value":"ssq", "name":"💵 all for sale / wanted - dealer"},{"value":"sso", "name":"💵 all for sale / wanted - owner"}]},
+                {"name":"⚪ free stuff","value":"zip"},
+                {"name":"⚪ garage sales","value":"gms"},
+                {"value":"waa","owner":"wan","dealer":"wad","name":"❓ items wanted", "children":[{"value":"wad", "name":"❓ items wanted - dealer"},{"value":"wan", "name":"❓ items wanted - owner"}]},
+                {"value":"ata","owner":"atq","dealer":"atd","name":"🚂 antiques", "children":[{"value":"atd", "name":"🚂 antiques - dealer"},{"value":"atq", "name":"🚂 antiques - owner"}]},
+                {"value":"ppa","owner":"app","dealer":"ppd","name":"🔌 appliances", "children":[{"value":"ppd", "name":"🔌 appliances - dealer"},{"value":"app", "name":"🔌 appliances - owner"}]},
+                {"value":"ara","owner":"art","dealer":"ard","name":"🎨 arts & crafts", "children":[{"value":"ard", "name":"🎨 arts & crafts - dealer"},{"value":"art", "name":"🎨 arts & crafts - owner"}]},
+                {"value":"sna","owner":"snw","dealer":"snd","name":"⚪ atvs/utvs/snowmobiles", "children":[{"value":"snd", "name":"⚪ atvs/utvs/snowmobiles - dealer"},{"value":"snw", "name":"⚪ atvs/utvs/snowmobiles - owner"}]},
+                {"value":"pta","owner":"pts","dealer":"ptd","name":"⚪ auto parts", "children":[{"value":"ptd", "name":"⚪ auto parts - dealer"},{"value":"pts", "name":"⚪ auto parts - owner"}]},
+                {"value":"wta","owner":"wto","dealer":"wtd","name":"⚪ auto parts - wheels tires", "children":[{"value":"wtd", "name":"⚪ auto parts - wheels tires - dealer"},{"value":"wto", "name":"⚪ auto parts - wheels tires - owner"}]},
+                {"value":"ava","owner":"avo","dealer":"avd","name":"✈️ aviation", "children":[{"value":"avd", "name":"✈️ aviation - dealer"},{"value":"avo", "name":"✈️ aviation - owner"}]},
+                {"value":"baa","owner":"bab","dealer":"bad","name":"🚼 baby & kid stuff", "children":[{"value":"bad", "name":"🚼 baby & kid stuff - dealer"},{"value":"bab", "name":"🚼 baby & kid stuff - owner"}]},
+                {"name":"🔃 barter","value":"bar"},
+                {"value":"bia","owner":"bik","dealer":"bid","name":"🚲 bikes", "children":[{"value":"bid", "name":"🚲 bikes - dealer"},{"value":"bik", "name":"🚲 bikes - owner"}]},
+                {"value":"bip","owner":"bop","dealer":"bdp","name":"🚲 bike parts", "children":[{"value":"bdp", "name":"🚲 bike parts - dealer"},{"value":"bop", "name":"🚲 bike parts - owner"}]},
+                {"value":"boo","owner":"boa","dealer":"bod","name":"🚤 boats", "children":[{"value":"bod", "name":"🚤 boats - dealer"},{"value":"boa", "name":"🚤 boats - owner"}]},
+                {"value":"bpo","owner":"bpa","dealer":"bpd","name":"🚤 boat parts & accessories", "children":[{"value":"bpd", "name":"🚤 boat parts & accessories - dealer"},{"value":"bpa", "name":"🚤 boat parts & accessories - owner"}]},
+                {"value":"bka","owner":"bks","dealer":"bkd","name":"📖 books", "children":[{"value":"bkd", "name":"📖 books - dealer"},{"value":"bks", "name":"📖 books - owner"}]},
+                {"value":"bfa","owner":"bfs","dealer":"bfd","name":"📊 business", "children":[{"value":"bfd", "name":"📊 business - dealer"},{"value":"bfs", "name":"📊 business - owner"}]},
+                {"value":"cta","owner":"cto","dealer":"ctd","name":"🚘 cars & trucks", "children":[{"value":"ctd", "name":"🚘 cars & trucks - dealer"},{"value":"cto", "name":"🚘 cars & trucks - owner"}]},
+                {"value":"ema","owner":"emd","dealer":"emq","name":"📀 cds/dvd/vhs", "children":[{"value":"emq", "name":"📀 cds/dvd/vhs - dealer"},{"value":"emd", "name":"📀 cds/dvd/vhs - owner"}]},
+                {"value":"moa","owner":"mob","dealer":"mod","name":"📱 cell phones", "children":[{"value":"mod", "name":"📱 cell phones - dealer"},{"value":"mob", "name":"📱 cell phones - owner"}]},
+                {"value":"cla","owner":"clo","dealer":"cld","name":"👗 clothing & accessories", "children":[{"value":"cld", "name":"👗 clothing & accessories - dealer"},{"value":"clo", "name":"👗 clothing & accessories - owner"}]},
+                {"value":"cba","owner":"clt","dealer":"cbd","name":"⚪ collectibles", "children":[{"value":"cbd", "name":"⚪ collectibles - dealer"},{"value":"clt", "name":"⚪ collectibles - owner"}]},
+                {"value":"syp","owner":"sop","dealer":"sdp","name":"💻 computer parts", "children":[{"value":"sdp", "name":"💻 computer parts - dealer"},{"value":"sop", "name":"💻 computer parts - owner"}]},
+                {"value":"sya","owner":"sys","dealer":"syd","name":"💻 computers", "children":[{"value":"syd", "name":"💻 computers - dealer"},{"value":"sys", "name":"💻 computers - owner"}]},
+                {"value":"ela","owner":"ele","dealer":"eld","name":"📠 electronics", "children":[{"value":"eld", "name":"📠 electronics - dealer"},{"value":"ele", "name":"📠 electronics - owner"}]},
+                {"value":"gra","owner":"grd","dealer":"grq","name":"🌽 farm & garden", "children":[{"value":"grq", "name":"🌽 farm & garden - dealer"},{"value":"grd", "name":"🌽 farm & garden - owner"}]},
+                {"value":"fua","owner":"fuo","dealer":"fud","name":"⚪ furniture", "children":[{"value":"fud", "name":"⚪ furniture - dealer"},{"value":"fuo", "name":"⚪ furniture - owner"}]},
+                {"value":"foa","owner":"for","dealer":"fod","name":"⚪ general", "children":[{"value":"fod", "name":"⚪ general - dealer"},{"value":"for", "name":"⚪ general - owner"}]},
+                {"value":"hva","owner":"hvo","dealer":"hvd","name":"⚪ heavy equipment", "children":[{"value":"hvd", "name":"⚪ heavy equipment - dealer"},{"value":"hvo", "name":"⚪ heavy equipment - owner"}]},
+                {"value":"haa","owner":"hab","dealer":"had","name":"💇 health and beauty", "children":[{"value":"had", "name":"💇 health and beauty - dealer"},{"value":"hab", "name":"💇 health and beauty - owner"}]},
+                {"value":"hsa","owner":"hsh","dealer":"hsd","name":"🏠 household", "children":[{"value":"hsd", "name":"🏠 household - dealer"},{"value":"hsh", "name":"🏠 household - owner"}]},
+                {"value":"jwa","owner":"jwl","dealer":"jwd","name":"💍 jewelry", "children":[{"value":"jwd", "name":"💍 jewelry - dealer"},{"value":"jwl", "name":"💍 jewelry - owner"}]},
+                {"value":"maa","owner":"mat","dealer":"mad","name":"⚫ materials", "children":[{"value":"mad", "name":"⚫ materials - dealer"},{"value":"mat", "name":"⚫ materials - owner"}]},
+                {"value":"mpa","owner":"mpo","dealer":"mpd","name":"⚪ motorcycle parts & acc", "children":[{"value":"mpd", "name":"⚪ motorcycle parts & acc - dealer"},{"value":"mpo", "name":"⚪ motorcycle parts & acc - owner"}]},
+                {"value":"mca","owner":"mcy","dealer":"mcd","name":"⚪ motorcycles", "children":[{"value":"mcd", "name":"⚪ motorcycles - dealer"},{"value":"mcy", "name":"⚪ motorcycles - owner"}]},
+                {"value":"msa","owner":"msg","dealer":"msd","name":"🎸 music instr", "children":[{"value":"msd", "name":"🎸 music instr - dealer"},{"value":"msg", "name":"🎸 music instr - owner"}]},
+                {"value":"pha","owner":"pho","dealer":"phd","name":"📷 photo+video", "children":[{"value":"phd", "name":"📷 photo+video - dealer"},{"value":"pho", "name":"📷 photo+video - owner"}]},
+                {"value":"rva","owner":"rvs","dealer":"rvd","name":"⚪ recreational vehicles", "children":[{"value":"rvd", "name":"⚪ recreational vehicles - dealer"},{"value":"rvs", "name":"⚪ recreational vehicles - owner"}]},
+                {"value":"sga","owner":"spo","dealer":"sgd","name":"🏈 sporting", "children":[{"value":"sgd", "name":"🏈 sporting - dealer"},{"value":"spo", "name":"🏈 sporting - owner"}]},
+                {"value":"tia","owner":"tix","dealer":"tid","name":"🎫 tickets", "children":[{"value":"tid", "name":"🎫 tickets - dealer"},{"value":"tix", "name":"🎫 tickets - owner"}]},
+                {"value":"tla","owner":"tls","dealer":"tld","name":"🔨 tools", "children":[{"value":"tld", "name":"🔨 tools - dealer"},{"value":"tls", "name":"🔨 tools - owner"}]},
+                {"value":"taa","owner":"tag","dealer":"tad","name":"🎲 toys & games", "children":[{"value":"tad", "name":"🎲 toys & games - dealer"},{"value":"tag", "name":"🎲 toys & games - owner"}]},
+                {"value":"tra","owner":"tro","dealer":"trb","name":"⚪ trailers", "children":[{"value":"trb", "name":"⚪ trailers - dealer"},{"value":"tro", "name":"⚪ trailers - owner"}]},
             {"value":"vga","owner":"vgm","dealer":"vgd","name":"🎮 video gaming", "children":[{"value":"vgd", "name":"🎮 video gaming - dealer"},{"value":"vgm", "name":"🎮 video gaming - owner"}]}]
-        },
-        {"value":"ccc","name":"👪 Community", "children":[
-            {"value":"act","name":"🏄 activity partner"},
-            {"value":"ats","name":"🎨 artists"},
-            {"value":"kid","name":"🚼 childcare"},
-            {"value":"com","name":"⚪ general"},
-            {"value":"grp","name":"⚪ groups"},
-            {"value":"vnn","name":"📰 local news and views"},
-            {"value":"laf","name":"🔍 lost & found"},
-            {"value":"muc","name":"🎶 musicians"},
-            {"value":"pet","name":"🐈 pets"},
-            {"value":"pol","name":"⚪ politics"},
-            {"value":"rid","name":"🚕 rideshare"},
+            },
+            {"value":"ccc","name":"👪 Community", "children":[
+                {"value":"act","name":"🏄 activity partner"},
+                {"value":"ats","name":"🎨 artists"},
+                {"value":"kid","name":"🚼 childcare"},
+                {"value":"com","name":"⚪ general"},
+                {"value":"grp","name":"⚪ groups"},
+                {"value":"vnn","name":"📰 local news and views"},
+                {"value":"laf","name":"🔍 lost & found"},
+                {"value":"muc","name":"🎶 musicians"},
+                {"value":"pet","name":"🐈 pets"},
+                {"value":"pol","name":"⚪ politics"},
+                {"value":"rid","name":"🚕 rideshare"},
             {"value":"vol","name":"🙋 volunteers"}]
-        },
-        {"value":"hhh", "name":"🏠 Housing", "children":[
-            {"name":"apts wanted","value":"hou"},
-            {"name":"apts/housing for rent","value":"apa"},
-            {"name":"housing swap","value":"swp"},
-            {"name":"housing wanted","value":"hsw"},
-            {"name":"office & commercial","value":"off"},
-            {"name":"parking & storage","value":"prk"},
-            {"name":"real estate - by broker","value":"reb"},
-            {"name":"real estate - by owner","value":"reo"},
-            {"name":"real estate for sale","value":"rea"},
-            {"name":"real estate wanted","value":"rew"},
-            {"name":"rooms & shares","value":"roo"},
-            {"name":"rooms wanted","value":"sha"},
-            {"name":"sublet/temp wanted","value":"sbw"},
-            {"name":"sublets & temporary","value":"sub"},
-            {"name":"vacation rentals","value":"vac"},
-            {"name":"(NY) All Apartments","value":"aap"},
-            {"name":"(NY) apts broker fee","value":"fee"},
-            {"name":"(NY) apts broker no fee","value":"nfb"},
-            {"name":"(NY) apts by owner","value":"abo"},
+            },
+            {"value":"hhh", "name":"🏠 Housing", "children":[
+                {"name":"apts wanted","value":"hou"},
+                {"name":"apts/housing for rent","value":"apa"},
+                {"name":"housing swap","value":"swp"},
+                {"name":"housing wanted","value":"hsw"},
+                {"name":"office & commercial","value":"off"},
+                {"name":"parking & storage","value":"prk"},
+                {"name":"real estate - by broker","value":"reb"},
+                {"name":"real estate - by owner","value":"reo"},
+                {"name":"real estate for sale","value":"rea"},
+                {"name":"real estate wanted","value":"rew"},
+                {"name":"rooms & shares","value":"roo"},
+                {"name":"rooms wanted","value":"sha"},
+                {"name":"sublet/temp wanted","value":"sbw"},
+                {"name":"sublets & temporary","value":"sub"},
+                {"name":"vacation rentals","value":"vac"},
+                {"name":"(NY) All Apartments","value":"aap"},
+                {"name":"(NY) apts broker fee","value":"fee"},
+                {"name":"(NY) apts broker no fee","value":"nfb"},
+                {"name":"(NY) apts by owner","value":"abo"},
             {"name":"(NY) apts registration fee","value":"aiv"}]
-        },
-        {"value":"bbb", "name":"💪 Services", "children":[
-            {"value":"aos","name":"🚗 automotive service"},
-            {"value":"bts","name":"💇 beauty services"},
-            {"value":"cps","name":"💻 computer services"},
-            {"value":"crs","name":"💡 creative services"},
-            {"value":"cys","name":"🚲 cycle services"},
-            {"value":"evs","name":"📆 event services"},
-            {"value":"fgs","name":"🌽 farm & garden services"},
-            {"value":"fns","name":"💸 financial services"},
-            {"value":"hss","name":"🏠 household services"},
-            {"value":"lbs","name":"💪 labor & moving"},
-            {"value":"lgs","name":"📑 legal services"},
-            {"value":"lss","name":"🎓 lessons & tutoring"},
-            {"value":"mas","name":"⚓ marine services"},
-            {"value":"pas","name":"🐈 pet services"},
-            {"value":"rts","name":"🏠 real estate services"},
-            {"value":"sks","name":"🔨 skilled trade services"},
-            {"value":"biz","name":"⚪ small biz ads"},
-            {"value":"ths","name":"⚪ therapeutic services"},
-            {"value":"trv","name":"💺 travel/vacation"},
+            },
+            {"value":"bbb", "name":"💪 Services", "children":[
+                {"value":"aos","name":"🚗 automotive service"},
+                {"value":"bts","name":"💇 beauty services"},
+                {"value":"cps","name":"💻 computer services"},
+                {"value":"crs","name":"💡 creative services"},
+                {"value":"cys","name":"🚲 cycle services"},
+                {"value":"evs","name":"📆 event services"},
+                {"value":"fgs","name":"🌽 farm & garden services"},
+                {"value":"fns","name":"💸 financial services"},
+                {"value":"hss","name":"🏠 household services"},
+                {"value":"lbs","name":"💪 labor & moving"},
+                {"value":"lgs","name":"📑 legal services"},
+                {"value":"lss","name":"🎓 lessons & tutoring"},
+                {"value":"mas","name":"⚓ marine services"},
+                {"value":"pas","name":"🐈 pet services"},
+                {"value":"rts","name":"🏠 real estate services"},
+                {"value":"sks","name":"🔨 skilled trade services"},
+                {"value":"biz","name":"⚪ small biz ads"},
+                {"value":"ths","name":"⚪ therapeutic services"},
+                {"value":"trv","name":"💺 travel/vacation"},
             {"value":"wet","name":"📝 write/edit/trans"}]
-        },
-        {"value":"jjj", "name":"💼 Jobs", "children":[
-            {"value":"ofc","name":"💼 admin/office job"},
-            {"value":"bus","name":"💼 business jobs"},
-            {"value":"csr","name":"👉 customer service jobs"},
-            {"value":"edu","name":"🎓 education jobs"},
-            {"value":"egr","name":"📐 engineering jobs"},
-            {"value":"etc","name":"⚪ etcetera jobs"},
-            {"value":"acc","name":"💵 finance jobs"},
-            {"value":"fbh","name":"🍝 food/bev/hosp jobs"},
-            {"value":"lab","name":"💪 general labor jobs"},
-            {"value":"gov","name":"👮 government jobs"},
-            {"value":"hea","name":"🏨 healthcare jobs"},
-            {"value":"hum","name":"⚪ human resource jobs"},
-            {"value":"eng","name":"💻 internet engineering jobs"},
-            {"value":"lgl","name":"📑 legal jobs"},
-            {"value":"mnu","name":"⚪ manufacturing jobs"},
-            {"value":"mar","name":"📣 marketing jobs"},
-            {"value":"med","name":"🎥 media jobs"},
-            {"value":"npo","name":"⚪ nonprofit jobs"},
-            {"value":"rej","name":"🏠 real estate jobs"},
-            {"value":"rfh","name":"🍔 retail/food/hospitality jobs"},
-            {"value":"ret","name":"💲 retail/wholesale jobs"},
-            {"value":"sls","name":"💲 sales jobs"},
-            {"value":"spa","name":"💇🏃 salon/spa/fitness"},
-            {"value":"sci","name":"🔬 science jobs"},
-            {"value":"sec","name":"🔫 security jobs"},
-            {"value":"trd","name":"🔨 skilled trades jobs"},
-            {"value":"sof","name":"💻 software jobs"},
-            {"value":"sad","name":"💻 systems/networking jobs"},
-            {"value":"tch","name":"💻 tech support jobs"},
-            {"value":"trp","name":"🚌 transport jobs"},
-            {"value":"tfr","name":"📻 tv video radio jobs"},
-            {"value":"web","name":"💻 web design jobs"},
+            },
+            {"value":"jjj", "name":"💼 Jobs", "children":[
+                {"value":"ofc","name":"💼 admin/office job"},
+                {"value":"bus","name":"💼 business jobs"},
+                {"value":"csr","name":"👉 customer service jobs"},
+                {"value":"edu","name":"🎓 education jobs"},
+                {"value":"egr","name":"📐 engineering jobs"},
+                {"value":"etc","name":"⚪ etcetera jobs"},
+                {"value":"acc","name":"💵 finance jobs"},
+                {"value":"fbh","name":"🍝 food/bev/hosp jobs"},
+                {"value":"lab","name":"💪 general labor jobs"},
+                {"value":"gov","name":"👮 government jobs"},
+                {"value":"hea","name":"🏨 healthcare jobs"},
+                {"value":"hum","name":"⚪ human resource jobs"},
+                {"value":"eng","name":"💻 internet engineering jobs"},
+                {"value":"lgl","name":"📑 legal jobs"},
+                {"value":"mnu","name":"⚪ manufacturing jobs"},
+                {"value":"mar","name":"📣 marketing jobs"},
+                {"value":"med","name":"🎥 media jobs"},
+                {"value":"npo","name":"⚪ nonprofit jobs"},
+                {"value":"rej","name":"🏠 real estate jobs"},
+                {"value":"rfh","name":"🍔 retail/food/hospitality jobs"},
+                {"value":"ret","name":"💲 retail/wholesale jobs"},
+                {"value":"sls","name":"💲 sales jobs"},
+                {"value":"spa","name":"💇🏃 salon/spa/fitness"},
+                {"value":"sci","name":"🔬 science jobs"},
+                {"value":"sec","name":"🔫 security jobs"},
+                {"value":"trd","name":"🔨 skilled trades jobs"},
+                {"value":"sof","name":"💻 software jobs"},
+                {"value":"sad","name":"💻 systems/networking jobs"},
+                {"value":"tch","name":"💻 tech support jobs"},
+                {"value":"trp","name":"🚌 transport jobs"},
+                {"value":"tfr","name":"📻 tv video radio jobs"},
+                {"value":"web","name":"💻 web design jobs"},
             {"value":"wri","name":"📝 writing jobs"}]
-        },
-        {"value":"ggg", "name":"💫 Gigs", "children":[
-            {"value":"cpg","name":"💻 computer gig"},
-            {"value":"crg","name":"💡 creative gigs"},
-            {"value":"cwg","name":"⚪ crew gigs"},
-            {"value":"dmg","name":"⚪ domestic gigs"},
-            {"value":"evg","name":"📅 event gigs"},
-            {"value":"lbg","name":"💪 labor gigs"},
-            {"value":"tlg","name":"⚪ talent gigs"},
+            },
+            {"value":"ggg", "name":"💫 Gigs", "children":[
+                {"value":"cpg","name":"💻 computer gig"},
+                {"value":"crg","name":"💡 creative gigs"},
+                {"value":"cwg","name":"⚪ crew gigs"},
+                {"value":"dmg","name":"⚪ domestic gigs"},
+                {"value":"evg","name":"📅 event gigs"},
+                {"value":"lbg","name":"💪 labor gigs"},
+                {"value":"tlg","name":"⚪ talent gigs"},
             {"value":"wrg","name":"📝 writing gigs"}]},
-        {"value":"res","name":"📄 Résumés"}
+            {"value":"res","name":"📄 Résumés"}
         ]}
     ]},
     "locations":{
