@@ -1,0 +1,2088 @@
+{
+    "searchUUID": "kijiji.com.rss",
+    "name":"kijiji.com",
+    "subtitle":"RSS Search",
+    "loader": {
+        "type":"RSS",
+        "context":{
+            "city":{
+                "name": "${location.name}",
+                "computedKey":"${location.key}",
+                "url":"${location.url}",
+                "postUrl":"${location.postUrl}",
+                "subCode":"${location.subcode}",
+                "location":{
+                    "lat": "${location.geoInfo.lat}",
+                    "lng": "${location.geoInfo.lng}"
+                },
+                "postalCode":"${location.geoInfo.postal_code}"
+            },
+            "locationText": "${location.name}"
+        }
+    },
+    "initialModel": {
+        "category": ["sss"],
+        "scrollOffset": 0
+    },
+    "incrementalLoad":{
+        "step": 25,
+        "modelKey": "scrollOffset"
+    },
+    "fieldLayouts":{
+        "layoutModelSource": "category",
+        "splitRequests":["location", "category"],
+        "locSearchPattern": {
+            "cat":"locSearchPattern",
+            "pattern": "${location.url}/search${location.subcode}",
+            "fields": {
+                "subcode": { "prefix": "/"}
+            }
+        },
+        "generic": {
+            "pattern": "format=rss${scrollOffset}&query=${keywords}${hasImages}${titleOnly}",
+            "fields": {
+                "location": {"type":"text", "layoutOnChange":true, "selectTreeRef": "locations", "buttonStyle": "cancel", "title": "Location", "prefix": "🌎 ", "required":true, "autoSelect":"nearest"},
+                "category": {"type":"text", "layoutOnChange":true, "selectTreeRef": "categories", "buttonStyle": "cancel", "title": "Category", "required":true},
+                "keywords": {"type":"text", "placeholder": "keywords"},
+                "titleOnly": { "type":"boolean", "label": "Title Only", "falseVal": ""},
+                "hasImages": { "type":"boolean", "trueVal":"1", "falseVal": "", "prefix": "&hasPic=", "label": "Has Image"},
+                "minPrice": { "type":"numeric", "prefix": "&min_price=", "placeholder" : "Min Price"},
+                "maxPrice": { "type":"numeric", "prefix": "&max_price=", "placeholder" : "Max Price"},
+                "scrollOffset": { "type":"numeric", "prefix": "&s=", "zeroVal" : ""}
+            },
+            "fieldsLayout": {
+                "type":"grid",
+                "columns": 2,
+                "fields": [
+                    {"f": "location", "width": 2},
+                    {"f": "category", "width": 2},
+                    {"f": "keywords", "width": 2},
+                    {"f": "titleOnly", "width": 1}, {"f": "hasImages", "width": 1}
+                ]
+            }
+        },
+        "priceSearch": {
+            "parent":"generic",
+            "cat":"generic",
+            "pattern": "${generic}${minPrice}${maxPrice}",
+            "fields": {
+                "minPrice": { "type":"numeric", "prefix": "&min_price=", "placeholder" : "Min Price"},
+                "maxPrice": { "type":"numeric", "prefix": "&max_price=", "placeholder" : "Max Price"}
+            },
+            "fieldsLayout": {
+                "type":"grid",
+                "columns": 2,
+                "fields": [
+                    {"f": "minPrice", "width": 1}, {"f": "maxPrice", "width": 1}
+                ]
+            }
+        },
+        "sss": {
+            "cat": "sss",
+            "catName": "all for sale",
+            "parent": "priceSearch",
+            "pattern": "${locSearchPattern}/${category.value}?${priceSearch}"
+        }, 
+        "ssq":{"parent": "sss"}, 
+        "sso":{"parent": "sss"},
+        "cta": {
+            "cat": "cta",
+            "catName": "cars trucks autos",
+            "parent": "priceSearch",
+            "pattern": "${locSearchPattern}/${category.value}?${priceSearch}${minYear}${maxYear}${minOdo}${maxOdo}${auto_cylinders}${auto_drivetrain}${auto_fuel_type}${auto_paint}${auto_size}${auto_title_status}${auto_transmission}${auto_bodytype}",
+            "groupTitle": "Cars & Trucks",
+            "fields": {
+                "auto_cylinders": { "type":"numeric", "prefix":"&auto_cylinders=", "listSep":"&auto_cylinders=", "placeholder":"Cylinders", "selections":[
+                    {"label":"3 cylinders"},
+                    {"label":"4 cylinders"},
+                    {"label":"5 cylinders"},
+                    {"label":"6 cylinders"},
+                    {"label":"8 cylinders"},
+                    {"label":"10 cylinders"},
+                    {"label":"12 cylinders"},
+                    {"label":"other"}
+                ]},
+                "auto_drivetrain": { "type":"numeric", "prefix":"&auto_drivetrain=", "listSep":"&auto_drivetrain=", "placeholder":"Drive", "selections":[
+                    {"label":"fwd"},
+                    {"label":"rwd"},
+                    {"label":"4wd"}
+                ]},
+                "auto_fuel_type": { "type":"numeric", "prefix":"&auto_fuel_type=", "listSep":"&auto_fuel_type=", "placeholder":"Fuel", "selections":[
+                    {"label":"gas"},
+                    {"label":"diesel"},
+                    {"label":"hybrid"},
+                    {"label":"electric"},
+                    {"label":"other", "value":"6"}
+                ]},
+                "auto_paint": { "type":"numeric", "prefix":"&auto_paint=", "listSep":"&auto_paint=", "placeholder":"Color", "selections":[
+                    {"label":"black", "value":"1"},
+                    {"label":"blue", "value":"2"},
+                    {"label":"brown", "value":"20"},
+                    {"label":"green", "value":"3"},
+                    {"label":"grey", "value":"4"},
+                    {"label":"orange", "value":"5"},
+                    {"label":"purple", "value":"6"},
+                    {"label":"red", "value":"7"},
+                    {"label":"silver", "value":"8"},
+                    {"label":"white", "value":"9"},
+                    {"label":"yellow", "value":"10"},
+                    {"label":"custom", "value":"11"}
+                ]},
+                "auto_size": { "type":"numeric", "prefix":"&auto_size=", "listSep":"&auto_size=", "placeholder":"Size", "selections":[
+                    {"label":" compact"},
+                    {"label":"full-size"},
+                    {"label":"mid-size"},
+                    {"label":"sub-compact"}
+                ]},
+                "auto_title_status": { "type":"numeric", "prefix":"&auto_title_status=", "listSep":"&auto_title_status=", "placeholder":"Title", "selections":[
+                    {"label":"clean"},
+                    {"label":"salvage"},
+                    {"label":"rebuilt"},
+                    {"label":"parts only"},
+                    {"label":"lien"},
+                    {"label":"missing"}
+                ]},
+                "auto_transmission": { "type":"numeric", "prefix":"&auto_transmission=", "listSep":"&auto_transmission=", "placeholder":"Trans", "selections":[
+                    {"label":"manual"},
+                    {"label":"automatic"},
+                    {"label":"other"}
+                ]},
+                "auto_bodytype": { "type":"numeric", "prefix":"&auto_bodytype=", "listSep":"&auto_bodytype=", "placeholder":"Type", "selections":[
+                    {"label":"bus"},
+                    {"label":"convertible"},
+                    {"label":"coupe"},
+                    {"label":"hatchback"},
+                    {"label":"mini-van"},
+                    {"label":"offroad"},
+                    {"label":"pickup"},
+                    {"label":"sedan"},
+                    {"label":"truck"},
+                    {"label":"SUV"},
+                    {"label":"wagon"},
+                    {"label":"van"},
+                    {"label":"other"}
+                ]},
+                "minYear": { "type":"numeric", "prefix":"&min_auto_year=", "placeholder": "Min Year"},
+                "maxYear": { "type":"numeric", "prefix":"&max_auto_year=", "placeholder": "Max Year"},
+                "minOdo": { "type":"numeric", "prefix":"&min_auto_miles=", "placeholder": "Min"},
+                "maxOdo": { "type":"numeric", "prefix":"&max_auto_miles=", "placeholder": "Max"}
+            },
+            "groupCaption": "Cars & Trucks",
+            "fieldsLayout": {
+                "type":"grid",
+                "columns": 2,
+                "fields": [
+                    {"f": "minYear", "width": 1}, {"f": "maxYear", "width": 1},
+                    {"label":"ODOMETER", "width": 2},
+                    {"f": "minOdo", "width": 1}, {"f": "maxOdo", "width": 1},
+                    {"f": "auto_cylinders", "width": 1}, {"f": "auto_drivetrain", "width": 1},
+                    {"f": "auto_fuel_type", "width": 1}, {"f": "auto_paint", "width": 1},
+                    {"f": "auto_size", "width": 1}, {"f": "auto_title_status", "width": 1},
+                    {"f": "auto_transmission", "width": 1}, {"f": "auto_bodytype", "width": 1}
+                ]
+            }
+        }, 
+        "cto":{"parent": "cta"}, 
+        "ctd":{"parent": "cta"},
+        "mca": {
+            "cat": "mca",
+            "catName": "motorcycles",
+            "parent": "priceSearch",
+            "pattern": "${locSearchPattern}/${category.value}?format=rss&${priceSearch}${minYear}${maxYear}${minOdo}${maxOdo}${minDisp}${maxDisp}",
+            "groupTitle": "Motocycles",
+            "fields": {
+                "minYear": { "type":"numeric", "prefix":"&min_auto_year="},
+                "maxYear": { "type":"numeric", "prefix":"&max_auto_year="},
+                "minOdo": { "type":"numeric", "prefix":"&min_auto_miles="},
+                "maxOdo": { "type":"numeric", "prefix":"&max_auto_miles="},
+                "minDisp": { "type":"numeric", "prefix":"&min_engine_displacement_cc="},
+                "maxDisp": { "type":"numeric", "prefix":"&max_engine_displacement_cc="}
+            },
+            "fieldsLayout": {
+                "type":"grid",
+                "columns": 2,
+                "fields": [
+                    {"f": "minYear", "width": 1}, {"f": "maxYear", "width": 1},
+                    {"label":"ODOMETER", "width": 2},
+                    {"f": "minOdo", "width": 1}, {"f": "maxOdo", "width": 1},
+                    {"label":"ENGINE DISPLACEMENT (CC)", "width": 2},
+                    {"f": "minDisp", "width": 1}, {"f": "maxDisp", "width": 1}
+                ]
+            }
+        }, 
+        "mcy":{"parent": "mca"}, 
+        "mcd":{"parent": "mca"},
+
+        "ata":{"parent":"sss"},
+        "ppa":{"parent":"sss"},
+        "ara":{"parent":"sss"},
+        "sna":{"parent":"sss"},
+        "pta":{"parent":"sss"},
+        "wta":{"parent":"sss"},
+        "ava":{"parent":"sss"},
+        "baa":{"parent":"sss"},
+        "bar":{"parent":"sss"},
+        "haa":{"parent":"sss"},
+        "bip":{"parent":"sss"},
+        "bia":{"parent":"sss"},
+        "bpa":{"parent":"sss"},
+        "boo":{"parent":"sss"},
+        "bka":{"parent":"sss"},
+        "bfa":{"parent":"sss"},
+        "ema":{"parent":"sss"},
+        "moa":{"parent":"sss"},
+        "cla":{"parent":"sss"},
+        "cba":{"parent":"sss"},
+        "syp":{"parent":"sss"},
+        "sya":{"parent":"sss"},
+        "ela":{"parent":"sss"},
+        "gra":{"parent":"sss"},
+        "zip":{"parent":"sss"},
+        "fua":{"parent":"sss"},
+        "gms":{"parent":"sss"},
+        "foa":{"parent":"sss"},
+        "hva":{"parent":"sss"},
+        "hsa":{"parent":"sss"},
+        "jwa":{"parent":"sss"},
+        "maa":{"parent":"sss"},
+        "mpa":{"parent":"sss"},
+        "msa":{"parent":"sss"},
+        "pha":{"parent":"sss"},
+        "rva":{"parent":"sss"},
+        "sga":{"parent":"sss"},
+        "tia":{"parent":"sss"},
+        "tla":{"parent":"sss"},
+        "taa":{"parent":"sss"},
+        "tra":{"parent":"sss"},
+        "vga":{"parent":"sss"},
+        "waa":{"parent":"sss"},
+
+        "wan":{"parent":"waa"},
+        "atq":{"parent":"ata"},
+        "app":{"parent":"ppa"},
+        "art":{"parent":"ara"},
+        "snw":{"parent":"sna"},
+        "pts":{"parent":"pta"},
+        "wto":{"parent":"wta"},
+        "avo":{"parent":"ava"},
+        "bab":{"parent":"baa"},
+        "bik":{"parent":"bia"},
+        "bop":{"parent":"bip"},
+        "boa":{"parent":"boo"},
+        "bks":{"parent":"bka"},
+        "bfs":{"parent":"bfa"},
+        "emd":{"parent":"ema"},
+        "mob":{"parent":"moa"},
+        "clo":{"parent":"cla"},
+        "clt":{"parent":"cba"},
+        "sop":{"parent":"syp"},
+        "sys":{"parent":"sya"},
+        "ele":{"parent":"ela"},
+        "grd":{"parent":"gra"},
+        "fuo":{"parent":"fua"},
+        "for":{"parent":"foa"},
+        "hvo":{"parent":"hva"},
+        "hab":{"parent":"haa"},
+        "hsh":{"parent":"hsa"},
+        "jwl":{"parent":"jwa"},
+        "mat":{"parent":"maa"},
+        "mpo":{"parent":"mpa"},
+        "msg":{"parent":"msa"},
+        "pho":{"parent":"pha"},
+        "rvs":{"parent":"rva"},
+        "spo":{"parent":"sga"},
+        "tix":{"parent":"tia"},
+        "tls":{"parent":"tla"},
+        "tag":{"parent":"taa"},
+        "tro":{"parent":"tra"},
+        "vgm":{"parent":"vga"},
+
+        "wad":{"parent":"waa"},
+        "atd":{"parent":"ata"},
+        "ppd":{"parent":"ppa"},
+        "ard":{"parent":"ara"},
+        "snd":{"parent":"sna"},
+        "ptd":{"parent":"pta"},
+        "wtd":{"parent":"wta"},
+        "avd":{"parent":"ava"},
+        "bad":{"parent":"baa"},
+        "bid":{"parent":"bia"},
+        "bdp":{"parent":"bip"},
+        "bod":{"parent":"boo"},
+        "bpd":{"parent":"bpo"},
+        "bkd":{"parent":"bka"},
+        "bfd":{"parent":"bfa"},
+        "emq":{"parent":"ema"},
+        "mod":{"parent":"moa"},
+        "cld":{"parent":"cla"},
+        "cbd":{"parent":"cba"},
+        "sdp":{"parent":"syp"},
+        "syd":{"parent":"sya"},
+        "eld":{"parent":"ela"},
+        "grq":{"parent":"gra"},
+        "fud":{"parent":"fua"},
+        "fod":{"parent":"foa"},
+        "hvd":{"parent":"hva"},
+        "had":{"parent":"haa"},
+        "hsd":{"parent":"hsa"},
+        "jwd":{"parent":"jwa"},
+        "mad":{"parent":"maa"},
+        "mpd":{"parent":"mpa"},
+        "msd":{"parent":"msa"},
+        "phd":{"parent":"pha"},
+        "rvd":{"parent":"rva"},
+        "sgd":{"parent":"sga"},
+        "tid":{"parent":"tia"},
+        "tld":{"parent":"tla"},
+        "tad":{"parent":"taa"},
+        "trb":{"parent":"tra"},
+        "vgd":{"parent":"vga"},
+
+        "hhh":{
+            "cat": "hhh",
+            "catName": "housing",
+            "parent": "priceSearch",
+            "pattern": "${locSearchPattern}/${category.value}?${priceSearch}${bdrmsMin}${bdrmsMax}${bathMin}${bathMax}${minSqft}${maxSqft}${avail}${catsOk}${dogsOk}${furnished}${noSmoking}${wheelchairAccess}${laundry}${parking}&sale_date=all+dates",
+            "groupTitle": "Housing",
+            "fields": {
+                "bdrmsMin": { "type":"numeric", "multi": false, "prefix":"&min_bedrooms=", "placeholder":"Min", "selections":[
+                    {"label":"Min", "value":""},
+                    {"label":"1", "value":"1"},
+                    {"label":"2", "value":"2"},
+                    {"label":"3", "value":"3"},
+                    {"label":"4", "value":"4"},
+                    {"label":"5", "value":"5"},
+                    {"label":"6", "value":"6"},
+                    {"label":"7", "value":"7"},
+                    {"label":"8", "value":"8"}
+                ]},
+                "bdrmsMax": { "type":"numeric", "multi": false, "prefix":"&max_bedrooms=", "placeholder":"Max", "selections":[
+                    {"label":"Max", "value":""},
+                    {"label":"1", "value":"1"},
+                    {"label":"2", "value":"2"},
+                    {"label":"3", "value":"3"},
+                    {"label":"4", "value":"4"},
+                    {"label":"5", "value":"5"},
+                    {"label":"6", "value":"6"},
+                    {"label":"7", "value":"7"},
+                    {"label":"8", "value":"8"}
+                ]},
+                "bathMin": { "type":"numeric", "multi": false, "prefix":"&min_bathrooms=", "placeholder":"Min", "selections":[
+                    {"label":"Min", "value":""},
+                    {"label":"1", "value":"1"},
+                    {"label":"2", "value":"2"},
+                    {"label":"3", "value":"3"},
+                    {"label":"4", "value":"4"},
+                    {"label":"5", "value":"5"},
+                    {"label":"6", "value":"6"},
+                    {"label":"7", "value":"7"},
+                    {"label":"8", "value":"8"}
+                ]},
+                "bathMax": { "type":"numeric", "multi": false, "prefix":"&max_bathrooms=", "placeholder":"Max", "selections":[
+                    {"label":"Max", "value":""},
+                    {"label":"1", "value":"1"},
+                    {"label":"2", "value":"2"},
+                    {"label":"3", "value":"3"},
+                    {"label":"4", "value":"4"},
+                    {"label":"5", "value":"5"},
+                    {"label":"6", "value":"6"},
+                    {"label":"7", "value":"7"},
+                    {"label":"8", "value":"8"}
+                ]},
+                "laundry": { "type":"numeric", "prefix":"&laundry=", "listSep":"&laundry=", "placeholder":"Laundry", "selections":[
+                    {"label":"w/d in unit", "value":"1"},
+                    {"label":"w/d hookups", "value":"4"},
+                    {"label":"laundry in bldg", "value":"2"},
+                    {"label":"laundry on site", "value":"3"},
+                    {"label":"no laundry on site", "value":"5"}
+                ]},
+                "parking": { "type":"numeric", "prefix":"&parking=", "listSep":"&parking=", "placeholder":"Parking", "selections":[
+                    {"label":"carport", "value":"1"},
+                    {"label":"attached garage", "value":"2"},
+                    {"label":"detached garage", "value":"3"},
+                    {"label":"off-street parking", "value":"4"},
+                    {"label":"street parking", "value":"5"},
+                    {"label":"valet parking", "value":"6"},
+                    {"label":"no parking", "value":"7"}
+                ]},
+                "avail": { "type":"numeric", "multi":false, "prefix":"&availabilityMode=", "placeholder":"All Dates", "selections":[
+                    {"label":"All Dates", "value":""},
+                    {"label":"within 30 days", "value":"1"},
+                    {"label":"beyond 30 days", "value":"2"}
+                ]},
+                "minSqft": { "type":"numeric", "label": "Min", "placeholder":"Min"},
+                "maxSqft": { "type":"numeric", "label": "Max", "placeholder":"Max"},
+                "dogsOk": { "type":"boolean", "label": "Dogs OK", "prefix":"&pets_dog=", "falseVal": ""},
+                "catsOk": { "type":"boolean", "label": "Cats OK", "prefix":"&pets_cat=", "falseVal": ""},
+                "furnished": { "type":"boolean", "label": "Furnished", "prefix":"&is_furnished=", "falseVal": ""},
+                "noSmoking": { "type":"boolean", "label": "No Smoking",  "prefix":"&no_smoking=", "falseVal": ""},
+                "wheelchairAccess": { "type":"boolean", "label": "Wheelchair", "prefix":"&wheelchaccess=", "falseVal": ""}
+            },
+            "groupCaption": "Housing",
+            "fieldsLayout": {
+                "type":"grid",
+                "columns": 2,
+                "fields": [
+                    {"label":"BEDROOMS", "width": 2},
+                    {"f": "bdrmsMin", "width": 1}, {"f": "bdrmsMax", "width": 1},
+                    {"label":"BATHROOMS", "width": 2},
+                    {"f": "bathMin", "width": 1}, {"f": "bathMax", "width": 1},
+                    {"label":"SQFT", "width": 2},
+                    {"f": "minSqft", "width": 1}, {"f": "maxSqft", "width": 1},
+                    {"label":"AVAILABILITY", "width": 2},
+                    {"f": "avail", "width": 2}, 
+                    {"f": "catsOk", "width": 1}, {"f": "dogsOk", "width": 1},
+                    {"f": "furnished", "width": 1}, {"f": "noSmoking", "width": 1},
+                    {"f": "wheelchairAccess", "width": 1}, {"label":"", "width": 1},
+                    {"f": "laundry", "width": 1},{"f": "parking", "width": 1}
+                ]
+            }
+        },
+        "hou":{"parent": "hhh"},
+        "apa":{"parent": "hhh"},
+        "swp":{"parent": "hhh"},
+        "off":{"parent": "hhh"},
+        "prk":{"parent": "hhh"},
+        "reb":{"parent": "hhh"},
+        "reo":{"parent": "hhh"},
+        "rew":{"parent": "hhh"},
+        "roo":{"parent": "hhh"},
+        "sha":{"parent": "hhh"},
+        "sbw":{"parent": "hhh"},
+        "sub":{"parent": "hhh"},
+        "vac":{"parent": "hhh"},
+
+        "jjj":{
+            "catName": "jobs",
+            "parent": "generic",
+            "pattern": "${locSearchPattern}/${category.value}?${generic}${is_internship}${is_nonprofit}${is_telecommuting}${fullTime}${partTime}${contract}${empChoice}",
+            "groupTitle": "Jobs",
+            "fields": {
+                "is_internship": { "type":"boolean", "label": "internship", "prefix":"&is_internship=", "trueVal":"1", "falseVal": ""},
+                "is_nonprofit": { "type":"boolean", "label": "non-profit", "prefix":"&is_nonprofit=", "trueVal":"1", "falseVal": ""},
+                "is_telecommuting": { "type":"boolean", "label": "telecommute", "prefix":"&is_telecommuting=", "trueVal":"1", "falseVal": ""},
+                "fullTime": { "type":"boolean", "label": "full-time", "prefix":"&employment_type=", "trueVal":"1", "falseVal": ""},
+                "partTime": { "type":"boolean", "label": "part-time", "prefix":"&employment_type=", "trueVal":"2", "falseVal": ""},
+                "contract": { "type":"boolean", "label": "contract", "prefix":"&employment_type=", "trueVal":"3", "falseVal": ""},
+                "empChoice": { "type":"boolean", "label": "your choice", "prefix":"&employment_type=", "trueVal":"4", "falseVal": ""}
+            },
+            "groupCaption": "Jobs",
+            "fieldsLayout": {
+                "type":"grid",
+                "columns": 2,
+                "fields": [
+                    {"f": "is_internship", "width": 1}, {"f": "is_nonprofit", "width": 1},
+                    {"f": "is_telecommuting", "width": 2},
+                    {"label":"EMPLOYMENT TYPE", "width": 2},
+                    {"f": "fullTime", "width": 1}, {"f": "partTime", "width": 1}, 
+                    {"f": "contract", "width": 1}, {"f": "empChoice", "width": 1}
+                ]
+            }
+        }, 
+        "ofc": {"parent":"jjj"}, "bus": {"parent":"jjj"}, "csr": {"parent":"jjj"}, "edu": {"parent":"jjj"}, "egr": {"parent":"jjj"}, "etc": {"parent":"jjj"}, "acc": {"parent":"jjj"}, "fbh": {"parent":"jjj"}, "lab": {"parent":"jjj"}, "gov": {"parent":"jjj"}, "hea": {"parent":"jjj"}, "hum": {"parent":"jjj"}, "lgl": {"parent":"jjj"}, "mnu": {"parent":"jjj"}, "mar": {"parent":"jjj"}, "med": {"parent":"jjj"}, "npo": {"parent":"jjj"}, "rej": {"parent":"jjj"}, "ret": {"parent":"jjj"}, "sls": {"parent":"jjj"}, "spa": {"parent":"jjj"}, "sci": {"parent":"jjj"}, "sec": {"parent":"jjj"}, "trd": {"parent":"jjj"}, "sof": {"parent":"jjj"}, "sad": {"parent":"jjj"}, "tch": {"parent":"jjj"}, "trp": {"parent":"jjj"}, "tfr": {"parent":"jjj"}, "web": {"parent":"jjj"}, "wri": {"parent":"jjj"},
+
+        "ggg":{
+            "groupTitle": "Gigs",
+            "parent": "generic",
+            "pattern": "${locSearchPattern}/${category.value}?${generic}${paid}",
+            "fields": {
+                "paid": { "type":"numeric", "multi": false, "control":"segmented", "prefix":"&is_paid=", "placeholder":"paid", "selections":[
+                    {"label":"all", "value":""},
+                    {"label":"paid", "value":"yes"},
+                    {"label":"unpaid", "value":"no"}
+                ]}
+            },
+            "groupCaption": "Gigs",
+            "fieldsLayout": {
+                "type":"grid",
+                "columns": 1,
+                "fields": [
+                    {"f": "paid", "width": 1}
+                ]
+            }
+
+        },
+        "cpg":{"parent":"ggg"},
+        "crg":{"parent":"ggg"},
+        "cwg":{"parent":"ggg"},
+        "dmg":{"parent":"ggg"},
+        "evg":{"parent":"ggg"},
+        "lbg":{"parent":"ggg"},
+        "tlg":{"parent":"ggg"},
+        "wrg":{"parent":"ggg"},
+
+        "res":{
+            "parent": "generic",
+            "pattern": "${locSearchPattern}/${category.value}?${generic}",
+            "fields": {},
+            "fieldsLayout": {
+                "type":"grid",
+                "columns": 1,
+                "fields": []
+            }
+        },
+        "bbb":{
+            "groupTitle": "Services",
+            "parent": "generic",
+            "pattern": "${locSearchPattern}/${category.value}?${generic}",
+            "fields": {},
+            "fieldsLayout": {
+                "type":"grid",
+                "columns": 1,
+                "fields": []
+            }
+        },
+        "aos":{"parent":"bbb"},
+        "bts":{"parent":"bbb"},
+        "cms":{"parent":"bbb"},
+        "cps":{"parent":"bbb"},
+        "crs":{"parent":"bbb"},
+        "cys":{"parent":"bbb"},
+        "evs":{"parent":"bbb"},
+        "fgs":{"parent":"bbb"},
+        "fns":{"parent":"bbb"},
+        "hss":{"parent":"bbb"},
+        "lbs":{"parent":"bbb"},
+        "lgs":{"parent":"bbb"},
+        "lss":{"parent":"bbb"},
+        "mas":{"parent":"bbb"},
+        "pas":{"parent":"bbb"},
+        "rts":{"parent":"bbb"},
+        "sks":{"parent":"bbb"},
+        "biz":{"parent":"bbb"},
+        "trv":{"parent":"bbb"},
+        "wet":{"parent":"bbb"},
+
+        "ccc":{
+            "parent": "generic",
+            "pattern": "${locSearchPattern}/${category.value}?${generic}",
+            "fields": {},
+            "fieldsLayout": {
+                "type":"grid",
+                "columns": 1,
+                "fields": []
+            }
+        },
+        "act":{"parent":"ccc"},
+        "ats":{"parent":"ccc"},
+        "kid":{"parent":"ccc"},
+        "com":{"parent":"ccc"},
+        "grp":{"parent":"ccc"},
+        "vnn":{"parent":"ccc"},
+        "laf":{"parent":"ccc"},
+        "mis":{"parent":"ccc"},
+        "muc":{"parent":"ccc"},
+        "pet":{"parent":"ccc"},
+        "pol":{"parent":"ccc"},
+        "rnr":{"parent":"ccc"},
+        "rid":{"parent":"ccc"},
+        "vol":{"parent":"ccc"}
+    },
+    "categories":{"name":"Categories", "itemCaption":"category", "itemKey":"value", "itemTreePath":"children[1]", "recentKey":"recentCatSelections", "children":[
+        {"name":"Special", "groupHeader":true, "children":[
+            {"name":"Current Selection", "dynamic":"currentSel", "allowSelect":false},
+            {"name":"Recent Selection", "dynamic":"recentSel", "allowSelect":false}
+        ]},
+        {"name":"All Categories", "groupHeader":true, "children":[
+        {"value":"sss","name":"💵 For Sale", "selectable":false, "children":[
+            {"value":"sss","owner":"sso","dealer":"ssq","name":"💵 all for sale / wanted", "children":[{"value":"ssq", "name":"💵 all for sale / wanted - dealer"},{"value":"sso", "name":"💵 all for sale / wanted - owner"}]},
+            {"name":"⚪ free stuff","value":"zip"},
+            {"name":"⚪ garage sales","value":"gms"},
+            {"value":"waa","owner":"wan","dealer":"wad","name":"❓ items wanted", "children":[{"value":"wad", "name":"❓ items wanted - dealer"},{"value":"wan", "name":"❓ items wanted - owner"}]},
+            {"value":"ata","owner":"atq","dealer":"atd","name":"🚂 antiques", "children":[{"value":"atd", "name":"🚂 antiques - dealer"},{"value":"atq", "name":"🚂 antiques - owner"}]},
+            {"value":"ppa","owner":"app","dealer":"ppd","name":"🔌 appliances", "children":[{"value":"ppd", "name":"🔌 appliances - dealer"},{"value":"app", "name":"🔌 appliances - owner"}]},
+            {"value":"ara","owner":"art","dealer":"ard","name":"🎨 arts & crafts", "children":[{"value":"ard", "name":"🎨 arts & crafts - dealer"},{"value":"art", "name":"🎨 arts & crafts - owner"}]},
+            {"value":"sna","owner":"snw","dealer":"snd","name":"⚪ atvs/utvs/snowmobiles", "children":[{"value":"snd", "name":"⚪ atvs/utvs/snowmobiles - dealer"},{"value":"snw", "name":"⚪ atvs/utvs/snowmobiles - owner"}]},
+            {"value":"pta","owner":"pts","dealer":"ptd","name":"⚪ auto parts", "children":[{"value":"ptd", "name":"⚪ auto parts - dealer"},{"value":"pts", "name":"⚪ auto parts - owner"}]},
+            {"value":"wta","owner":"wto","dealer":"wtd","name":"⚪ auto parts - wheels tires", "children":[{"value":"wtd", "name":"⚪ auto parts - wheels tires - dealer"},{"value":"wto", "name":"⚪ auto parts - wheels tires - owner"}]},
+            {"value":"ava","owner":"avo","dealer":"avd","name":"✈️ aviation", "children":[{"value":"avd", "name":"✈️ aviation - dealer"},{"value":"avo", "name":"✈️ aviation - owner"}]},
+            {"value":"baa","owner":"bab","dealer":"bad","name":"🚼 baby & kid stuff", "children":[{"value":"bad", "name":"🚼 baby & kid stuff - dealer"},{"value":"bab", "name":"🚼 baby & kid stuff - owner"}]},
+            {"name":"🔃 barter","value":"bar"},
+            {"value":"bia","owner":"bik","dealer":"bid","name":"🚲 bikes", "children":[{"value":"bid", "name":"🚲 bikes - dealer"},{"value":"bik", "name":"🚲 bikes - owner"}]},
+            {"value":"bip","owner":"bop","dealer":"bdp","name":"🚲 bike parts", "children":[{"value":"bdp", "name":"🚲 bike parts - dealer"},{"value":"bop", "name":"🚲 bike parts - owner"}]},
+            {"value":"boo","owner":"boa","dealer":"bod","name":"🚤 boats", "children":[{"value":"bod", "name":"🚤 boats - dealer"},{"value":"boa", "name":"🚤 boats - owner"}]},
+            {"value":"bpo","owner":"bpa","dealer":"bpd","name":"🚤 boat parts & accessories", "children":[{"value":"bpd", "name":"🚤 boat parts & accessories - dealer"},{"value":"bpa", "name":"🚤 boat parts & accessories - owner"}]},
+            {"value":"bka","owner":"bks","dealer":"bkd","name":"📖 books", "children":[{"value":"bkd", "name":"📖 books - dealer"},{"value":"bks", "name":"📖 books - owner"}]},
+            {"value":"bfa","owner":"bfs","dealer":"bfd","name":"📊 business", "children":[{"value":"bfd", "name":"📊 business - dealer"},{"value":"bfs", "name":"📊 business - owner"}]},
+            {"value":"cta","owner":"cto","dealer":"ctd","name":"🚘 cars & trucks", "children":[{"value":"ctd", "name":"🚘 cars & trucks - dealer"},{"value":"cto", "name":"🚘 cars & trucks - owner"}]},
+            {"value":"ema","owner":"emd","dealer":"emq","name":"📀 cds/dvd/vhs", "children":[{"value":"emq", "name":"📀 cds/dvd/vhs - dealer"},{"value":"emd", "name":"📀 cds/dvd/vhs - owner"}]},
+            {"value":"moa","owner":"mob","dealer":"mod","name":"📱 cell phones", "children":[{"value":"mod", "name":"📱 cell phones - dealer"},{"value":"mob", "name":"📱 cell phones - owner"}]},
+            {"value":"cla","owner":"clo","dealer":"cld","name":"👗 clothing & accessories", "children":[{"value":"cld", "name":"👗 clothing & accessories - dealer"},{"value":"clo", "name":"👗 clothing & accessories - owner"}]},
+            {"value":"cba","owner":"clt","dealer":"cbd","name":"⚪ collectibles", "children":[{"value":"cbd", "name":"⚪ collectibles - dealer"},{"value":"clt", "name":"⚪ collectibles - owner"}]},
+            {"value":"syp","owner":"sop","dealer":"sdp","name":"💻 computer parts", "children":[{"value":"sdp", "name":"💻 computer parts - dealer"},{"value":"sop", "name":"💻 computer parts - owner"}]},
+            {"value":"sya","owner":"sys","dealer":"syd","name":"💻 computers", "children":[{"value":"syd", "name":"💻 computers - dealer"},{"value":"sys", "name":"💻 computers - owner"}]},
+            {"value":"ela","owner":"ele","dealer":"eld","name":"📠 electronics", "children":[{"value":"eld", "name":"📠 electronics - dealer"},{"value":"ele", "name":"📠 electronics - owner"}]},
+            {"value":"gra","owner":"grd","dealer":"grq","name":"🌽 farm & garden", "children":[{"value":"grq", "name":"🌽 farm & garden - dealer"},{"value":"grd", "name":"🌽 farm & garden - owner"}]},
+            {"value":"fua","owner":"fuo","dealer":"fud","name":"⚪ furniture", "children":[{"value":"fud", "name":"⚪ furniture - dealer"},{"value":"fuo", "name":"⚪ furniture - owner"}]},
+            {"value":"foa","owner":"for","dealer":"fod","name":"⚪ general", "children":[{"value":"fod", "name":"⚪ general - dealer"},{"value":"for", "name":"⚪ general - owner"}]},
+            {"value":"hva","owner":"hvo","dealer":"hvd","name":"⚪ heavy equipment", "children":[{"value":"hvd", "name":"⚪ heavy equipment - dealer"},{"value":"hvo", "name":"⚪ heavy equipment - owner"}]},
+            {"value":"haa","owner":"hab","dealer":"had","name":"💇 health and beauty", "children":[{"value":"had", "name":"💇 health and beauty - dealer"},{"value":"hab", "name":"💇 health and beauty - owner"}]},
+            {"value":"hsa","owner":"hsh","dealer":"hsd","name":"🏠 household", "children":[{"value":"hsd", "name":"🏠 household - dealer"},{"value":"hsh", "name":"🏠 household - owner"}]},
+            {"value":"jwa","owner":"jwl","dealer":"jwd","name":"💍 jewelry", "children":[{"value":"jwd", "name":"💍 jewelry - dealer"},{"value":"jwl", "name":"💍 jewelry - owner"}]},
+            {"value":"maa","owner":"mat","dealer":"mad","name":"⚫ materials", "children":[{"value":"mad", "name":"⚫ materials - dealer"},{"value":"mat", "name":"⚫ materials - owner"}]},
+            {"value":"mpa","owner":"mpo","dealer":"mpd","name":"⚪ motorcycle parts & acc", "children":[{"value":"mpd", "name":"⚪ motorcycle parts & acc - dealer"},{"value":"mpo", "name":"⚪ motorcycle parts & acc - owner"}]},
+            {"value":"mca","owner":"mcy","dealer":"mcd","name":"⚪ motorcycles", "children":[{"value":"mcd", "name":"⚪ motorcycles - dealer"},{"value":"mcy", "name":"⚪ motorcycles - owner"}]},
+            {"value":"msa","owner":"msg","dealer":"msd","name":"🎸 music instr", "children":[{"value":"msd", "name":"🎸 music instr - dealer"},{"value":"msg", "name":"🎸 music instr - owner"}]},
+            {"value":"pha","owner":"pho","dealer":"phd","name":"📷 photo+video", "children":[{"value":"phd", "name":"📷 photo+video - dealer"},{"value":"pho", "name":"📷 photo+video - owner"}]},
+            {"value":"rva","owner":"rvs","dealer":"rvd","name":"⚪ recreational vehicles", "children":[{"value":"rvd", "name":"⚪ recreational vehicles - dealer"},{"value":"rvs", "name":"⚪ recreational vehicles - owner"}]},
+            {"value":"sga","owner":"spo","dealer":"sgd","name":"🏈 sporting", "children":[{"value":"sgd", "name":"🏈 sporting - dealer"},{"value":"spo", "name":"🏈 sporting - owner"}]},
+            {"value":"tia","owner":"tix","dealer":"tid","name":"🎫 tickets", "children":[{"value":"tid", "name":"🎫 tickets - dealer"},{"value":"tix", "name":"🎫 tickets - owner"}]},
+            {"value":"tla","owner":"tls","dealer":"tld","name":"🔨 tools", "children":[{"value":"tld", "name":"🔨 tools - dealer"},{"value":"tls", "name":"🔨 tools - owner"}]},
+            {"value":"taa","owner":"tag","dealer":"tad","name":"🎲 toys & games", "children":[{"value":"tad", "name":"🎲 toys & games - dealer"},{"value":"tag", "name":"🎲 toys & games - owner"}]},
+            {"value":"tra","owner":"tro","dealer":"trb","name":"⚪ trailers", "children":[{"value":"trb", "name":"⚪ trailers - dealer"},{"value":"tro", "name":"⚪ trailers - owner"}]},
+            {"value":"vga","owner":"vgm","dealer":"vgd","name":"🎮 video gaming", "children":[{"value":"vgd", "name":"🎮 video gaming - dealer"},{"value":"vgm", "name":"🎮 video gaming - owner"}]}]
+        },
+        {"value":"ccc","name":"👪 Community", "children":[
+            {"value":"act","name":"🏄 activity partner"},
+            {"value":"ats","name":"🎨 artists"},
+            {"value":"kid","name":"🚼 childcare"},
+            {"value":"com","name":"⚪ general"},
+            {"value":"grp","name":"⚪ groups"},
+            {"value":"vnn","name":"📰 local news and views"},
+            {"value":"laf","name":"🔍 lost & found"},
+            {"value":"muc","name":"🎶 musicians"},
+            {"value":"pet","name":"🐈 pets"},
+            {"value":"pol","name":"⚪ politics"},
+            {"value":"rid","name":"🚕 rideshare"},
+            {"value":"vol","name":"🙋 volunteers"}]
+        },
+        {"value":"hhh", "name":"🏠 Housing", "children":[
+            {"name":"apts wanted","value":"hou"},
+            {"name":"apts/housing for rent","value":"apa"},
+            {"name":"housing swap","value":"swp"},
+            {"name":"housing wanted","value":"hsw"},
+            {"name":"office & commercial","value":"off"},
+            {"name":"parking & storage","value":"prk"},
+            {"name":"real estate - by broker","value":"reb"},
+            {"name":"real estate - by owner","value":"reo"},
+            {"name":"real estate for sale","value":"rea"},
+            {"name":"real estate wanted","value":"rew"},
+            {"name":"rooms & shares","value":"roo"},
+            {"name":"rooms wanted","value":"sha"},
+            {"name":"sublet/temp wanted","value":"sbw"},
+            {"name":"sublets & temporary","value":"sub"},
+            {"name":"vacation rentals","value":"vac"},
+            {"name":"(NY) All Apartments","value":"aap"},
+            {"name":"(NY) apts broker fee","value":"fee"},
+            {"name":"(NY) apts broker no fee","value":"nfb"},
+            {"name":"(NY) apts by owner","value":"abo"},
+            {"name":"(NY) apts registration fee","value":"aiv"}]
+        },
+        {"value":"bbb", "name":"💪 Services", "children":[
+            {"value":"aos","name":"🚗 automotive service"},
+            {"value":"bts","name":"💇 beauty services"},
+            {"value":"cps","name":"💻 computer services"},
+            {"value":"crs","name":"💡 creative services"},
+            {"value":"cys","name":"🚲 cycle services"},
+            {"value":"evs","name":"📆 event services"},
+            {"value":"fgs","name":"🌽 farm & garden services"},
+            {"value":"fns","name":"💸 financial services"},
+            {"value":"hss","name":"🏠 household services"},
+            {"value":"lbs","name":"💪 labor & moving"},
+            {"value":"lgs","name":"📑 legal services"},
+            {"value":"lss","name":"🎓 lessons & tutoring"},
+            {"value":"mas","name":"⚓ marine services"},
+            {"value":"pas","name":"🐈 pet services"},
+            {"value":"rts","name":"🏠 real estate services"},
+            {"value":"sks","name":"🔨 skilled trade services"},
+            {"value":"biz","name":"⚪ small biz ads"},
+            {"value":"ths","name":"⚪ therapeutic services"},
+            {"value":"trv","name":"💺 travel/vacation"},
+            {"value":"wet","name":"📝 write/edit/trans"}]
+        },
+        {"value":"jjj", "name":"💼 Jobs", "children":[
+            {"value":"ofc","name":"💼 admin/office job"},
+            {"value":"bus","name":"💼 business jobs"},
+            {"value":"csr","name":"👉 customer service jobs"},
+            {"value":"edu","name":"🎓 education jobs"},
+            {"value":"egr","name":"📐 engineering jobs"},
+            {"value":"etc","name":"⚪ etcetera jobs"},
+            {"value":"acc","name":"💵 finance jobs"},
+            {"value":"fbh","name":"🍝 food/bev/hosp jobs"},
+            {"value":"lab","name":"💪 general labor jobs"},
+            {"value":"gov","name":"👮 government jobs"},
+            {"value":"hea","name":"🏨 healthcare jobs"},
+            {"value":"hum","name":"⚪ human resource jobs"},
+            {"value":"eng","name":"💻 internet engineering jobs"},
+            {"value":"lgl","name":"📑 legal jobs"},
+            {"value":"mnu","name":"⚪ manufacturing jobs"},
+            {"value":"mar","name":"📣 marketing jobs"},
+            {"value":"med","name":"🎥 media jobs"},
+            {"value":"npo","name":"⚪ nonprofit jobs"},
+            {"value":"rej","name":"🏠 real estate jobs"},
+            {"value":"rfh","name":"🍔 retail/food/hospitality jobs"},
+            {"value":"ret","name":"💲 retail/wholesale jobs"},
+            {"value":"sls","name":"💲 sales jobs"},
+            {"value":"spa","name":"💇🏃 salon/spa/fitness"},
+            {"value":"sci","name":"🔬 science jobs"},
+            {"value":"sec","name":"🔫 security jobs"},
+            {"value":"trd","name":"🔨 skilled trades jobs"},
+            {"value":"sof","name":"💻 software jobs"},
+            {"value":"sad","name":"💻 systems/networking jobs"},
+            {"value":"tch","name":"💻 tech support jobs"},
+            {"value":"trp","name":"🚌 transport jobs"},
+            {"value":"tfr","name":"📻 tv video radio jobs"},
+            {"value":"web","name":"💻 web design jobs"},
+            {"value":"wri","name":"📝 writing jobs"}]
+        },
+        {"value":"ggg", "name":"💫 Gigs", "children":[
+            {"value":"cpg","name":"💻 computer gig"},
+            {"value":"crg","name":"💡 creative gigs"},
+            {"value":"cwg","name":"⚪ crew gigs"},
+            {"value":"dmg","name":"⚪ domestic gigs"},
+            {"value":"evg","name":"📅 event gigs"},
+            {"value":"lbg","name":"💪 labor gigs"},
+            {"value":"tlg","name":"⚪ talent gigs"},
+            {"value":"wrg","name":"📝 writing gigs"}]},
+        {"value":"res","name":"📄 Résumés"}
+        ]}
+    ]},
+    "locations":{
+        "recentKey": "recentRegionsSelections",
+        "itemTreePath": "children[1]",
+        "itemLngPath": "geoInfo.lng",
+        "itemLatPath": "geoInfo.lat",
+        "name": "Regions",
+        "itemCaption":"region",
+        "itemKey": "key",
+        "children": [
+            {
+                "name": "Special",
+                "groupHeader": true,
+                "children": [
+                    {
+                        "dynamic": "currentSel",
+                        "allowSelect": false,
+                        "name": "Current Selection"
+                    },
+                    {
+                        "dynamic": "recentSel",
+                        "allowSelect": false,
+                        "name": "Recent Selection"
+                    },
+                    {
+                        "dynamic": "nearestSorted",
+                        "allowSelect": false,
+                        "name": "Cities by Distance",
+                        "nearestLngPath": "geoInfo.lng",
+                        "nearestLatPath": "geoInfo.lat"
+                    }
+                ]
+            },
+            {
+                "key": "group.AllRegions",
+                "name": "All Regions",
+                "groupHeader": true,
+                "children": 
+                [
+                    {
+                        "value": "alberta",
+                        "key": "9003",
+                        "name": "All of Alberta",
+                        "children": [
+                            {
+                                "value": "banff-canmore",
+                                "key": "1700234",
+                                "name": "Banff / Canmore",
+                                "geoInfo": { "postal_code": "T2G 5E6", "lat": 51.139165, "lng": -115.416627 }
+                            },
+                            {
+                                "value": "calgary",
+                                "key": "1700199",
+                                "name": "Calgary",
+                                "geoInfo": { "postal_code": "T2G 5E6", "lat": 51.0453246, "lng": -114.0581012 }
+                            },
+                            {
+                                "value": "edmonton",
+                                "key": "1700202",
+                                "name": "All of Edmonton Area",
+                                "geoInfo": { "postal_code": "T5J 0Y2", "lat": 53.544389, "lng": -113.4909267 },
+                                "children": [
+                                    {
+                                        "value": "edmonton",
+                                        "key": "1700203",
+                                        "name": "Edmonton",
+                                        "geoInfo": { "postal_code": "T5J 0Y2", "lat": 53.544389, "lng": -113.4909267 }
+                                    },
+                                    {
+                                        "value": "st-albert",
+                                        "key": "1700205",
+                                        "name": "St. Albert",
+                                        "geoInfo": { "postal_code": "T5J 0Y2", "lat": 53.6305, "lng": -113.6256 }
+                                    },
+                                    {
+                                        "value": "strathcona-county",
+                                        "key": "1700204",
+                                        "name": "Strathcona County",
+                                        "geoInfo": { "postal_code": "T5J 0Y2", "lat": 53.5327, "lng": -113.1553 }
+                                    }
+                                ]
+                            },
+                            {
+                                "value": "fort-mcmurray",
+                                "key": "1700232",
+                                "name": "Fort McMurray",
+                                "geoInfo": { "postal_code": "T9H 5C7", "lat": 56.72637959999999, "lng": -111.3803407 }
+                            },
+                            {
+                                "value": "grande-prairie",
+                                "key": "1700233",
+                                "name": "Grande Prairie",
+                                "geoInfo": { "postal_code": "T9H 5C7", "lat": 55.1699, "lng": -118.7986 }
+                            },
+                            {
+                                "value": "lethbridge",
+                                "key": "1700230",
+                                "name": "Lethbridge",
+                                "geoInfo": { "postal_code": "T1J 4C9", "lat": 49.69349, "lng": -112.84184 }
+                            },
+                            {
+                                "value": "lloydminster",
+                                "key": "1700095",
+                                "name": "Lloydminster",
+                                "geoInfo": { "postal_code": "T1J 4C9", "lat": 53.2780, "lng": -110.0061 }
+                            },
+                            {
+                                "value": "medicine-hat",
+                                "key": "1700231",
+                                "name": "Medicine Hat",
+                                "geoInfo": { "postal_code": "T1A 0C5", "lat": 50.0405486, "lng": -110.6764258 }
+                            },
+                            {
+                                "value": "red-deer",
+                                "key": "1700136",
+                                "name": "Red Deer",
+                                "geoInfo": { "postal_code": "T4N 3T3", "lat": 52.2681118, "lng": -113.8112386 }
+                            }
+                        ]
+                    },
+                    {
+                        "value": "british-columbia",
+                        "key": "9007",
+                        "name": "All of British Columbia",
+                        "geoInfo": { "postal_code": "T4N 3T3", "lat": 53.7267, "lng": -127.6476 },
+                        "children": [
+                            {
+                                "value": "cariboo",
+                                "key": "1700296",
+                                "name": "All of Cariboo Area",
+                                "geoInfo": { "postal_code": "V0L", "lat": 52.4031805, "lng": -123.4553619 },
+                                "children": [
+                                    {
+                                        "value": "100-mile-house",
+                                        "key": "1700307",
+                                        "name": "100 Mile House",
+                                        "geoInfo": { "postal_code": "V0L", "lat": 51.6440, "lng": -121.2950 }
+                                    },
+                                    {
+                                        "value": "quesnel",
+                                        "key": "1700306",
+                                        "name": "Quesnel",
+                                        "geoInfo": { "postal_code": "V0L", "lat": 52.9817, "lng": -122.4949 }
+                                    },
+                                    {
+                                        "value": "williams-lake",
+                                        "key": "1700305",
+                                        "name": "Williams Lake",
+                                        "geoInfo": { "postal_code": "V0L", "lat": 52.1417, "lng": -122.1417 }
+                                    }
+                                ]
+                            },
+                            {
+                                "value": "comox-valley",
+                                "key": "1700298",
+                                "name": "All of Comox Valley Area",
+                                "children": [
+                                    {
+                                        "value": "campbell-river",
+                                        "key": "1700316",
+                                        "name": "Campbell River",
+                                        "geoInfo": { "postal_code": "V0L", "lat": 50.0331, "lng": -125.2733 }
+                                    },
+                                    {
+                                        "value": "comox-courtenay-cumberland",
+                                        "key": "1700315",
+                                        "name": "Comox / Courtenay / Cumberland",
+                                        "geoInfo": { "postal_code": "V9J 1P3", "lat": 49.70641879999997, "lng": -125.021945 }
+                                    },
+                                    {
+                                        "value": "cowichan-valley-duncan",
+                                        "key": "1700300",
+                                        "name": "Cowichan Valley / Duncan",
+                                        "geoInfo": { "postal_code": "V9J 1P3", "lat": 48.7787, "lng": -123.7079 }
+                                    },
+                                    {
+                                        "value": "cranbrook",
+                                        "key": "1700224",
+                                        "name": "Cranbrook",
+                                        "geoInfo": { "postal_code": "V0B", "lat": 50.12841050000001, "lng": -115.7568033 }
+                                    }
+                                ]
+                            },
+                            {
+                                "value": "fraser-valley",
+                                "key": "1700139",
+                                "name": "All of Fraser Valley",
+                                "geoInfo": { "postal_code": "V0M 1A1", "lat": 49.054633, "lng": -122.327627 },
+                                "children": [
+                                    {
+                                        "value": "abbotsford",
+                                        "key": "1700140",
+                                        "name": "Abbotsford",
+                                        "geoInfo": { "postal_code": "V0M 1A1", "lat": 49.054633, "lng": -122.327627 }
+                                    },
+                                    {
+                                        "value": "chilliwack",
+                                        "key": "1700141",
+                                        "name": "Chilliwack",
+                                        "geoInfo": { "postal_code": "V0M 1A1", "lat": 49.1579, "lng": -121.9515 }
+                                    },
+                                    {
+                                        "value": "hope-kent",
+                                        "key": "1700320",
+                                        "name": "Hope / Kent",
+                                        "geoInfo": { "postal_code": "V0M 1A1", "lat": 49.3795, "lng": -121.4417 }
+                                    },
+                                    {
+                                        "value": "mission",
+                                        "key": "1700319",
+                                        "name": "Mission",
+                                        "geoInfo": { "postal_code": "V0M 1A1", "lat": 49.1329, "lng": -121.3262 }
+                                    }
+                                ]
+                            },
+                            {
+                                "value": "greater-vancouver",
+                                "key": "80003",
+                                "name": "All of Greater Vancouver Area",
+                                "geoInfo": { "postal_code": "V0M 1A1", "lat": 49.1224, "lng": -122.9148 },
+                                "children": [
+                                    {
+                                        "value": "burnaby/new-westminster",
+                                        "key": "1700286",
+                                        "name": "Burnaby/New Westminster",
+                                        "geoInfo": { "postal_code": "V5Y", "lat": 49.237103, "lng": -122.977577 }
+                                    },
+                                    {
+                                        "value": "delta/surrey/langley",
+                                        "key": "1700285",
+                                        "name": "Delta/Surrey/Langley",
+                                        "geoInfo": { "postal_code": "V5Y", "lat": 49.13050999999999, "lng": -122.758698 }
+                                    },
+                                    {
+                                        "value": "downtown-west-end",
+                                        "key": "1700292",
+                                        "name": "Downtown-West End",
+                                        "geoInfo": { "postal_code": "V5Y", "lat": 49.285, "lng": -123.134 }
+                                    },
+                                    {
+                                        "value": "north-shore",
+                                        "key": "1700289",
+                                        "name": "North Shore",
+                                        "geoInfo": { "postal_code": "V5Y", "lat": 49.32, "lng": -123.0724 }
+                                    },
+                                    {
+                                        "value": "richmond",
+                                        "key": "1700288",
+                                        "name": "Richmond",
+                                        "geoInfo": { "postal_code": "V5Y", "lat": 49.159257, "lng": -123.132126 }
+                                    },
+                                    {
+                                        "value": "tricities/pitt/maple",
+                                        "key": "1700290",
+                                        "name": "Tricities/Pitt/Maple",
+                                        "geoInfo": { "postal_code": "V5Y", "lat": 49.251224, "lng": -122.719452 }
+                                    },
+                                    {
+                                        "value": "ubc",
+                                        "key": "1700291",
+                                        "name": "UBC",
+                                        "geoInfo": { "postal_code": "V5Y", "lat": 49.2606, "lng": -123.2460 }
+                                    },
+                                    {
+                                        "value": "vancouver",
+                                        "key": "1700287",
+                                        "name": "Vancouver",
+                                        "geoInfo": { "postal_code": "V5Y", "lat": 49.261226, "lng": -123.1139268 }
+                                    }
+                                ]
+                            },
+                            {
+                                "value": "kamloops",
+                                "key": "1700227",
+                                "name": "Kamloops",
+                                "geoInfo": { "postal_code": "V2C 3R4", "lat": 50.67452200000001, "lng": -120.3272674 }
+                            },
+                            {
+                                "value": "kelowna",
+                                "key": "1700228",
+                                "name": "All of Kelowna",
+                                "geoInfo": { "postal_code": "V1W 1Y3", "lat": 49.83385, "lng": -119.5236098 },
+                                "children": [
+                                    {
+                                        "value": "penticton",
+                                        "key": "1700246",
+                                        "name": "Penticton",
+                                        "geoInfo": { "postal_code": "V1W 1Y3", "lat": 49.4991, "lng": -119.5937 }
+                                    }
+                                ]
+                            },
+                            {
+                                "value": "nanaimo",
+                                "key": "1700263",
+                                "name": "Nanaimo",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 49.16588359999999, "lng": -123.9400647 }
+                            },
+                            {
+                                "value": "nelson",
+                                "key": "1700226",
+                                "name": "Nelson",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 41.2706, "lng": -173.2840 }
+                            },
+                            {
+                                "value": "peace-river",
+                                "key": "1700295",
+                                "name": "All of Peace River Area",
+                                "geoInfo": { "postal_code": "T0E", "lat": 53.9332706, "lng": -116.5765035 },
+                                "children": [
+                                    {
+                                        "value": "dawson-creek",
+                                        "key": "1700304",
+                                        "name": "Dawson Creek",
+                                        "geoInfo": { "postal_code": "T0E", "lat": 55.7596, "lng": -120.2377 }
+                                    },
+                                    {
+                                        "value": "fort-st-john",
+                                        "key": "1700303",
+                                        "name": "Fort St. John",
+                                        "geoInfo": { "postal_code": "V9R 3A5", "lat": 56.2524, "lng": -120.8464 }
+                                    }
+                                ]
+                            },
+                            {
+                                "value": "port-alberni-oceanside",
+                                "key": "1700299",
+                                "name": "All of Port Alberni / Oceanside",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 49.2339, "lng": -124.8055 },
+                                "children": [
+                                    {
+                                        "value": "parksville-qualicum-beach",
+                                        "key": "1700317",
+                                        "name": "Parksville / Qualicum Beach",
+                                        "geoInfo": { "postal_code": "V9R 3A5", "lat": 49.3193, "lng": -124.3136 }
+                                    },
+                                    {
+                                        "value": "port-alberni",
+                                        "key": "1700318",
+                                        "name": "Port Alberni",
+                                        "geoInfo": { "postal_code": "V9R 3A5", "lat": 49.2339, "lng": -124.8055 }
+                                    }
+                                ]
+                            },
+                            {
+                                "value": "port-hardy-port-mcneill",
+                                "key": "1700301",
+                                "name": "Port Hardy / Port McNeill",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 50.7124, "lng": -127.4604 }
+                            },
+                            {
+                                "value": "powell-river-district",
+                                "key": "1700294",
+                                "name": "Powell River District",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 49.8352, "lng": -124.5247 }
+                            },
+                            {
+                                "value": "prince-george",
+                                "key": "1700143",
+                                "name": "Prince George",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 53.9171, "lng": -122.7497 }
+                            },
+                            {
+                                "value": "revelstoke",
+                                "key": "1700302",
+                                "name": "Revelstoke",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 50.9981, "lng": -118.1957 }
+                            },
+                            {
+                                "value": "skeena-bulkley",
+                                "key": "1700297",
+                                "name": "All of Skeena-Bulkley Area",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 54.2498, "lng": -129.8327 },
+                                "children": [
+                                    {
+                                        "value": "burns-lake",
+                                        "key": "1700314",
+                                        "name": "Burns Lake",
+                                        "geoInfo": { "postal_code": "V9R 3A5", "lat": 54.2334, "lng": -125.7636 }
+                                    },
+                                    {
+                                        "value": "houston",
+                                        "key": "1700313",
+                                        "name": "Houston",
+                                        "geoInfo": { "postal_code": "V9R 3A5", "lat": 54.3980, "lng": -126.6482 }
+                                    },
+                                    {
+                                        "value": "kitimat",
+                                        "key": "1700310",
+                                        "name": "Kitimat",
+                                        "geoInfo": { "postal_code": "V9R 3A5", "lat": 54.0494, "lng": -128.6284 }
+                                    },
+                                    {
+                                        "value": "prince-rupert",
+                                        "key": "1700308",
+                                        "name": "Prince Rupert",
+                                        "geoInfo": { "postal_code": "V9R 3A5", "lat": 54.3150, "lng": -130.3208 }
+                                    },
+                                    {
+                                        "value": "smithers",
+                                        "key": "1700311",
+                                        "name": "Smithers",
+                                        "geoInfo": { "postal_code": "V9R 3A5", "lat": 54.7824, "lng": -127.1686 }
+                                    },
+                                    {
+                                        "value": "terrace",
+                                        "key": "1700309",
+                                        "name": "Terrace",
+                                        "geoInfo": { "postal_code": "V9R 3A5", "lat": 54.5182, "lng": -128.6032 }
+                                    },
+                                    {
+                                        "value": "vanderhoof",
+                                        "key": "1700312",
+                                        "name": "Vanderhoof",
+                                        "geoInfo": { "postal_code": "V9R 3A5", "lat": 54.0140, "lng": -124.0130 }
+                                    },
+                                    {
+                                        "value": "sunshine-coast",
+                                        "key": "1700293",
+                                        "name": "Sunshine Coast",
+                                        "geoInfo": { "postal_code": "V9R 3A5", "lat": 49.4742, "lng": -123.7546 }
+                                    }
+                                ]
+                            },
+                            {
+                                "value": "vernon",
+                                "key": "1700229",
+                                "name": "Vernon",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 50.2670, "lng": -119.2720 }
+                            },
+                            {
+                                "value": "victoria",
+                                "key": "1700173",
+                                "name": "Victoria",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 48.4284, "lng": -123.3656 }
+                            },
+                            {
+                                "value": "whistler",
+                                "key": "1700100",
+                                "name": "Whistler",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 50.1163, "lng": -122.9574 }
+                            }
+                        ]
+                    },
+                    {
+                        "value": "manitoba",
+                        "key": "9006",
+                        "name": "All of Manitoba",
+                        "geoInfo": { "postal_code": "V9R 3A5", "lat": 53.7609, "lng": -98.8139 },
+                        "children": [
+                            {
+                                "value": "brandon",
+                                "key": "1700085",
+                                "name": "All of Brandon Area",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 49.8485, "lng": -99.9501 },
+                                "children": [
+                                    {
+                                        "value": "brandon",
+                                        "key": "1700086",
+                                        "name": "Brandon",
+                                        "geoInfo": { "postal_code": "V9R 3A5", "lat": 49.8485, "lng": -99.9501 }
+                                    },
+                                    {
+                                        "value": "portage-la-prairie",
+                                        "key": "1700087",
+                                        "name": "Portage la Prairie",
+                                        "geoInfo": { "postal_code": "V9R 3A5", "lat": 49.9723, "lng": -98.2903 }
+                                    },
+                                    {
+                                        "value": "flin-flon",
+                                        "key": "1700236",
+                                        "name": "Flin Flon",
+                                        "geoInfo": { "postal_code": "V9R 3A5", "lat": 54.7658, "lng": -101.8762 }
+                                    },
+                                    {
+                                        "value": "thompson",
+                                        "key": "1700235",
+                                        "name": "Thompson",
+                                        "geoInfo": { "postal_code": "V9R 3A5", "lat": 55.7449, "lng": -97.8509 }
+                                    },
+                                    {
+                                        "value": "winnipeg",
+                                        "key": "1700192",
+                                        "name": "Winnipeg",
+                                        "geoInfo": { "postal_code": "V9R 3A5", "lat": 49.8951, "lng": -97.1384 }
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "value": "new-brunswick",
+                        "key": "9005",
+                        "name": "All of New Brunswick",
+                        "geoInfo": { "postal_code": "V9R 3A5", "lat": 46.5653, "lng": -66.4619 },
+                        "children": [
+                            {
+                                "value": "bathurst",
+                                "key": "1700260",
+                                "name": "Bathurst",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 47.6184, "lng": -65.6513 }
+                            },
+                            {
+                                "value": "edmundston",
+                                "key": "1700261",
+                                "name": "Edmundston",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 47.3690, "lng": -68.3267 }
+                            },
+                            {
+                                "value": "fredericton",
+                                "key": "1700018",
+                                "name": "Fredericton",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 45.9636, "lng": -66.6431 }
+                            },
+                            {
+                                "value": "miramichi",
+                                "key": "1700262",
+                                "name": "Miramichi",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 47.0296, "lng": -65.5059 }
+                            },
+                            {
+                                "value": "moncton",
+                                "key": "1700001",
+                                "name": "Moncton",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 46.0878, "lng": -64.7782 }
+                            },
+                            {
+                                "value": "saint-john",
+                                "key": "80017",
+                                "name": "Saint John",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 45.2733, "lng": -66.0633 }
+                            }
+                        ]
+                    },
+                    {
+                        "value": "newfoundland",
+                        "key": "9008",
+                        "name": "All of Newfoundland",
+                        "geoInfo": { "postal_code": "V9R 3A5", "lat": 53.1355, "lng": -57.6604 },
+                        "children": [
+                            {
+                                "value": "corner-brook",
+                                "key": "1700254",
+                                "name": "Corner Brook",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 48.9490, "lng": -57.9503 }
+                            },
+                            {
+                                "value": "gander",
+                                "key": "1700255",
+                                "name": "Gander",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 48.9544, "lng": -54.6103 }
+                            },
+                            {
+                                "value": "labrador",
+                                "key": "1700044",
+                                "name": "All of Labrador",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 53.1355, "lng": -57.6604 },
+                                "children": [
+                                    {
+                                        "value": "goose-bay",
+                                        "key": "1700045",
+                                        "name": "Goose Bay",
+                                        "geoInfo": { "postal_code": "V9R 3A5", "lat": 53.3017, "lng": -60.3261 }
+                                    },
+                                    {
+                                        "value": "labrador-city",
+                                        "key": "1700046",
+                                        "name": "Labrador City",
+                                        "geoInfo": { "postal_code": "V9R 3A5", "lat": 52.9390, "lng": -66.9142 }
+                                    }
+                                ]
+                            },
+                            {
+                                "value": "st-john's",
+                                "key": "1700113",
+                                "name": "St. John's",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 47.5615, "lng": -52.7126 }
+                            }
+                        ]
+                    },
+                    {
+                        "value": "nova-scotia",
+                        "key": "9002",
+                        "name": "All of Nova Scotia",
+                        "geoInfo": { "postal_code": "V9R 3A5", "lat": 44.6820, "lng": -63.7443 },
+                        "children": [
+                            {
+                                "value": "annapolis-valley",
+                                "key": "1700256",
+                                "name": "Annapolis Valley",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 44.9167, "lng": -65.1667 }
+                            },
+                            {
+                                "value": "bridgewater",
+                                "key": "1700257",
+                                "name": "Bridgewater",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 44.3721, "lng": -64.5209 }
+                            },
+                            {
+                                "value": "cape-breton",
+                                "key": "1700011",
+                                "name": "Cape Breton",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 46.0242, "lng": -60.2045 }
+                            },
+                            {
+                                "value": "halifax",
+                                "key": "80010",
+                                "name": "All of Halifax",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 44.6488, "lng": -63.5752 },
+                                "children": [
+                                    {
+                                        "value": "bedford",
+                                        "key": "1700107",
+                                        "name": "Bedford",
+                                        "geoInfo": { "postal_code": "V9R 3A5", "lat": 44.7247, "lng": -63.6909 }
+                                    },
+                                    {
+                                        "value": "city-of-halifax",
+                                        "key": "1700321",
+                                        "name": "City of Halifax",
+                                        "geoInfo": { "postal_code": "V9R 3A5", "lat": 44.6488, "lng": -63.5752 }
+                                    },
+                                    {
+                                        "value": "cole-harbour",
+                                        "key": "1700108",
+                                        "name": "Cole Harbour",
+                                        "geoInfo": { "postal_code": "V9R 3A5", "lat": 44.6458, "lng": -63.4534 }
+                                    },
+                                    {
+                                        "value": "dartmouth",
+                                        "key": "1700109",
+                                        "name": "Dartmouth",
+                                        "geoInfo": { "postal_code": "V9R 3A5", "lat": 44.7000, "lng": -63.5579 }
+                                    },
+                                    {
+                                        "value": "new-glasgow",
+                                        "key": "1700258",
+                                        "name": "New Glasgow",
+                                        "geoInfo": { "postal_code": "V9R 3A5", "lat": 45.5872, "lng": -62.6451 }
+                                    }
+                                ]
+                            },
+                            {
+                                "value": "truro",
+                                "key": "1700047",
+                                "name": "Truro",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 45.3658, "lng": -63.2869 }
+                            },
+                            {
+                                "value": "yarmouth",
+                                "key": "1700259",
+                                "name": "Yarmouth",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 43.8375, "lng": -66.1174 }
+                            }
+                        ]
+                    },
+                    {
+                        "value": "ontario",
+                        "key": "9004",
+                        "name": "All of Ontario",
+                        "geoInfo": { "postal_code": "V9R 3A5", "lat": 51.2538, "lng": -85.3232 },
+                        "children": [
+                            {
+                                "value": "barrie",
+                                "key": "1700006",
+                                "name": "Barrie",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 44.3894, "lng": -79.6903 }
+                            },
+                            {
+                                "value": "belleville",
+                                "key": "1700129",
+                                "name": "All of Belleville Area",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 44.1628, "lng": -77.3832 },
+                                "children": [
+                                    {
+                                        "value": "belleville",
+                                        "key": "1700130",
+                                        "name": "Belleville",
+                                        "geoInfo": { "postal_code": "V9R 3A5", "lat": 44.1628, "lng": -77.3832 }
+                                    },
+                                    {
+                                        "value": "trenton",
+                                        "key": "1700132",
+                                        "name": "Trenton",
+                                        "geoInfo": { "postal_code": "V9R 3A5", "lat": 44.1011, "lng": -77.5763 }
+                                    }
+                                ]
+                            },
+                            {
+                                "value": "brantford",
+                                "key": "1700206",
+                                "name": "Brantford",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 43.1394, "lng": -80.2644 }
+                            },
+                            {
+                                "value": "brockville",
+                                "key": "1700247",
+                                "name": "Brockville",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 44.5895, "lng": -75.6843 }
+                            },
+                            {
+                                "value": "chatham-kent",
+                                "key": "1700239",
+                                "name": "Chatham-Kent",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 42.4048, "lng": -82.1910 }
+                            },
+                            {
+                                "value": "cornwall",
+                                "key": "1700133",
+                                "name": "Cornwall",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 45.0213, "lng": -74.7303 }
+                            },
+                            {
+                                "value": "guelph",
+                                "key": "1700242",
+                                "name": "Guelph",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 43.5448, "lng": -80.2482 }
+                            },
+                            {
+                                "value": "hamilton",
+                                "key": "80014",
+                                "name": "Hamilton",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 43.2557, "lng": -79.8711 }
+                            },
+                            {
+                                "value": "kapuskasing",
+                                "key": "1700237",
+                                "name": "Kapuskasing",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 49.3803, "lng": -82.4001 }
+                            },
+                            {
+                                "value": "kenora",
+                                "key": "1700249",
+                                "name": "Kenora",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 49.7670, "lng": -94.4894 }
+                            },
+                            {
+                                "value": "kingston",
+                                "key": "1700181",
+                                "name": "All of Kingston Area",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 44.2312, "lng": -76.4860 },
+                                "children": [
+                                    {
+                                        "value": "kingston",
+                                        "key": "1700183",
+                                        "name": "Kingston",
+                                        "geoInfo": { "postal_code": "V9R 3A5", "lat": 44.2312, "lng": -76.4860 }
+                                    },
+                                    {
+                                        "value": "napanee",
+                                        "key": "1700182",
+                                        "name": "Napanee",
+                                        "geoInfo": { "postal_code": "V9R 3A5", "lat": 44.2148, "lng": -76.9643 }
+                                    }
+                                ]
+                            },
+                            {
+                                "value": "kitchener",
+                                "key": "1700209",
+                                "name": "All of Kitchener Area",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 43.4516, "lng": -80.4925 },
+                                "children": [
+                                    {
+                                        "value": "cambridge",
+                                        "key": "1700210",
+                                        "name": "Cambridge",
+                                        "geoInfo": { "postal_code": "V9R 3A5", "lat": 43.3616, "lng": -80.3144 }
+                                    },
+                                    {
+                                        "value": "kitchener-waterloo",
+                                        "key": "1700212",
+                                        "name": "Kitchener / Waterloo",
+                                        "geoInfo": { "postal_code": "V9R 3A5", "lat": 43.4516, "lng": -80.4925 }
+                                    },
+                                    {
+                                        "value": "stratford",
+                                        "key": "1700213",
+                                        "name": "Stratford",
+                                        "geoInfo": { "postal_code": "V9R 3A5", "lat": 43.3700, "lng": -80.9822 }
+                                    }
+                                ]
+                            },
+                            {
+                                "value": "leamington",
+                                "key": "1700240",
+                                "name": "Leamington",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 42.0532, "lng": -82.5999 }
+                            },
+                            {
+                                "value": "london",
+                                "key": "1700214",
+                                "name": "London",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 42.9849, "lng": -81.2453 }
+                            },
+                            {
+                                "value": "muskoka",
+                                "key": "1700078",
+                                "name": "Muskoka",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 45.1841, "lng": -79.4085 }
+                            },
+                            {
+                                "value": "norfolk-county",
+                                "key": "1700248",
+                                "name": "Norfolk County",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 42.7967, "lng": -80.4136 }
+                            },
+                            {
+                                "value": "north-bay",
+                                "key": "1700243",
+                                "name": "North Bay",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 46.3091, "lng": -79.4608 }
+                            },
+                            {
+                                "value": "ottawa-gatineau",
+                                "key": "1700184",
+                                "name": "All of Ottawa / Gatineau Area",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 45.4522, "lng": -75.6292 },
+                                "children": [
+                                    {
+                                        "value": "gatineau",
+                                        "key": "1700186",
+                                        "name": "Gatineau",
+                                        "geoInfo": { "postal_code": "V9R 3A5", "lat": 45.4765, "lng": -75.7013 }
+                                    },
+                                    {
+                                        "value": "ottawa",
+                                        "key": "1700185",
+                                        "name": "Ottawa",
+                                        "geoInfo": { "postal_code": "V9R 3A5", "lat": 45.4215, "lng": -75.6972 }
+                                    }
+                                ]
+                            },
+                            {
+                                "value": "owen-sound",
+                                "key": "1700187",
+                                "name": "Owen Sound",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 44.5690, "lng": -80.9406 }
+                            },
+                            {
+                                "value": "peterborough",
+                                "key": "1700217",
+                                "name": "All of Peterborough Area",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 44.3091, "lng": -78.3197 },
+                                "children": [
+                                    {
+                                        "value": "kawartha-lakes",
+                                        "key": "1700219",
+                                        "name": "Kawartha Lakes",
+                                        "geoInfo": { "postal_code": "V9R 3A5", "lat": 44.5337, "lng": -78.9006 }
+                                    },
+                                    {
+                                        "value": "peterborough",
+                                        "key": "1700218",
+                                        "name": "Peterborough",
+                                        "geoInfo": { "postal_code": "V9R 3A5", "lat": 44.3091, "lng": -78.3197 }
+                                    }
+                                ]
+                            },
+                            {
+                                "value": "renfrew-county",
+                                "key": "1700074",
+                                "name": "All of Renfrew County Area",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 45.6383, "lng": -77.1674 },
+                                "children": [
+                                    {
+                                        "value": "pembroke",
+                                        "key": "1700075",
+                                        "name": "Pembroke",
+                                        "geoInfo": { "postal_code": "V9R 3A5", "lat": 45.8267, "lng": -77.1109 }
+                                    },
+                                    {
+                                        "value": "petawawa",
+                                        "key": "1700076",
+                                        "name": "Petawawa",
+                                        "geoInfo": { "postal_code": "V9R 3A5", "lat": 45.8983, "lng": -77.2829 }
+                                    },
+                                    {
+                                        "value": "renfrew",
+                                        "key": "1700077",
+                                        "name": "Renfrew",
+                                        "geoInfo": { "postal_code": "V9R 3A5", "lat": 45.4749, "lng": -76.6877 }
+                                    }
+                                ]
+                            },
+                            {
+                                "value": "sarnia",
+                                "key": "1700189",
+                                "name": "All of Sarnia Area",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 42.9745, "lng": -82.4066 },
+                                "children": [
+                                    {
+                                        "value": "grand-bend",
+                                        "key": "1700190",
+                                        "name": "Grand Bend",
+                                        "geoInfo": { "postal_code": "V9R 3A5", "lat": 43.3130, "lng": -81.7562 }
+                                    },
+                                    {
+                                        "value": "sarnia",
+                                        "key": "1700191",
+                                        "name": "Sarnia",
+                                        "geoInfo": { "postal_code": "V9R 3A5", "lat": 42.9745, "lng": -82.4066 }
+                                    }
+                                ]
+                            },
+                            {
+                                "value": "sault-ste.-marie",
+                                "key": "1700244",
+                                "name": "Sault Ste. Marie",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 46.5136, "lng": -84.3358 }
+                            },
+                            {
+                                "value": "st-catharines",
+                                "key": "80016",
+                                "name": "St. Catharines",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 43.1594, "lng": -79.2469 }
+                            },
+                            {
+                                "value": "sudbury",
+                                "key": "1700245",
+                                "name": "Sudbury",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 46.4917, "lng": -80.9930 }
+                            },
+                            {
+                                "value": "thunder-bay",
+                                "key": "1700126",
+                                "name": "Thunder Bay",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 48.3809, "lng": -89.2477 }
+                            },
+                            {
+                                "value": "timmins",
+                                "key": "1700238",
+                                "name": "Timmins",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 48.4758, "lng": -81.3305 }
+                            },
+                            {
+                                "value": "toronto-(gta)",
+                                "key": "1700272",
+                                "name": "All of Toronto (GTA)",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 43.6532, "lng": -79.3832 },
+                                "children": [
+                                    {
+                                        "value": "city-of-toronto",
+                                        "key": "1700273",
+                                        "name": "City of Toronto",
+                                        "geoInfo": { "postal_code": "V9R 3A5", "lat": 43.6532, "lng": -79.3832 }
+                                    },
+                                    {
+                                        "value": "markham-york-region",
+                                        "key": "1700274",
+                                        "name": "Markham / York Region",
+                                        "geoInfo": { "postal_code": "V9R 3A5", "lat": 43.8561, "lng": -79.3370 }
+                                    },
+                                    {
+                                        "value": "mississauga-peel-region",
+                                        "key": "1700276",
+                                        "name": "Mississauga / Peel Region",
+                                        "geoInfo": { "postal_code": "V9R 3A5", "lat": 43.5890, "lng": -79.6441 }
+                                    },
+                                    {
+                                        "value": "oakville-halton-region",
+                                        "key": "1700277",
+                                        "name": "Oakville / Halton Region",
+                                        "geoInfo": { "postal_code": "V9R 3A5", "lat": 43.4675, "lng": -79.6877 }
+                                    },
+                                    {
+                                        "value": "oshawa-durham-region",
+                                        "key": "1700275",
+                                        "name": "Oshawa / Durham Region",
+                                        "geoInfo": { "postal_code": "V9R 3A5", "lat": 43.8971, "lng": -78.8658 }
+                                    }
+                                ]
+                            },
+                            {
+                                "value": "windsor-region",
+                                "key": "1700220",
+                                "name": "Windsor Region",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 42.3149, "lng": -83.0364 }
+                            },
+                            {
+                                "value": "woodstock",
+                                "key": "1700241",
+                                "name": "Woodstock",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 43.1315, "lng": -80.7472 }
+                            }
+                        ]
+                    },
+                    {
+                        "value": "prince-edward-island",
+                        "key": "9011",
+                        "name": "All of Prince Edward Island",
+                        "geoInfo": { "postal_code": "V9R 3A5", "lat": 46.5107, "lng": -63.4168 },
+                        "children": [
+                            {
+                                "value": "prince-edward-island",
+                                "key": "1700118",
+                                "name": "All of Prince Edward Island",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 46.5107, "lng": -63.4168 },
+                                "children": [
+                                    {
+                                        "value": "charlottetown",
+                                        "key": "1700119",
+                                        "name": "Charlottetown",
+                                        "geoInfo": { "postal_code": "V9R 3A5", "lat": 46.2382, "lng": -63.1311 }
+                                    },
+                                    {
+                                        "value": "summerside",
+                                        "key": "1700120",
+                                        "name": "Summerside",
+                                        "geoInfo": { "postal_code": "V9R 3A5", "lat": 46.3934, "lng": -63.7902 }
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "value": "québec",
+                        "key": "9001",
+                        "name": "All of Québec",
+                        "geoInfo": { "postal_code": "V9R 3A5", "lat": 52.9399, "lng": -73.5491 },
+                        "children": [
+                            {
+                                "value": "abitibi-témiscamingue",
+                                "key": "1700059",
+                                "name": "All of Abitibi-Témiscamingue",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 47.7344, "lng": -77.6728 },
+                                "children": [
+                                    {
+                                        "value": "rouyn-noranda",
+                                        "key": "1700060",
+                                        "name": "Rouyn-Noranda",
+                                        "geoInfo": { "postal_code": "V9R 3A5", "lat": 48.2342, "lng": -79.0188 }
+                                    },
+                                    {
+                                        "value": "val-d'or",
+                                        "key": "1700061",
+                                        "name": "Val D'Or",
+                                        "geoInfo": { "postal_code": "V9R 3A5", "lat": 48.0987, "lng": -77.7968 }
+                                    }
+                                ]
+                            },
+                            {
+                                "value": "baie-comeau",
+                                "key": "1700251",
+                                "name": "Baie-Comeau",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 49.2213, "lng": -68.1504 }
+                            },
+                            {
+                                "value": "centre-du-québec",
+                                "key": "1700121",
+                                "name": "All of Centre-du-Québec",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 52.9399, "lng": -73.5491 },
+                                "children": [
+                                    {
+                                        "value": "drummondville",
+                                        "key": "1700122",
+                                        "name": "Drummondville",
+                                        "geoInfo": { "postal_code": "V9R 3A5", "lat": 45.8803, "lng": -72.4843 }
+                                    },
+                                    {
+                                        "value": "victoriaville",
+                                        "key": "1700123",
+                                        "name": "Victoriaville",
+                                        "geoInfo": { "postal_code": "V9R 3A5", "lat": 46.0557, "lng": -71.9590 }
+                                    }
+                                ]
+                            },
+                            {
+                                "value": "chaudière-appalaches",
+                                "key": "1700062",
+                                "name": "All of Chaudière-Appalaches",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 46.4065, "lng": -71.0604 },
+                                "children": [
+                                    {
+                                        "value": "lévis",
+                                        "key": "1700063",
+                                        "name": "Lévis",
+                                        "geoInfo": { "postal_code": "V9R 3A5", "lat": 46.7382, "lng": -71.2465 }
+                                    },
+                                    {
+                                        "value": "st-georges-de-beauce",
+                                        "key": "1700065",
+                                        "name": "St-Georges-de-Beauce",
+                                        "geoInfo": { "postal_code": "V9R 3A5", "lat": 46.1229, "lng": -70.6704 }
+                                    },
+                                    {
+                                        "value": "thetford-mines",
+                                        "key": "1700064",
+                                        "name": "Thetford Mines",
+                                        "geoInfo": { "postal_code": "V9R 3A5", "lat": 46.1028, "lng": -71.3056 }
+                                    }
+                                ]
+                            },
+                            {
+                                "value": "chibougamau-northern-québec",
+                                "key": "1700284",
+                                "name": "Chibougamau / Northern Québec",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 49.9132, "lng": -74.3692 }
+                            },
+                            {
+                                "value": "gaspé",
+                                "key": "1700066",
+                                "name": "Gaspé",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 48.8316, "lng": -64.4869 }
+                            },
+                            {
+                                "value": "granby",
+                                "key": "1700253",
+                                "name": "Granby",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 45.4032, "lng": -72.7341 }
+                            },
+                            {
+                                "value": "greater-montréal",
+                                "key": "80002",
+                                "name": "All of Greater Montréal",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 45.5552, "lng": -73.5748 },
+                                "children": [
+                                    {
+                                        "value": "city-of-montréal",
+                                        "key": "1700281",
+                                        "name": "City of Montréal",
+                                        "geoInfo": { "postal_code": "V9R 3A5", "lat": 45.5017, "lng": -73.5673 }
+                                    },
+                                    {
+                                        "value": "laval-north-shore",
+                                        "key": "1700278",
+                                        "name": "Laval / North Shore",
+                                        "geoInfo": { "postal_code": "V9R 3A5", "lat": 45.6066, "lng": -73.7124 }
+                                    },
+                                    {
+                                        "value": "longueuil-south-shore",
+                                        "key": "1700279",
+                                        "name": "Longueuil / South Shore",
+                                        "geoInfo": { "postal_code": "V9R 3A5", "lat": 45.5369, "lng": -73.5107 }
+                                    },
+                                    {
+                                        "value": "west-island",
+                                        "key": "1700280",
+                                        "name": "West Island",
+                                        "geoInfo": { "postal_code": "V9R 3A5", "lat": 45.418031, "lng": -73.956515 }
+                                    }
+                                ]
+                            },
+                            {
+                                "value": "lanaudière",
+                                "key": "1700283",
+                                "name": "Lanaudière",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 46.1256, "lng": -73.7042 }
+                            },
+                            {
+                                "value": "laurentides",
+                                "key": "1700282",
+                                "name": "Laurentides",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 46.6182, "lng": -75.0181 }
+                            },
+                            {
+                                "value": "mauricie",
+                                "key": "1700147",
+                                "name": "All of Mauricie",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 46.6630, "lng": -72.8512 },
+                                "children": [
+                                    {
+                                        "value": "shawinigan",
+                                        "key": "1700148",
+                                        "name": "Shawinigan",
+                                        "geoInfo": { "postal_code": "V9R 3A5", "lat": 46.5619, "lng": -72.7435 }
+                                    },
+                                    {
+                                        "value": "trois-rivières",
+                                        "key": "1700150",
+                                        "name": "Trois-Rivières",
+                                        "geoInfo": { "postal_code": "V9R 3A5", "lat": 46.3430, "lng": -72.5421 }
+                                    }
+                                ]
+                            },
+                            {
+                                "value": "québec-city",
+                                "key": "1700124",
+                                "name": "Québec City",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 46.8139, "lng": -71.2080 }
+                            },
+                            {
+                                "value": "rimouski-bas-st-laurent",
+                                "key": "1700250",
+                                "name": "Rimouski / Bas-St-Laurent",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 48.4390, "lng": -68.5350 }
+                            },
+                            {
+                                "value": "saguenay-lac-saint-jean",
+                                "key": "1700178",
+                                "name": "All of Saguenay-Lac-Saint-Jean",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 49.3783, "lng": -72.7306 },
+                                "children": [
+                                    {
+                                        "value": "lac-saint-jean",
+                                        "key": "1700180",
+                                        "name": "Lac-Saint-Jean",
+                                        "geoInfo": { "postal_code": "V9R 3A5", "lat": 48.5554, "lng": -71.9950 }
+                                    },
+                                    {
+                                        "value": "saguenay",
+                                        "key": "1700179",
+                                        "name": "Saguenay",
+                                        "geoInfo": { "postal_code": "V9R 3A5", "lat": 48.4281, "lng": -71.0685 }
+                                    }
+                                ]
+                            },
+                            {
+                                "value": "saint-hyacinthe",
+                                "key": "1700151",
+                                "name": "Saint-Hyacinthe",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 45.6307, "lng": -72.9563 }
+                            },
+                            {
+                                "value": "saint-jean-sur-richelieu",
+                                "key": "1700252",
+                                "name": "Saint-Jean-sur-Richelieu",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 45.3058, "lng": -73.2545 }
+                            },
+                            {
+                                "value": "sept-îles",
+                                "key": "1700071",
+                                "name": "Sept-Îles",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 50.2133, "lng": -66.3758 }
+                            },
+                            {
+                                "value": "sherbrooke",
+                                "key": "1700156",
+                                "name": "Sherbrooke",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 45.4042, "lng": -71.8929 }
+                            }
+                        ]
+                    },
+                    {
+                        "value": "saskatchewan",
+                        "key": "9009",
+                        "name": "All of Saskatchewan",
+                        "geoInfo": { "postal_code": "V9R 3A5", "lat": 52.9399, "lng": -106.4509 },
+                        "children": [
+                            {
+                                "value": "la-ronge",
+                                "key": "1700265",
+                                "name": "La Ronge",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 55.1082, "lng": -105.2860 }
+                            },
+                            {
+                                "value": "meadow-lake",
+                                "key": "1700264",
+                                "name": "Meadow Lake",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 54.1317, "lng": -108.4280 }
+                            },
+                            {
+                                "value": "nipawin",
+                                "key": "1700266",
+                                "name": "Nipawin",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 53.3624, "lng": -104.0130 }
+                            },
+                            {
+                                "value": "prince-albert",
+                                "key": "1700088",
+                                "name": "Prince Albert",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 53.2033, "lng": -105.7531 }
+                            },
+                            {
+                                "value": "regina",
+                                "key": "1700194",
+                                "name": "All of Regina Area",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 50.4452, "lng": -104.6189 },
+                                "children": [
+                                    {
+                                        "value": "moose-jaw",
+                                        "key": "1700195",
+                                        "name": "Moose Jaw",
+                                        "geoInfo": { "postal_code": "V9R 3A5", "lat": 50.3916, "lng": -105.5349 }
+                                    },
+                                    {
+                                        "value": "regina",
+                                        "key": "1700196",
+                                        "name": "Regina",
+                                        "geoInfo": { "postal_code": "V9R 3A5", "lat": 50.4452, "lng": -104.6189 }
+                                    }
+                                ]
+                            },
+                            {
+                                "value": "saskatoon",
+                                "key": "1700197",
+                                "name": "Saskatoon",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 52.1332, "lng": -106.6700 }
+                            },
+                            {
+                                "value": "swift-current",
+                                "key": "1700093",
+                                "name": "Swift Current",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 50.2851, "lng": -107.7972 }
+                            }
+                        ]
+                    },
+                    {
+                        "value": "territories",
+                        "key": "9010",
+                        "name": "All of Territories",
+                        "geoInfo": { "postal_code": "V9R 3A5", "lat": 64.8255, "lng": -124.8457 },
+                        "children": [
+                            {
+                                "value": "northwest-territories",
+                                "key": "1700103",
+                                "name": "All of Northwest Territories",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 64.8255, "lng": -124.8457 },
+                                "children": [
+                                    {
+                                        "value": "yellowknife",
+                                        "key": "1700104",
+                                        "name": "Yellowknife",
+                                        "geoInfo": { "postal_code": "V9R 3A5", "lat": 62.4540, "lng": -114.3718 }
+                                    }
+                                ]
+                            },
+                            {
+                                "value": "nunavut",
+                                "key": "1700105",
+                                "name": "All of Nunavut",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 70.2998, "lng": -83.1076 },
+                                "children": [
+                                    {
+                                        "value": "iqaluit",
+                                        "key": "1700106",
+                                        "name": "Iqaluit",
+                                        "geoInfo": { "postal_code": "V9R 3A5", "lat": 63.7467, "lng": -68.5170 }
+                                    }
+                                ]
+                            },
+                            {
+                                "value": "yukon",
+                                "key": "1700101",
+                                "name": "All of Yukon",
+                                "geoInfo": { "postal_code": "V9R 3A5", "lat": 64.2823, "lng": -135.0000 },
+                                "children": [
+                                    {
+                                        "value": "whitehorse",
+                                        "key": "1700102",
+                                        "name": "Whitehorse",
+                                        "geoInfo": { "postal_code": "V9R 3A5", "lat": 60.7212, "lng": -135.0568 }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
