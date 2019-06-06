@@ -1,6 +1,7 @@
 [
 {
     "searchUUID": "craigslist.org.rss",
+    "changeTest":"",
     "name":"craigslist.org",
     "subtitle":"RSS Search",
     "openExternalBrowser": true,
