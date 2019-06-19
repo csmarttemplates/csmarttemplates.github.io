@@ -1,0 +1,43 @@
+{
+    "searchUUID" : "www.ebay.com.rss",
+    "initialModel" : {
+        "page":0
+    },
+    "incrementalLoad":{
+        "step": 1,
+        "modelKey": "page"
+    },
+    "fieldLayouts" : {
+        "default" : {
+            "pattern" : "https:\/\/www.ebay.com\/sch\/i.html?${keywords}&_sacat=0${pageDisplay}&_rss=1",
+            "fieldsLayout" : {
+                "type" : "grid",
+                "columns" : 1,
+                "fields" : [
+                    {
+                        "label" : "eBay RSS Search",
+                        "width" : 1
+                    },
+                    {
+                        "f": "keywords",
+                        "width": 1
+                    }
+                ]
+            },
+            "fields" : {
+                "keywords": {
+                    "type": "text",
+                    "placeholder": "keywords (required)",
+                    "prefix": "_nkw="
+                },
+                "page": { "type":"numeric"},
+                "pageDisplay": { "type":"numeric", "prefix": "&_pgn=", "replace" : {"1": ""}, "valuePattern": "${ page + 1 }"}
+            }
+        }
+    },
+    "name" : "eBay RSS",
+    "subtitle" : "RSS Search",
+    "loader" : {
+        "type" : "RSS"
+    }
+}
