@@ -71,7 +71,7 @@
     "initialModel": {
         "category": ["buy-sell"],
         "page": 0,
-        "keywords": "norco"
+        "keywords": ""
     },
     "incrementalLoad":{
         "step": 1,
