@@ -1,6 +1,6 @@
 {
-    "searchUUID": "kijiji.com.rss",
-    "name":"kijiji.com",
+    "searchUUID": "kijiji.ca.rss",
+    "name":"Kijiji.ca RSS",
     "subtitle":"RSS Search",
     "loader": {
         "type":"RSS",
