@@ -68,7 +68,7 @@
                 "location": {"type":"text", "layoutOnChange":true, "selectTreeRef": "locations", "buttonStyle": "cancel", "title": "Location", "prefix": "🌎 ", "required":true, "autoSelect":"nearest"},
                 "category": {"type":"text", "layoutOnChange":true, "selectTreeRef": "categories", "buttonStyle": "cancel", "title": "Category", "required":true},
                 "keywords": {"type":"text", "placeholder": "keywords"},
-                "titleOnly": { "type":"boolean", "label": "Title Only", "falseVal": ""},
+                "titleOnly": { "type":"boolean", "label": "Title Only", "falseVal": "", "trueVal":"T", "prefix": "&srchType="},
                 "hasImages": { "type":"boolean", "trueVal":"1", "falseVal": "", "prefix": "&hasPic=", "label": "Has Image"},
                 "minPrice": { "type":"numeric", "prefix": "&min_price=", "placeholder" : "Min Price"},
                 "maxPrice": { "type":"numeric", "prefix": "&max_price=", "placeholder" : "Max Price"},
