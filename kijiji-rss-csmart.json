@@ -417,7 +417,6 @@
                 ]
             },
             {
-                "key": "group.AllRegions",
                 "name": "All Regions",
                 "groupHeader": true,
                 "children": 

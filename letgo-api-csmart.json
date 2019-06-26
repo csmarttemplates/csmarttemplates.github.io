@@ -499,7 +499,6 @@
                 ]
             },
             {
-                "key": "group.AllRegions",
                 "name": "All Regions",
                 "groupHeader": true,
                 "children": [
@@ -635,7 +634,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Alabama",
                                 "name": "Alabama"
                             },
                             {
@@ -697,7 +695,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Alaska",
                                 "name": "Alaska"
                             },
                             {
@@ -877,7 +874,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Arizona",
                                 "name": "Arizona"
                             },
                             {
@@ -953,7 +949,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Arkansas",
                                 "name": "Arkansas"
                             },
                             {
@@ -1597,7 +1592,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.California",
                                 "name": "California"
                             },
                             {
@@ -1715,7 +1709,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Colorado",
                                 "name": "Colorado"
                             },
                             {
@@ -1777,7 +1770,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Connecticut",
                                 "name": "Connecticut"
                             },
                             {
@@ -1797,7 +1789,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Delaware",
                                 "name": "Delaware"
                             },
                             {
@@ -1864,7 +1855,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.DistrictofColumbia",
                                 "name": "District of Columbia"
                             },
                             {
@@ -2306,7 +2296,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Florida",
                                 "name": "Florida"
                             },
                             {
@@ -2543,7 +2532,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Georgia",
                                 "name": "Georgia"
                             },
                             {
@@ -2696,7 +2684,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Idaho",
                                 "name": "Idaho"
                             },
                             {
@@ -2948,7 +2935,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Illinois",
                                 "name": "Illinois"
                             },
                             {
@@ -3094,7 +3080,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Indiana",
                                 "name": "Indiana"
                             },
                             {
@@ -3254,7 +3239,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Iowa",
                                 "name": "Iowa"
                             },
                             {
@@ -3372,7 +3356,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Kansas",
                                 "name": "Kansas"
                             },
                             {
@@ -3462,7 +3445,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Kentucky",
                                 "name": "Kentucky"
                             },
                             {
@@ -3580,7 +3562,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Louisiana",
                                 "name": "Louisiana"
                             },
                             {
@@ -3600,7 +3581,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Maine",
                                 "name": "Maine"
                             },
                             {
@@ -3690,7 +3670,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Maryland",
                                 "name": "Maryland"
                             },
                             {
@@ -3843,7 +3822,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Massachusetts",
                                 "name": "Massachusetts"
                             },
                             {
@@ -4148,7 +4126,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Michigan",
                                 "name": "Michigan"
                             },
                             {
@@ -4358,7 +4335,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Minnesota",
                                 "name": "Minnesota"
                             },
                             {
@@ -4448,7 +4424,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Mississippi",
                                 "name": "Mississippi"
                             },
                             {
@@ -4580,7 +4555,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Missouri",
                                 "name": "Missouri"
                             },
                             {
@@ -4698,7 +4672,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Montana",
                                 "name": "Montana"
                             },
                             {
@@ -4774,7 +4747,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Nebraska",
                                 "name": "Nebraska"
                             },
                             {
@@ -4822,7 +4794,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Nevada",
                                 "name": "Nevada"
                             },
                             {
@@ -4842,7 +4813,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.NewHampshire",
                                 "name": "New Hampshire"
                             },
                             {
@@ -4904,7 +4874,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.NewJersey",
                                 "name": "New Jersey"
                             },
                             {
@@ -4994,7 +4963,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.NewMexico",
                                 "name": "New Mexico"
                             },
                             {
@@ -5417,7 +5385,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.NewYork",
                                 "name": "New York"
                             },
                             {
@@ -5591,7 +5558,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.NorthCarolina",
                                 "name": "North Carolina"
                             },
                             {
@@ -5653,7 +5619,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.NorthDakota",
                                 "name": "North Dakota"
                             },
                             {
@@ -5869,7 +5834,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Ohio",
                                 "name": "Ohio"
                             },
                             {
@@ -5945,7 +5909,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Oklahoma",
                                 "name": "Oklahoma"
                             },
                             {
@@ -6198,7 +6161,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Oregon",
                                 "name": "Oregon"
                             },
                             {
@@ -6414,7 +6376,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Pennsylvania",
                                 "name": "Pennsylvania"
                             },
                             {
@@ -6434,7 +6395,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.RhodeIsland",
                                 "name": "Rhode Island"
                             },
                             {
@@ -6524,7 +6484,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.SouthCarolina",
                                 "name": "South Carolina"
                             },
                             {
@@ -6600,7 +6559,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.SouthDakota",
                                 "name": "South Dakota"
                             },
                             {
@@ -6718,7 +6676,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Tennessee",
                                 "name": "Tennessee"
                             },
                             {
@@ -7179,7 +7136,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Texas",
                                 "name": "Texas"
                             },
                             {
@@ -7255,7 +7211,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Utah",
                                 "name": "Utah"
                             },
                             {
@@ -7275,7 +7230,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Vermont",
                                 "name": "Vermont"
                             },
                             {
@@ -7435,7 +7389,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Virginia",
                                 "name": "Virginia"
                             },
                             {
@@ -7688,7 +7641,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Washington",
                                 "name": "Washington"
                             },
                             {
@@ -7806,7 +7758,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.WestVirginia",
                                 "name": "West Virginia"
                             },
                             {
@@ -7966,7 +7917,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Wisconsin",
                                 "name": "Wisconsin"
                             },
                             {
@@ -7986,7 +7936,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Wyoming",
                                 "name": "Wyoming"
                             },
                             {
@@ -8034,11 +7983,9 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Territories",
                                 "name": "Territories"
                             }
                         ],
-                        "key": "group.US",
                         "name": "US"
                     },
                     {
@@ -8145,7 +8092,6 @@
                                         "distanceType": "km"
                                     }
                                 ],
-                                "key": "group.Alberta",
                                 "name": "Alberta"
                             },
                             {
@@ -8425,7 +8371,6 @@
                                         "distanceType": "km"
                                     }
                                 ],
-                                "key": "group.BritishColumbia",
                                 "name": "British Columbia"
                             },
                             {
@@ -8445,7 +8390,6 @@
                                         "distanceType": "km"
                                     }
                                 ],
-                                "key": "group.Manitoba",
                                 "name": "Manitoba"
                             },
                             {
@@ -8465,7 +8409,6 @@
                                         "distanceType": "km"
                                     }
                                 ],
-                                "key": "group.NewBrunswick",
                                 "name": "New Brunswick"
                             },
                             {
@@ -8485,7 +8428,6 @@
                                         "distanceType": "km"
                                     }
                                 ],
-                                "key": "group.NewfoundlandandLabrador",
                                 "name": "Newfoundland and Labrador"
                             },
                             {
@@ -8519,7 +8461,6 @@
                                         "distanceType": "km"
                                     }
                                 ],
-                                "key": "group.NorthwestTerritories",
                                 "name": "Northwest Territories"
                             },
                             {
@@ -8539,7 +8480,6 @@
                                         "distanceType": "km"
                                     }
                                 ],
-                                "key": "group.NovaScotia",
                                 "name": "Nova Scotia"
                             },
                             {
@@ -8917,7 +8857,6 @@
                                         "distanceType": "km"
                                     }
                                 ],
-                                "key": "group.Ontario",
                                 "name": "Ontario"
                             },
                             {
@@ -8937,7 +8876,6 @@
                                         "distanceType": "km"
                                     }
                                 ],
-                                "key": "group.PrinceEdwardIsland",
                                 "name": "Prince Edward Island"
                             },
                             {
@@ -9013,7 +8951,6 @@
                                         "distanceType": "km"
                                     }
                                 ],
-                                "key": "group.Quebec",
                                 "name": "Quebec"
                             },
                             {
@@ -9047,7 +8984,6 @@
                                         "distanceType": "km"
                                     }
                                 ],
-                                "key": "group.Saskatchewan",
                                 "name": "Saskatchewan"
                             },
                             {
@@ -9067,11 +9003,9 @@
                                         "distanceType": "km"
                                     }
                                 ],
-                                "key": "group.YukonTerritory",
                                 "name": "Yukon Territory"
                             }
                         ],
-                        "key": "group.Canada",
                         "name": "Canada"
                     },
                     {
@@ -9092,7 +9026,6 @@
                                         "url": "http://vienna.letgo.at"
                                     }
                                 ],
-                                "key": "group.Austria",
                                 "name": "Austria"
                             },
                             {
@@ -9112,7 +9045,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Belgium",
                                 "name": "Belgium"
                             },
                             {
@@ -9132,7 +9064,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Bulgaria",
                                 "name": "Bulgaria"
                             },
                             {
@@ -9152,7 +9083,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Croatia",
                                 "name": "Croatia"
                             },
                             {
@@ -9170,7 +9100,6 @@
                                         "url": "http://prague.letgo.cz"
                                     }
                                 ],
-                                "key": "group.CzechRepublic",
                                 "name": "Czech Republic"
                             },
                             {
@@ -9190,7 +9119,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Denmark",
                                 "name": "Denmark"
                             },
                             {
@@ -9208,7 +9136,6 @@
                                         "url": "http://helsinki.letgo.fi"
                                     }
                                 ],
-                                "key": "group.Finland",
                                 "name": "Finland"
                             },
                             {
@@ -9396,7 +9323,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.France",
                                 "name": "France"
                             },
                             {
@@ -9582,7 +9508,6 @@
                                         "url": "http://stuttgart.letgo.de"
                                     }
                                 ],
-                                "key": "group.Germany",
                                 "name": "Germany"
                             },
                             {
@@ -9600,7 +9525,6 @@
                                         "url": "http://athens.letgo.gr"
                                     }
                                 ],
-                                "key": "group.Greece",
                                 "name": "Greece"
                             },
                             {
@@ -9620,7 +9544,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Hungary",
                                 "name": "Hungary"
                             },
                             {
@@ -9640,7 +9563,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Iceland",
                                 "name": "Iceland"
                             },
                             {
@@ -9660,7 +9582,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Ireland",
                                 "name": "Ireland"
                             },
                             {
@@ -9798,7 +9719,6 @@
                                         "url": "http://venice.letgo.it"
                                     }
                                 ],
-                                "key": "group.Italy",
                                 "name": "Italy"
                             },
                             {
@@ -9818,7 +9738,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Luxembourg",
                                 "name": "Luxembourg"
                             },
                             {
@@ -9838,7 +9757,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Netherlands",
                                 "name": "Netherlands"
                             },
                             {
@@ -9858,7 +9776,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Norway",
                                 "name": "Norway"
                             },
                             {
@@ -9876,7 +9793,6 @@
                                         "url": "http://warsaw.letgo.pl"
                                     }
                                 ],
-                                "key": "group.Poland",
                                 "name": "Poland"
                             },
                             {
@@ -9918,7 +9834,6 @@
                                         "url": "http://porto.letgo.pt"
                                     }
                                 ],
-                                "key": "group.Portugal",
                                 "name": "Portugal"
                             },
                             {
@@ -9938,7 +9853,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Romania",
                                 "name": "Romania"
                             },
                             {
@@ -9972,7 +9886,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.RussianFederation",
                                 "name": "Russian Federation"
                             },
                             {
@@ -10110,7 +10023,6 @@
                                         "url": "http://valencia.letgo.es"
                                     }
                                 ],
-                                "key": "group.Spain",
                                 "name": "Spain"
                             },
                             {
@@ -10128,7 +10040,6 @@
                                         "url": "http://stockholm.letgo.se"
                                     }
                                 ],
-                                "key": "group.Sweden",
                                 "name": "Sweden"
                             },
                             {
@@ -10194,7 +10105,6 @@
                                         "url": "http://zurich.letgo.ch"
                                     }
                                 ],
-                                "key": "group.Switzerland",
                                 "name": "Switzerland"
                             },
                             {
@@ -10214,7 +10124,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Turkey",
                                 "name": "Turkey"
                             },
                             {
@@ -10234,7 +10143,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Ukraine",
                                 "name": "Ukraine"
                             },
                             {
@@ -10564,11 +10472,9 @@
                                         "url": "http://sheffield.letgo.co.uk"
                                     }
                                 ],
-                                "key": "group.UnitedKingdom",
                                 "name": "United Kingdom"
                             }
                         ],
-                        "key": "group.Europe",
                         "name": "Europe"
                     },
                     {
@@ -10591,7 +10497,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Bangladesh",
                                 "name": "Bangladesh"
                             },
                             {
@@ -10765,7 +10670,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.China",
                                 "name": "China"
                             },
                             {
@@ -10785,7 +10689,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Guam/Micronesia",
                                 "name": "Guam / Micronesia"
                             },
                             {
@@ -10803,7 +10706,6 @@
                                         "url": "http://hongkong.letgo.hk"
                                     }
                                 ],
-                                "key": "group.HongKong",
                                 "name": "Hong Kong"
                             },
                             {
@@ -11001,7 +10903,6 @@
                                         "url": "http://surat.letgo.co.in"
                                     }
                                 ],
-                                "key": "group.India",
                                 "name": "India"
                             },
                             {
@@ -11021,7 +10922,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Indonesia",
                                 "name": "Indonesia"
                             },
                             {
@@ -11041,7 +10941,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Iran",
                                 "name": "Iran"
                             },
                             {
@@ -11061,7 +10960,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Iraq",
                                 "name": "Iraq"
                             },
                             {
@@ -11123,7 +11021,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.IsraelandPalestine",
                                 "name": "Israel and Palestine"
                             },
                             {
@@ -11225,7 +11122,6 @@
                                         "url": "http://tokyo.letgo.jp"
                                     }
                                 ],
-                                "key": "group.Japan",
                                 "name": "Japan"
                             },
                             {
@@ -11243,7 +11139,6 @@
                                         "url": "http://seoul.letgo.co.kr"
                                     }
                                 ],
-                                "key": "group.Korea",
                                 "name": "Korea"
                             },
                             {
@@ -11263,7 +11158,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Kuwait",
                                 "name": "Kuwait"
                             },
                             {
@@ -11283,7 +11177,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Lebanon",
                                 "name": "Lebanon"
                             },
                             {
@@ -11303,7 +11196,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Malaysia",
                                 "name": "Malaysia"
                             },
                             {
@@ -11323,7 +11215,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Pakistan",
                                 "name": "Pakistan"
                             },
                             {
@@ -11455,7 +11346,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Philippines",
                                 "name": "Philippines"
                             },
                             {
@@ -11475,7 +11365,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Singapore",
                                 "name": "Singapore"
                             },
                             {
@@ -11495,7 +11384,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Taiwan",
                                 "name": "Taiwan"
                             },
                             {
@@ -11513,7 +11401,6 @@
                                         "url": "http://bangkok.letgo.co.th"
                                     }
                                 ],
-                                "key": "group.Thailand",
                                 "name": "Thailand"
                             },
                             {
@@ -11533,7 +11420,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.UnitedArabEmirates",
                                 "name": "United Arab Emirates"
                             },
                             {
@@ -11553,11 +11439,9 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Vietnam",
                                 "name": "Vietnam"
                             }
                         ],
-                        "key": "group.AsiaPacific&MiddleEast",
                         "name": "Asia Pacific & Middle East"
                     },
                     {
@@ -11734,7 +11618,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Australia",
                                 "name": "Australia"
                             },
                             {
@@ -11794,11 +11677,9 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.NewZealand",
                                 "name": "New Zealand"
                             }
                         ],
-                        "key": "group.Oceania",
                         "name": "Oceania"
                     },
                     {
@@ -11821,7 +11702,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Argentina",
                                 "name": "Argentina"
                             },
                             {
@@ -11841,7 +11721,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Bolivia",
                                 "name": "Bolivia"
                             },
                             {
@@ -11973,7 +11852,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Brazil",
                                 "name": "Brazil"
                             },
                             {
@@ -11993,7 +11871,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.CaribbeanIslands",
                                 "name": "Caribbean Islands"
                             },
                             {
@@ -12013,7 +11890,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Chile",
                                 "name": "Chile"
                             },
                             {
@@ -12033,7 +11909,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Colombia",
                                 "name": "Colombia"
                             },
                             {
@@ -12053,7 +11928,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.CostaRica",
                                 "name": "Costa Rica"
                             },
                             {
@@ -12073,7 +11947,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.DominicanRepublic",
                                 "name": "Dominican Republic"
                             },
                             {
@@ -12093,7 +11966,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Ecuador",
                                 "name": "Ecuador"
                             },
                             {
@@ -12113,7 +11985,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.ElSalvador",
                                 "name": "El Salvador"
                             },
                             {
@@ -12133,7 +12004,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Guatemala",
                                 "name": "Guatemala"
                             },
                             {
@@ -12363,7 +12233,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Mexico",
                                 "name": "Mexico"
                             },
                             {
@@ -12383,7 +12252,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Nicaragua",
                                 "name": "Nicaragua"
                             },
                             {
@@ -12403,7 +12271,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Panama",
                                 "name": "Panama"
                             },
                             {
@@ -12423,7 +12290,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Peru",
                                 "name": "Peru"
                             },
                             {
@@ -12443,7 +12309,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.PuertoRico",
                                 "name": "Puerto Rico"
                             },
                             {
@@ -12463,7 +12328,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Uruguay",
                                 "name": "Uruguay"
                             },
                             {
@@ -12483,7 +12347,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Venezuela",
                                 "name": "Venezuela"
                             },
                             {
@@ -12503,11 +12366,9 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.VirginIslands,U.S.",
                                 "name": "Virgin Islands, U.S."
                             }
                         ],
-                        "key": "group.LatinAmerica&Caribbean",
                         "name": "Latin America & Caribbean"
                     },
                     {
@@ -12530,7 +12391,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Egypt",
                                 "name": "Egypt"
                             },
                             {
@@ -12550,7 +12410,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Ethiopia",
                                 "name": "Ethiopia"
                             },
                             {
@@ -12570,7 +12429,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Ghana",
                                 "name": "Ghana"
                             },
                             {
@@ -12590,7 +12448,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Kenya",
                                 "name": "Kenya"
                             },
                             {
@@ -12610,7 +12467,6 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Morocco",
                                 "name": "Morocco"
                             },
                             {
@@ -12664,7 +12520,6 @@
                                         "url": "http://pretoria.letgo.co.za"
                                     }
                                 ],
-                                "key": "group.SouthAfrica",
                                 "name": "South Africa"
                             },
                             {
@@ -12684,11 +12539,9 @@
                                         "distanceType": "miles"
                                     }
                                 ],
-                                "key": "group.Tunisia",
                                 "name": "Tunisia"
                             }
                         ],
-                        "key": "group.Africa",
                         "name": "Africa"
                     }
                 ]

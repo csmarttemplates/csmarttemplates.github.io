@@ -824,7 +824,6 @@
                 ]
             },
             {
-                "key": "group.AllRegions",
                 "name": "All Regions",
                 "groupHeader": true,
                 "children": [
@@ -888,7 +887,6 @@
                                         "url": "http://tuscaloosa.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Alabama",
                                 "name": "Alabama"
                             },
                             {
@@ -918,7 +916,6 @@
                                         "url": "http://juneau.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Alaska",
                                 "name": "Alaska"
                             },
                             {
@@ -1002,7 +999,6 @@
                                         "url": "http://yuma.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Arizona",
                                 "name": "Arizona"
                             },
                             {
@@ -1038,7 +1034,6 @@
                                         "url": "http://texarkana.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Arkansas",
                                 "name": "Arkansas"
                             },
                             {
@@ -1330,7 +1325,6 @@
                                         "url": "http://yubasutter.craigslist.org"
                                     }
                                 ],
-                                "key": "group.California",
                                 "name": "California"
                             },
                             {
@@ -1384,7 +1378,6 @@
                                         "url": "http://westslope.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Colorado",
                                 "name": "Colorado"
                             },
                             {
@@ -1414,7 +1407,6 @@
                                         "url": "http://nwct.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Connecticut",
                                 "name": "Connecticut"
                             },
                             {
@@ -1426,7 +1418,6 @@
                                         "url": "http://delaware.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Delaware",
                                 "name": "Delaware"
                             },
                             {
@@ -1461,7 +1452,6 @@
                                         "url": "http://washingtondc.craigslist.org"
                                     }
                                 ],
-                                "key": "group.DistrictofColumbia",
                                 "name": "District of Columbia"
                             },
                             {
@@ -1663,7 +1653,6 @@
                                         "url": "http://treasure.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Florida",
                                 "name": "Florida"
                             },
                             {
@@ -1772,7 +1761,6 @@
                                         "url": "http://valdosta.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Georgia",
                                 "name": "Georgia"
                             },
                             {
@@ -1845,7 +1833,6 @@
                                         "url": "http://twinfalls.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Idaho",
                                 "name": "Idaho"
                             },
                             {
@@ -1961,7 +1948,6 @@
                                         "url": "http://quincy.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Illinois",
                                 "name": "Illinois"
                             },
                             {
@@ -2027,7 +2013,6 @@
                                         "url": "http://terrehaute.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Indiana",
                                 "name": "Indiana"
                             },
                             {
@@ -2099,7 +2084,6 @@
                                         "url": "http://waterloo.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Iowa",
                                 "name": "Iowa"
                             },
                             {
@@ -2153,7 +2137,6 @@
                                         "url": "http://wichita.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Kansas",
                                 "name": "Kansas"
                             },
                             {
@@ -2195,7 +2178,6 @@
                                         "url": "http://westky.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Kentucky",
                                 "name": "Kentucky"
                             },
                             {
@@ -2249,7 +2231,6 @@
                                         "url": "http://shreveport.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Louisiana",
                                 "name": "Louisiana"
                             },
                             {
@@ -2261,7 +2242,6 @@
                                         "url": "http://maine.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Maine",
                                 "name": "Maine"
                             },
                             {
@@ -2303,7 +2283,6 @@
                                         "url": "http://westmd.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Maryland",
                                 "name": "Maryland"
                             },
                             {
@@ -2376,7 +2355,6 @@
                                         "url": "http://worcester.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Massachusetts",
                                 "name": "Massachusetts"
                             },
                             {
@@ -2513,7 +2491,6 @@
                                         "url": "http://up.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Michigan",
                                 "name": "Michigan"
                             },
                             {
@@ -2611,7 +2588,6 @@
                                         "url": "http://stcloud.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Minnesota",
                                 "name": "Minnesota"
                             },
                             {
@@ -2653,7 +2629,6 @@
                                         "url": "http://natchez.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Mississippi",
                                 "name": "Mississippi"
                             },
                             {
@@ -2713,7 +2688,6 @@
                                         "url": "http://stlouis.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Missouri",
                                 "name": "Missouri"
                             },
                             {
@@ -2767,7 +2741,6 @@
                                         "url": "http://montana.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Montana",
                                 "name": "Montana"
                             },
                             {
@@ -2803,7 +2776,6 @@
                                         "url": "http://scottsbluff.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Nebraska",
                                 "name": "Nebraska"
                             },
                             {
@@ -2827,7 +2799,6 @@
                                         "url": "http://reno.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Nevada",
                                 "name": "Nevada"
                             },
                             {
@@ -2839,7 +2810,6 @@
                                         "url": "http://nh.craigslist.org"
                                     }
                                 ],
-                                "key": "group.NewHampshire",
                                 "name": "New Hampshire"
                             },
                             {
@@ -2869,7 +2839,6 @@
                                         "url": "http://southjersey.craigslist.org"
                                     }
                                 ],
-                                "key": "group.NewJersey",
                                 "name": "New Jersey"
                             },
                             {
@@ -2911,7 +2880,6 @@
                                         "url": "http://santafe.craigslist.org"
                                     }
                                 ],
-                                "key": "group.NewMexico",
                                 "name": "New Mexico"
                             },
                             {
@@ -3102,7 +3070,6 @@
                                         "url": "http://watertown.craigslist.org"
                                     }
                                 ],
-                                "key": "group.NewYork",
                                 "name": "New York"
                             },
                             {
@@ -3180,7 +3147,6 @@
                                         "url": "http://winstonsalem.craigslist.org"
                                     }
                                 ],
-                                "key": "group.NorthCarolina",
                                 "name": "North Carolina"
                             },
                             {
@@ -3210,7 +3176,6 @@
                                         "url": "http://nd.craigslist.org"
                                     }
                                 ],
-                                "key": "group.NorthDakota",
                                 "name": "North Dakota"
                             },
                             {
@@ -3306,7 +3271,6 @@
                                         "url": "http://zanesville.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Ohio",
                                 "name": "Ohio"
                             },
                             {
@@ -3342,7 +3306,6 @@
                                         "url": "http://tulsa.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Oklahoma",
                                 "name": "Oklahoma"
                             },
                             {
@@ -3459,7 +3422,6 @@
                                         "url": "http://salem.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Oregon",
                                 "name": "Oregon"
                             },
                             {
@@ -3555,7 +3517,6 @@
                                         "url": "http://york.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Pennsylvania",
                                 "name": "Pennsylvania"
                             },
                             {
@@ -3567,7 +3528,6 @@
                                         "url": "http://providence.craigslist.org"
                                     }
                                 ],
-                                "key": "group.RhodeIsland",
                                 "name": "Rhode Island"
                             },
                             {
@@ -3609,7 +3569,6 @@
                                         "url": "http://myrtlebeach.craigslist.org"
                                     }
                                 ],
-                                "key": "group.SouthCarolina",
                                 "name": "South Carolina"
                             },
                             {
@@ -3645,7 +3604,6 @@
                                         "url": "http://sd.craigslist.org"
                                     }
                                 ],
-                                "key": "group.SouthDakota",
                                 "name": "South Dakota"
                             },
                             {
@@ -3699,7 +3657,6 @@
                                         "url": "http://tricities.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Tennessee",
                                 "name": "Tennessee"
                             },
                             {
@@ -3904,7 +3861,6 @@
                                         "url": "http://wichitafalls.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Texas",
                                 "name": "Texas"
                             },
                             {
@@ -3940,7 +3896,6 @@
                                         "url": "http://stgeorge.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Utah",
                                 "name": "Utah"
                             },
                             {
@@ -3952,7 +3907,6 @@
                                         "url": "http://burlington.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Vermont",
                                 "name": "Vermont"
                             },
                             {
@@ -4024,7 +3978,6 @@
                                         "url": "http://winchester.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Virginia",
                                 "name": "Virginia"
                             },
                             {
@@ -4141,7 +4094,6 @@
                                         "url": "http://yakima.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Washington",
                                 "name": "Washington"
                             },
                             {
@@ -4195,7 +4147,6 @@
                                         "url": "http://wv.craigslist.org"
                                     }
                                 ],
-                                "key": "group.WestVirginia",
                                 "name": "West Virginia"
                             },
                             {
@@ -4267,7 +4218,6 @@
                                         "url": "http://wausau.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Wisconsin",
                                 "name": "Wisconsin"
                             },
                             {
@@ -4279,7 +4229,6 @@
                                         "url": "http://wyoming.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Wyoming",
                                 "name": "Wyoming"
                             },
                             {
@@ -4303,11 +4252,9 @@
                                         "url": "http://virgin.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Territories",
                                 "name": "Territories"
                             }
                         ],
-                        "key": "group.US",
                         "name": "US"
                     },
                     {
@@ -4358,7 +4305,6 @@
                                         "url": "http://reddeer.craigslist.ca"
                                     }
                                 ],
-                                "key": "group.Alberta",
                                 "name": "Alberta"
                             },
                             {
@@ -4486,7 +4432,6 @@
                                         "url": "http://whistler.craigslist.ca"
                                     }
                                 ],
-                                "key": "group.BritishColumbia",
                                 "name": "British Columbia"
                             },
                             {
@@ -4498,7 +4443,6 @@
                                         "url": "http://winnipeg.craigslist.ca"
                                     }
                                 ],
-                                "key": "group.Manitoba",
                                 "name": "Manitoba"
                             },
                             {
@@ -4510,7 +4454,6 @@
                                         "url": "http://newbrunswick.craigslist.ca"
                                     }
                                 ],
-                                "key": "group.NewBrunswick",
                                 "name": "New Brunswick"
                             },
                             {
@@ -4522,7 +4465,6 @@
                                         "url": "http://newfoundland.craigslist.ca"
                                     }
                                 ],
-                                "key": "group.NewfoundlandandLabrador",
                                 "name": "Newfoundland and Labrador"
                             },
                             {
@@ -4540,7 +4482,6 @@
                                         "url": "http://yellowknife.craigslist.ca"
                                     }
                                 ],
-                                "key": "group.NorthwestTerritories",
                                 "name": "Northwest Territories"
                             },
                             {
@@ -4552,7 +4493,6 @@
                                         "url": "http://halifax.craigslist.ca"
                                     }
                                 ],
-                                "key": "group.NovaScotia",
                                 "name": "Nova Scotia"
                             },
                             {
@@ -4722,7 +4662,6 @@
                                         "url": "http://windsor.craigslist.ca"
                                     }
                                 ],
-                                "key": "group.Ontario",
                                 "name": "Ontario"
                             },
                             {
@@ -4734,7 +4673,6 @@
                                         "url": "http://pei.craigslist.ca"
                                     }
                                 ],
-                                "key": "group.PrinceEdwardIsland",
                                 "name": "Prince Edward Island"
                             },
                             {
@@ -4770,7 +4708,6 @@
                                         "url": "http://troisrivieres.craigslist.ca"
                                     }
                                 ],
-                                "key": "group.Quebec",
                                 "name": "Quebec"
                             },
                             {
@@ -4788,7 +4725,6 @@
                                         "url": "http://saskatoon.craigslist.ca"
                                     }
                                 ],
-                                "key": "group.Saskatchewan",
                                 "name": "Saskatchewan"
                             },
                             {
@@ -4800,11 +4736,9 @@
                                         "url": "http://whitehorse.craigslist.ca"
                                     }
                                 ],
-                                "key": "group.YukonTerritory",
                                 "name": "Yukon Territory"
                             }
                         ],
-                        "key": "group.Canada",
                         "name": "Canada"
                     },
                     {
@@ -4819,7 +4753,6 @@
                                         "url": "http://vienna.craigslist.at"
                                     }
                                 ],
-                                "key": "group.Austria",
                                 "name": "Austria"
                             },
                             {
@@ -4831,7 +4764,6 @@
                                         "url": "http://brussels.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Belgium",
                                 "name": "Belgium"
                             },
                             {
@@ -4843,7 +4775,6 @@
                                         "url": "http://bulgaria.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Bulgaria",
                                 "name": "Bulgaria"
                             },
                             {
@@ -4855,7 +4786,6 @@
                                         "url": "http://zagreb.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Croatia",
                                 "name": "Croatia"
                             },
                             {
@@ -4867,7 +4797,6 @@
                                         "url": "http://prague.craigslist.cz"
                                     }
                                 ],
-                                "key": "group.CzechRepublic",
                                 "name": "Czech Republic"
                             },
                             {
@@ -4879,7 +4808,6 @@
                                         "url": "http://copenhagen.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Denmark",
                                 "name": "Denmark"
                             },
                             {
@@ -4891,7 +4819,6 @@
                                         "url": "http://helsinki.craigslist.fi"
                                     }
                                 ],
-                                "key": "group.Finland",
                                 "name": "Finland"
                             },
                             {
@@ -4975,7 +4902,6 @@
                                         "url": "http://toulouse.craigslist.org"
                                     }
                                 ],
-                                "key": "group.France",
                                 "name": "France"
                             },
                             {
@@ -5071,7 +4997,6 @@
                                         "url": "http://stuttgart.craigslist.de"
                                     }
                                 ],
-                                "key": "group.Germany",
                                 "name": "Germany"
                             },
                             {
@@ -5083,7 +5008,6 @@
                                         "url": "http://athens.craigslist.gr"
                                     }
                                 ],
-                                "key": "group.Greece",
                                 "name": "Greece"
                             },
                             {
@@ -5095,7 +5019,6 @@
                                         "url": "http://budapest.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Hungary",
                                 "name": "Hungary"
                             },
                             {
@@ -5107,7 +5030,6 @@
                                         "url": "http://reykjavik.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Iceland",
                                 "name": "Iceland"
                             },
                             {
@@ -5119,7 +5041,6 @@
                                         "url": "http://dublin.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Ireland",
                                 "name": "Ireland"
                             },
                             {
@@ -5191,7 +5112,6 @@
                                         "url": "http://venice.craigslist.it"
                                     }
                                 ],
-                                "key": "group.Italy",
                                 "name": "Italy"
                             },
                             {
@@ -5203,7 +5123,6 @@
                                         "url": "http://luxembourg.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Luxembourg",
                                 "name": "Luxembourg"
                             },
                             {
@@ -5215,7 +5134,6 @@
                                         "url": "http://amsterdam.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Netherlands",
                                 "name": "Netherlands"
                             },
                             {
@@ -5227,7 +5145,6 @@
                                         "url": "http://oslo.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Norway",
                                 "name": "Norway"
                             },
                             {
@@ -5239,7 +5156,6 @@
                                         "url": "http://warsaw.craigslist.pl"
                                     }
                                 ],
-                                "key": "group.Poland",
                                 "name": "Poland"
                             },
                             {
@@ -5263,7 +5179,6 @@
                                         "url": "http://porto.craigslist.pt"
                                     }
                                 ],
-                                "key": "group.Portugal",
                                 "name": "Portugal"
                             },
                             {
@@ -5275,7 +5190,6 @@
                                         "url": "http://bucharest.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Romania",
                                 "name": "Romania"
                             },
                             {
@@ -5293,7 +5207,6 @@
                                         "url": "http://stpetersburg.craigslist.org"
                                     }
                                 ],
-                                "key": "group.RussianFederation",
                                 "name": "Russian Federation"
                             },
                             {
@@ -5365,7 +5278,6 @@
                                         "url": "http://valencia.craigslist.es"
                                     }
                                 ],
-                                "key": "group.Spain",
                                 "name": "Spain"
                             },
                             {
@@ -5377,7 +5289,6 @@
                                         "url": "http://stockholm.craigslist.se"
                                     }
                                 ],
-                                "key": "group.Sweden",
                                 "name": "Sweden"
                             },
                             {
@@ -5413,7 +5324,6 @@
                                         "url": "http://zurich.craigslist.ch"
                                     }
                                 ],
-                                "key": "group.Switzerland",
                                 "name": "Switzerland"
                             },
                             {
@@ -5425,7 +5335,6 @@
                                         "url": "http://istanbul.craigslist.com.tr"
                                     }
                                 ],
-                                "key": "group.Turkey",
                                 "name": "Turkey"
                             },
                             {
@@ -5437,7 +5346,6 @@
                                         "url": "http://ukraine.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Ukraine",
                                 "name": "Ukraine"
                             },
                             {
@@ -5605,11 +5513,9 @@
                                         "url": "http://sheffield.craigslist.co.uk"
                                     }
                                 ],
-                                "key": "group.UnitedKingdom",
                                 "name": "United Kingdom"
                             }
                         ],
-                        "key": "group.Europe",
                         "name": "Europe"
                     },
                     {
@@ -5624,7 +5530,6 @@
                                         "url": "http://bangladesh.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Bangladesh",
                                 "name": "Bangladesh"
                             },
                             {
@@ -5702,7 +5607,6 @@
                                         "url": "http://xian.craigslist.com.cn"
                                     }
                                 ],
-                                "key": "group.China",
                                 "name": "China"
                             },
                             {
@@ -5714,7 +5618,6 @@
                                         "url": "http://micronesia.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Guam/Micronesia",
                                 "name": "Guam / Micronesia"
                             },
                             {
@@ -5726,7 +5629,6 @@
                                         "url": "http://hongkong.craigslist.hk"
                                     }
                                 ],
-                                "key": "group.HongKong",
                                 "name": "Hong Kong"
                             },
                             {
@@ -5828,7 +5730,6 @@
                                         "url": "http://surat.craigslist.co.in"
                                     }
                                 ],
-                                "key": "group.India",
                                 "name": "India"
                             },
                             {
@@ -5840,7 +5741,6 @@
                                         "url": "http://jakarta.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Indonesia",
                                 "name": "Indonesia"
                             },
                             {
@@ -5852,7 +5752,6 @@
                                         "url": "http://tehran.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Iran",
                                 "name": "Iran"
                             },
                             {
@@ -5864,7 +5763,6 @@
                                         "url": "http://baghdad.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Iraq",
                                 "name": "Iraq"
                             },
                             {
@@ -5894,7 +5792,6 @@
                                         "url": "http://ramallah.craigslist.org"
                                     }
                                 ],
-                                "key": "group.IsraelandPalestine",
                                 "name": "Israel and Palestine"
                             },
                             {
@@ -5948,7 +5845,6 @@
                                         "url": "http://tokyo.craigslist.jp"
                                     }
                                 ],
-                                "key": "group.Japan",
                                 "name": "Japan"
                             },
                             {
@@ -5960,7 +5856,6 @@
                                         "url": "http://seoul.craigslist.co.kr"
                                     }
                                 ],
-                                "key": "group.Korea",
                                 "name": "Korea"
                             },
                             {
@@ -5972,7 +5867,6 @@
                                         "url": "http://kuwait.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Kuwait",
                                 "name": "Kuwait"
                             },
                             {
@@ -5984,7 +5878,6 @@
                                         "url": "http://beirut.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Lebanon",
                                 "name": "Lebanon"
                             },
                             {
@@ -5996,7 +5889,6 @@
                                         "url": "http://malaysia.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Malaysia",
                                 "name": "Malaysia"
                             },
                             {
@@ -6008,7 +5900,6 @@
                                         "url": "http://pakistan.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Pakistan",
                                 "name": "Pakistan"
                             },
                             {
@@ -6068,7 +5959,6 @@
                                         "url": "http://zamboanga.craigslist.com.ph"
                                     }
                                 ],
-                                "key": "group.Philippines",
                                 "name": "Philippines"
                             },
                             {
@@ -6080,7 +5970,6 @@
                                         "url": "http://singapore.craigslist.com.sg"
                                     }
                                 ],
-                                "key": "group.Singapore",
                                 "name": "Singapore"
                             },
                             {
@@ -6092,7 +5981,6 @@
                                         "url": "http://taipei.craigslist.com.tw"
                                     }
                                 ],
-                                "key": "group.Taiwan",
                                 "name": "Taiwan"
                             },
                             {
@@ -6104,7 +5992,6 @@
                                         "url": "http://bangkok.craigslist.co.th"
                                     }
                                 ],
-                                "key": "group.Thailand",
                                 "name": "Thailand"
                             },
                             {
@@ -6116,7 +6003,6 @@
                                         "url": "http://dubai.craigslist.org"
                                     }
                                 ],
-                                "key": "group.UnitedArabEmirates",
                                 "name": "United Arab Emirates"
                             },
                             {
@@ -6128,11 +6014,9 @@
                                         "url": "http://vietnam.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Vietnam",
                                 "name": "Vietnam"
                             }
                         ],
-                        "key": "group.AsiaPacific&MiddleEast",
                         "name": "Asia Pacific & Middle East"
                     },
                     {
@@ -6213,7 +6097,6 @@
                                         "url": "http://wollongong.craigslist.com.au"
                                     }
                                 ],
-                                "key": "group.Australia",
                                 "name": "Australia"
                             },
                             {
@@ -6243,11 +6126,9 @@
                                         "url": "http://wellington.craigslist.org"
                                     }
                                 ],
-                                "key": "group.NewZealand",
                                 "name": "New Zealand"
                             }
                         ],
-                        "key": "group.Oceania",
                         "name": "Oceania"
                     },
                     {
@@ -6262,7 +6143,6 @@
                                         "url": "http://buenosaires.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Argentina",
                                 "name": "Argentina"
                             },
                             {
@@ -6274,7 +6154,6 @@
                                         "url": "http://lapaz.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Bolivia",
                                 "name": "Bolivia"
                             },
                             {
@@ -6334,7 +6213,6 @@
                                         "url": "http://saopaulo.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Brazil",
                                 "name": "Brazil"
                             },
                             {
@@ -6346,7 +6224,6 @@
                                         "url": "http://caribbean.craigslist.org"
                                     }
                                 ],
-                                "key": "group.CaribbeanIslands",
                                 "name": "Caribbean Islands"
                             },
                             {
@@ -6358,7 +6235,6 @@
                                         "url": "http://santiago.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Chile",
                                 "name": "Chile"
                             },
                             {
@@ -6370,7 +6246,6 @@
                                         "url": "http://colombia.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Colombia",
                                 "name": "Colombia"
                             },
                             {
@@ -6382,7 +6257,6 @@
                                         "url": "http://costarica.craigslist.org"
                                     }
                                 ],
-                                "key": "group.CostaRica",
                                 "name": "Costa Rica"
                             },
                             {
@@ -6394,7 +6268,6 @@
                                         "url": "http://santodomingo.craigslist.org"
                                     }
                                 ],
-                                "key": "group.DominicanRepublic",
                                 "name": "Dominican Republic"
                             },
                             {
@@ -6406,7 +6279,6 @@
                                         "url": "http://quito.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Ecuador",
                                 "name": "Ecuador"
                             },
                             {
@@ -6418,7 +6290,6 @@
                                         "url": "http://elsalvador.craigslist.org"
                                     }
                                 ],
-                                "key": "group.ElSalvador",
                                 "name": "El Salvador"
                             },
                             {
@@ -6430,7 +6301,6 @@
                                         "url": "http://guatemala.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Guatemala",
                                 "name": "Guatemala"
                             },
                             {
@@ -6532,7 +6402,6 @@
                                         "url": "http://yucatan.craigslist.com.mx"
                                     }
                                 ],
-                                "key": "group.Mexico",
                                 "name": "Mexico"
                             },
                             {
@@ -6544,7 +6413,6 @@
                                         "url": "http://managua.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Nicaragua",
                                 "name": "Nicaragua"
                             },
                             {
@@ -6556,7 +6424,6 @@
                                         "url": "http://panama.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Panama",
                                 "name": "Panama"
                             },
                             {
@@ -6568,7 +6435,6 @@
                                         "url": "http://lima.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Peru",
                                 "name": "Peru"
                             },
                             {
@@ -6580,7 +6446,6 @@
                                         "url": "http://puertorico.craigslist.org"
                                     }
                                 ],
-                                "key": "group.PuertoRico",
                                 "name": "Puerto Rico"
                             },
                             {
@@ -6592,7 +6457,6 @@
                                         "url": "http://montevideo.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Uruguay",
                                 "name": "Uruguay"
                             },
                             {
@@ -6604,7 +6468,6 @@
                                         "url": "http://caracas.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Venezuela",
                                 "name": "Venezuela"
                             },
                             {
@@ -6616,11 +6479,9 @@
                                         "url": "http://virgin.craigslist.org"
                                     }
                                 ],
-                                "key": "group.VirginIslands,U.S.",
                                 "name": "Virgin Islands, U.S."
                             }
                         ],
-                        "key": "group.LatinAmerica&Caribbean",
                         "name": "Latin America & Caribbean"
                     },
                     {
@@ -6635,7 +6496,6 @@
                                         "url": "http://cairo.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Egypt",
                                 "name": "Egypt"
                             },
                             {
@@ -6647,7 +6507,6 @@
                                         "url": "http://addisababa.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Ethiopia",
                                 "name": "Ethiopia"
                             },
                             {
@@ -6659,7 +6518,6 @@
                                         "url": "http://accra.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Ghana",
                                 "name": "Ghana"
                             },
                             {
@@ -6671,7 +6529,6 @@
                                         "url": "http://kenya.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Kenya",
                                 "name": "Kenya"
                             },
                             {
@@ -6683,7 +6540,6 @@
                                         "url": "http://casablanca.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Morocco",
                                 "name": "Morocco"
                             },
                             {
@@ -6713,7 +6569,6 @@
                                         "url": "http://pretoria.craigslist.co.za"
                                     }
                                 ],
-                                "key": "group.SouthAfrica",
                                 "name": "South Africa"
                             },
                             {
@@ -6725,11 +6580,9 @@
                                         "url": "http://tunis.craigslist.org"
                                     }
                                 ],
-                                "key": "group.Tunisia",
                                 "name": "Tunisia"
                             }
                         ],
-                        "key": "group.Africa",
                         "name": "Africa"
                     }
                 ]

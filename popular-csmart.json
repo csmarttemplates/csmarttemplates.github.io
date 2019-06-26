@@ -66,6 +66,10 @@
                 "postalCode":"${location.geoInfo.postal_code}"
             },
             "locationText": "${location.name}"
+        },
+        "customTags":{
+            "price": "g-core:price",
+            "price.format": "¤#,##0.##"
         }
     },
     "initialModel": {
@@ -461,7 +465,6 @@
                 ]
             },
             {
-                "key": "group.AllRegions",
                 "name": "All Regions",
                 "groupHeader": true,
                 "children": 
