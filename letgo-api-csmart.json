@@ -139,9 +139,9 @@
     },
     "initialModel": {
         "category": [
-            "cars"
+            ""
         ],
-        "keywords":"toyota",
+        "keywords":"",
         "scrollOffset": 0
     },
     "incrementalLoad": {
