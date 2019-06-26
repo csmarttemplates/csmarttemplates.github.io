@@ -1,6 +1,6 @@
 {
     "searchUUID": "craigslist.org.rss",
-    "name":"craigslist.org",
+    "name":"craigslist.org RSS",
     "subtitle":"RSS Search",
     "openExternalBrowser": true,
     "postLink": "https://post.craigslist.org",
