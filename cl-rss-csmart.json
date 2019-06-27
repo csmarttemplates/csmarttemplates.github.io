@@ -546,7 +546,6 @@
             }
         },
         "bbb":{
-            "groupTitle": "Services",
             "parent": "generic",
             "pattern": "${locSearchPattern}/${category.value}?${generic}",
             "fields": {},
