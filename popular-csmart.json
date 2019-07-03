@@ -186,7 +186,7 @@
                         {"label":"van"},
                         {"label":"other"}
                     ]},
-                    "auto_make_model": { "type":"numeric", "prefix":"&auto_make_model=", "placeholder": "Make Model"},
+                    "auto_make_model": { "type":"numeric", "prefix":"&auto_make_model=", "placeholder": "Make / Model"},
                     "minYear": { "type":"numeric", "prefix":"&min_auto_year=", "placeholder": "Min Year"},
                     "maxYear": { "type":"numeric", "prefix":"&max_auto_year=", "placeholder": "Max Year"},
                     "minOdo": { "type":"numeric", "prefix":"&min_auto_miles=", "placeholder": "Min"},
@@ -197,6 +197,7 @@
                     "type":"grid",
                     "columns": 2,
                     "fields": [
+                        {"f": "auto_make_model", "width": 2},
                         {"f": "minYear", "width": 1}, {"f": "maxYear", "width": 1},
                         {"label":"ODOMETER", "width": 2},
                         {"f": "minOdo", "width": 1}, {"f": "maxOdo", "width": 1},
