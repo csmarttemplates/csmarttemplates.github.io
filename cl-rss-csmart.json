@@ -112,7 +112,7 @@
             "cat": "cta",
             "catName": "cars trucks autos",
             "parent": "priceSearch",
-            "pattern": "${locSearchPattern}/${category.value}?${priceSearch}${minYear}${maxYear}${minOdo}${maxOdo}${auto_cylinders}${auto_drivetrain}${auto_fuel_type}${auto_paint}${auto_size}${auto_title_status}${auto_transmission}${auto_bodytype}",
+            "pattern": "${locSearchPattern}/${category.value}?${priceSearch}${auto_make_model}${minYear}${maxYear}${minOdo}${maxOdo}${auto_cylinders}${auto_drivetrain}${auto_fuel_type}${auto_paint}${auto_size}${auto_title_status}${auto_transmission}${auto_bodytype}",
             "groupTitle": "Cars & Trucks",
             "fields": {
                 "auto_cylinders": { "type":"numeric", "prefix":"&auto_cylinders=", "listSep":"&auto_cylinders=", "placeholder":"Cylinders", "selections":[
@@ -185,6 +185,7 @@
                     {"label":"van"},
                     {"label":"other"}
                 ]},
+                "auto_make_model": { "type":"numeric", "prefix":"&auto_make_model=", "placeholder": "Make Model"},
                 "minYear": { "type":"numeric", "prefix":"&min_auto_year=", "placeholder": "Min Year"},
                 "maxYear": { "type":"numeric", "prefix":"&max_auto_year=", "placeholder": "Max Year"},
                 "minOdo": { "type":"numeric", "prefix":"&min_auto_miles=", "placeholder": "Min"},
