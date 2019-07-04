@@ -37,6 +37,16 @@
             "field": "category",
             "fieldWrapper": "array",
             "headerLayoutPanels":[{},{"layoutRef": "headerLayout"}]
+        },
+        "treeMenuV2":{
+            "selectTreeRef": "categories",
+            "maxDepth": 3,
+            "parentAboveLeaves": true,
+            "autoSelectParentAboveLeaves": true,
+            "columnWidths":[115, 200, 250],
+            "field": "category",
+            "fieldWrapper": "array",
+            "headerLayoutPanels":[{},{"layoutRef": "headerLayout"},{}]
         }
     },
     "fieldLayouts":{
