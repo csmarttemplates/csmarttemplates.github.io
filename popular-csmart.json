@@ -50,6 +50,47 @@
                 "headerLayoutPanels":[{},{"layoutRef": "headerLayout"},{}]
             }
         },
+        "searchLabelPatterns":
+        {
+            "title":{
+                "pattern": "${titleField}",
+                "fields": {
+                    "titleField": { "existsPattern" : "${searchName}", "existsPattern.if" : "${name}", "existsPattern.else" : "${myKeywords}"},
+                    "searchName": {},
+                    "myKeywords": { "existsPattern" : "${keywords}" , "existsPattern.if" : "${keywords}", "existsPattern.else" : ""}
+                }
+            },
+            "subtitle":{
+                "pattern": "${searchNotify}${hasImages}${titleOnly}${auto_make_model}${dogsOk}${catsOk}${is_telecommuting}${partTime}${contract}${is_internship}${is_nonprofit}${paid}",
+                "fields": {
+                    "searchNotify": { "type":"boolean", "trueVal":"", "falseVal": "Notify Off"},
+                    "auto_make_model": { "type":"numeric", "prefix": " • "},
+                    "titleOnly": { "type":"boolean", "trueVal": "Title Only", "falseVal": "", "prefix": " • "},
+                    "hasImages": { "type":"boolean", "trueVal":"Has images", "falseVal": "", "prefix": " • "},
+                    "dogsOk": { "type":"boolean", "trueVal": "Dogs OK", "falseVal": ""},
+                    "catsOk": { "type":"boolean", "trueVal": "Cats OK", "prefix": " • ", "falseVal": ""},
+                    "is_telecommuting": { "type":"boolean", "label": "telecommute", "prefix": " • ", "trueVal":"Telecommute", "falseVal": ""},
+                    "partTime": { "type":"boolean", "label": "part-time", "prefix": " • ", "trueVal":"Part Time", "falseVal": ""},
+                    "contract": { "type":"boolean", "label": "contract", "prefix": " • ", "trueVal":"Contract", "falseVal": ""},
+                    "is_internship": { "type":"boolean", "label": "internship", "prefix": " • ", "trueVal":"Internship", "falseVal": ""},
+                    "is_nonprofit": { "type":"boolean", "label": "non-profit", "prefix": " • ", "trueVal":"Non-profit", "falseVal": ""},
+                    "fullTime": { "type":"boolean", "label": "full-time", "prefix": " • ", "trueVal":"Full Time", "falseVal": ""},
+                    "paid": { "type":"numeric", "prefix":" Paid "}
+                }
+            },
+            "line2":{
+                "pattern": "${category}",
+                "fields": {
+                    "category": {"type":"text", "selectTreeRef": "categories", "title": "Categories", "treeSummary":true}
+                }
+            },
+            "line3":{
+                "pattern": "${location}",
+                "fields": {
+                    "location": {"type":"text", "selectTreeRef": "locations", "title": "Regions", "treeSummary":true}
+                }
+            }
+        },        
         "fieldLayouts":{
             "layoutModelSource": "category",
             "splitRequests":["location", "category"],
