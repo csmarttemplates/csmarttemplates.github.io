@@ -1,6 +1,6 @@
 [
     {
-        "searchUUID": "craigslist.org.rss",
+        "searchUUID": "craigslist.org.rss", 
         "name":"craigslist.org RSS",
         "subtitle":"RSS Search",
         "postLink": "https://post.craigslist.org",
