@@ -486,9 +486,9 @@
                         {"label":"All Dates", "value":""},
                         {"label":"within 30 days", "value":"1"},
                         {"label":"beyond 30 days", "value":"2"}
-                    ]},
-                    "minSqft": { "type":"numeric", "label": "Min", "placeholder":"Min"},
-                    "maxSqft": { "type":"numeric", "label": "Max", "placeholder":"Max"},
+                        ]},
+                    "minSqft": { "type":"numeric", "label": "Min", "placeholder":"Min", "prefix":"&minSqft="},
+                    "maxSqft": { "type":"numeric", "label": "Max", "placeholder":"Max", "prefix":"&maxSqft="},
                     "dogsOk": { "type":"boolean", "label": "Dogs OK", "prefix":"&pets_dog=", "falseVal": ""},
                     "catsOk": { "type":"boolean", "label": "Cats OK", "prefix":"&pets_cat=", "falseVal": ""},
                     "furnished": { "type":"boolean", "label": "Furnished", "prefix":"&is_furnished=", "falseVal": ""},
