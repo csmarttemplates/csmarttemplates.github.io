@@ -50,6 +50,11 @@
                 "headerLayoutPanels":[{},{"layoutRef": "headerLayout"},{}]
             }
         },
+        "savedSearchCategories": {
+            "selectTreeRef": "categories",
+            "modelKey": "category",
+            "depth": 2
+        },        
         "searchLabelPatterns":
         {
             "title":{
