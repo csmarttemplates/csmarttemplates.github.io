@@ -390,7 +390,8 @@
         "bid":{"parent":"bia"},
         "bdp":{"parent":"bip"},
         "bod":{"parent":"boo"},
-        "bpd":{"parent":"bpo"},
+        "bpd":{"parent":"bpa"},
+        "bpo":{"parent":"bpa"},
         "bkd":{"parent":"bka"},
         "bfd":{"parent":"bfa"},
         "emq":{"parent":"ema"},
@@ -6646,4 +6647,3 @@
         ]
     }
 }
-
