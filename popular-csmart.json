@@ -636,6 +636,7 @@
             "biz":{"parent":"bbb"},
             "trv":{"parent":"bbb"},
             "wet":{"parent":"bbb"},
+            "ths":{"parent":"bbb"},            
             
             "ccc":{
                 "parent": "generic",
