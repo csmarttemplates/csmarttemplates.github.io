@@ -1,5 +1,5 @@
 {
-    "searchUUID": "craigslist.org.rss",
+    "searchUUID": "craigslist.org.rss", 
     "name":"craigslist.org RSS",
     "subtitle":"RSS Search",
     "postLink": "https://post.craigslist.org",
@@ -53,7 +53,7 @@
         "selectTreeRef": "categories",
         "modelKey": "category",
         "depth": 2
-    },    
+    },        
     "searchLabelPatterns":
     {
         "title":{
@@ -94,7 +94,7 @@
                 "location": {"type":"text", "selectTreeRef": "locations", "title": "Regions", "treeSummary":true}
             }
         }
-    },    
+    },        
     "fieldLayouts":{
         "layoutModelSource": "category",
         "splitRequests":["location", "category"],
@@ -390,8 +390,8 @@
         "bid":{"parent":"bia"},
         "bdp":{"parent":"bip"},
         "bod":{"parent":"boo"},
-        "bpd":{"parent":"bpa"},
         "bpo":{"parent":"bpa"},
+        "bpd":{"parent":"bpa"},
         "bkd":{"parent":"bka"},
         "bfd":{"parent":"bfa"},
         "emq":{"parent":"ema"},
@@ -491,7 +491,7 @@
                     {"label":"All Dates", "value":""},
                     {"label":"within 30 days", "value":"1"},
                     {"label":"beyond 30 days", "value":"2"}
-                ]},
+                    ]},
                 "minSqft": { "type":"numeric", "label": "Min", "placeholder":"Min", "prefix":"&minSqft="},
                 "maxSqft": { "type":"numeric", "label": "Max", "placeholder":"Max", "prefix":"&maxSqft="},
                 "dogsOk": { "type":"boolean", "label": "Dogs OK", "prefix":"&pets_dog=", "falseVal": ""},
@@ -529,7 +529,7 @@
         "reo":{"parent": "hhh"},
         "rew":{"parent": "hhh"},
         "rea":{"parent": "hhh"},
-        "hsw":{"parent": "hhh"},
+        "hsw":{"parent": "hhh"},            
         "roo":{"parent": "hhh"},
         "sha":{"parent": "hhh"},
         "sbw":{"parent": "hhh"},
@@ -563,7 +563,40 @@
                 ]
             }
         },
-        "ofc": {"parent":"jjj"}, "bus": {"parent":"jjj"}, "csr": {"parent":"jjj"}, "edu": {"parent":"jjj"}, "egr": {"parent":"jjj"}, "etc": {"parent":"jjj"}, "acc": {"parent":"jjj"}, "fbh": {"parent":"jjj"}, "lab": {"parent":"jjj"}, "gov": {"parent":"jjj"}, "hea": {"parent":"jjj"}, "hum": {"parent":"jjj"}, "lgl": {"parent":"jjj"}, "mnu": {"parent":"jjj"}, "mar": {"parent":"jjj"}, "med": {"parent":"jjj"}, "npo": {"parent":"jjj"}, "rej": {"parent":"jjj"}, "ret": {"parent":"jjj"}, "sls": {"parent":"jjj"}, "spa": {"parent":"jjj"}, "sci": {"parent":"jjj"}, "sec": {"parent":"jjj"}, "trd": {"parent":"jjj"}, "sof": {"parent":"jjj"}, "sad": {"parent":"jjj"}, "tch": {"parent":"jjj"}, "trp": {"parent":"jjj"}, "tfr": {"parent":"jjj"}, "web": {"parent":"jjj"}, "wri": {"parent":"jjj"},
+        "ofc": {"parent":"jjj"}, 
+        "bus": {"parent":"jjj"}, 
+        "csr": {"parent":"jjj"}, 
+        "edu": {"parent":"jjj"}, 
+        "egr": {"parent":"jjj"}, 
+        "etc": {"parent":"jjj"}, 
+        "acc": {"parent":"jjj"}, 
+        "fbh": {"parent":"jjj"}, 
+        "lab": {"parent":"jjj"}, 
+        "gov": {"parent":"jjj"}, 
+        "hea": {"parent":"jjj"}, 
+        "hum": {"parent":"jjj"}, 
+        "lgl": {"parent":"jjj"}, 
+        "mnu": {"parent":"jjj"}, 
+        "mar": {"parent":"jjj"}, 
+        "med": {"parent":"jjj"}, 
+        "npo": {"parent":"jjj"}, 
+        "rej": {"parent":"jjj"}, 
+        "ret": {"parent":"jjj"}, 
+        "sls": {"parent":"jjj"}, 
+        "spa": {"parent":"jjj"}, 
+        "sci": {"parent":"jjj"}, 
+        "sec": {"parent":"jjj"}, 
+        "trd": {"parent":"jjj"}, 
+        "sof": {"parent":"jjj"}, 
+        "sad": {"parent":"jjj"}, 
+        "tch": {"parent":"jjj"}, 
+        "trp": {"parent":"jjj"}, 
+        "tfr": {"parent":"jjj"}, 
+        "web": {"parent":"jjj"}, 
+        "wri": {"parent":"jjj"},
+        "eng": {"parent":"jjj"},
+        "rfh": {"parent":"jjj"},
+
         
         "ggg":{
             "groupTitle": "Gigs",
@@ -635,6 +668,7 @@
         "biz":{"parent":"bbb"},
         "trv":{"parent":"bbb"},
         "wet":{"parent":"bbb"},
+        "ths":{"parent":"bbb"},            
         
         "ccc":{
             "parent": "generic",
