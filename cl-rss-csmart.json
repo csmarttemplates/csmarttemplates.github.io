@@ -122,7 +122,15 @@
             "fields": {
                 "location": {"type":"text", "layoutOnChange":true, "selectTreeRef": "locations", "buttonStyle": "cancel", "title": "Location", "prefix": "🌎 ", "required":true, "autoSelect":"nearest"},
                 "category": {"type":"text", "layoutOnChange":true, "selectTreeRef": "categories", "buttonStyle": "cancel", "title": "Category", "required":true},
-                "keywords": {"type":"text", "placeholder": "keywords"},
+                "keywords": {"type":"text", "placeholder": "keywords", "keyboardAccessoryButtons":[
+                    {"caption":"(", "insert": "(", "width": 38},
+                    {"caption":")", "insert": ")", "width": 38},
+                    {"caption":"|", "insert": "|", "width": 38},
+                    {"caption":"*", "insert": "*", "width": 38},
+                    {"caption":"\"", "insert": "\"", "width": 38},
+                    {"caption":"HowTo", "openUrl":"https://www.craigslist.org/about/help/search#NarrowingSearch"},
+                    {"spacer": "flex"}
+                ]},
                 "titleOnly": { "type":"boolean", "label": "Title Only", "falseVal": "", "trueVal":"T", "prefix": "&srchType="},
                 "hasImages": { "type":"boolean", "trueVal":"1", "falseVal": "", "prefix": "&hasPic=", "label": "Has Image"},
                 "minPrice": { "type":"numeric", "prefix": "&min_price=", "placeholder" : "Min Price"},
@@ -133,8 +141,8 @@
                 "type":"grid",
                 "columns": 2,
                 "fields": [
-                    {"f": "location", "width": 2},
-                    {"f": "category", "width": 2},
+                    {"f": "location", "width": 2, "height":35},
+                    {"f": "category", "width": 2, "height":35},
                     {"f": "keywords", "width": 2},
                     {"f": "titleOnly", "width": 1}, {"f": "hasImages", "width": 1}
                 ]
