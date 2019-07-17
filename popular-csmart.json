@@ -6703,6 +6703,7 @@
             "modelKey": "page"
         },
         "fieldLayouts" : {
+            "splitRequests":[],
             "default" : {
                 "pattern" : "https:\/\/www.ebay.com\/sch\/i.html?${keywords}&_sacat=0${pageDisplay}&_rss=1",
                 "fieldsLayout" : {
