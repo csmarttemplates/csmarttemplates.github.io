@@ -68,7 +68,7 @@
             "pattern": "${searchNotify}${hasImages}${titleOnly}${auto_make_model}${dogsOk}${catsOk}${is_telecommuting}${partTime}${contract}${is_internship}${is_nonprofit}${paid}",
             "fields": {
                 "searchNotify": { "type":"boolean", "trueVal":"", "falseVal": "Notify Off"},
-                "auto_make_model": { "type":"numeric", "prefix": " • "},
+                "auto_make_model": { "type":"text", "prefix": " • "},
                 "titleOnly": { "type":"boolean", "trueVal": "Title Only", "falseVal": "", "prefix": " • "},
                 "hasImages": { "type":"boolean", "trueVal":"Has images", "falseVal": "", "prefix": " • "},
                 "dogsOk": { "type":"boolean", "trueVal": "Dogs OK", "falseVal": ""},
@@ -249,7 +249,7 @@
                     {"label":"van"},
                     {"label":"other"}
                 ]},
-                "auto_make_model": { "type":"numeric", "prefix":"&auto_make_model=", "placeholder": "Make / Model"},
+                "auto_make_model": { "type":"text", "prefix":"&auto_make_model=", "placeholder": "Make / Model"},
                 "minYear": { "type":"numeric", "prefix":"&min_auto_year=", "placeholder": "Min Year"},
                 "maxYear": { "type":"numeric", "prefix":"&max_auto_year=", "placeholder": "Max Year"},
                 "minOdo": { "type":"numeric", "prefix":"&min_auto_miles=", "placeholder": "Min"},
