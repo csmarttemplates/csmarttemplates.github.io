@@ -281,12 +281,12 @@
                 "pattern": "${locSearchPattern}/${category.value}?format=rss&${priceSearch}${minYear}${maxYear}${minOdo}${maxOdo}${minDisp}${maxDisp}",
                 "groupTitle": "Motocycles",
                 "fields": {
-                    "minYear": { "type":"numeric", "prefix":"&min_auto_year="},
-                    "maxYear": { "type":"numeric", "prefix":"&max_auto_year="},
-                    "minOdo": { "type":"numeric", "prefix":"&min_auto_miles="},
-                    "maxOdo": { "type":"numeric", "prefix":"&max_auto_miles="},
-                    "minDisp": { "type":"numeric", "prefix":"&min_engine_displacement_cc="},
-                    "maxDisp": { "type":"numeric", "prefix":"&max_engine_displacement_cc="}
+                    "minYear": { "type":"numeric", "prefix":"&min_auto_year=", "placeholder": "Min Year"},
+                    "maxYear": { "type":"numeric", "prefix":"&max_auto_year=", "placeholder": "Max Year"},
+                    "minOdo": { "type":"numeric", "prefix":"&min_auto_miles=", "placeholder": "Min"},
+                    "maxOdo": { "type":"numeric", "prefix":"&max_auto_miles=", "placeholder": "Max"},
+                    "minDisp": { "type":"numeric", "prefix":"&min_engine_displacement_cc=", "placeholder": "Min"},
+                    "maxDisp": { "type":"numeric", "prefix":"&max_engine_displacement_cc=", "placeholder": "Max"}
                 },
                 "fieldsLayout": {
                     "type":"grid",
