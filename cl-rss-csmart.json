@@ -543,6 +543,11 @@
         "sbw":{"parent": "hhh"},
         "sub":{"parent": "hhh"},
         "vac":{"parent": "hhh"},
+
+        "aap":{"parent": "hhh"},
+        "fee":{"parent": "hhh"},
+        "nfb":{"parent": "hhh"},
+        "abo":{"parent": "hhh"},
         
         "jjj":{
             "catName": "jobs",
