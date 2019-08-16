@@ -1396,13 +1396,13 @@
                         ]
                     },
                     {
-                        "value": "québec",
+                        "value": "quebec",
                         "key": "9001",
                         "name": "All of Québec",
                         "geoInfo": { "postal_code": "V9R 3A5", "lat": 52.9399, "lng": -73.5491 },
                         "children": [
                             {
-                                "value": "abitibi-témiscamingue",
+                                "value": "abitibi-temiscamingue",
                                 "key": "1700059",
                                 "name": "All of Abitibi-Témiscamingue",
                                 "geoInfo": { "postal_code": "V9R 3A5", "lat": 47.7344, "lng": -77.6728 },
@@ -1414,7 +1414,7 @@
                                         "geoInfo": { "postal_code": "V9R 3A5", "lat": 48.2342, "lng": -79.0188 }
                                     },
                                     {
-                                        "value": "val-d'or",
+                                        "value": "val-dor",
                                         "key": "1700061",
                                         "name": "Val D'Or",
                                         "geoInfo": { "postal_code": "V9R 3A5", "lat": 48.0987, "lng": -77.7968 }
@@ -1428,7 +1428,7 @@
                                 "geoInfo": { "postal_code": "V9R 3A5", "lat": 49.2213, "lng": -68.1504 }
                             },
                             {
-                                "value": "centre-du-québec",
+                                "value": "centre-du-quebec",
                                 "key": "1700121",
                                 "name": "All of Centre-du-Québec",
                                 "geoInfo": { "postal_code": "V9R 3A5", "lat": 52.9399, "lng": -73.5491 },
@@ -1448,13 +1448,13 @@
                                 ]
                             },
                             {
-                                "value": "chaudière-appalaches",
+                                "value": "chaudiere-appalaches",
                                 "key": "1700062",
                                 "name": "All of Chaudière-Appalaches",
                                 "geoInfo": { "postal_code": "V9R 3A5", "lat": 46.4065, "lng": -71.0604 },
                                 "children": [
                                     {
-                                        "value": "lévis",
+                                        "value": "levis",
                                         "key": "1700063",
                                         "name": "Lévis",
                                         "geoInfo": { "postal_code": "V9R 3A5", "lat": 46.7382, "lng": -71.2465 }
@@ -1474,13 +1474,13 @@
                                 ]
                             },
                             {
-                                "value": "chibougamau-northern-québec",
+                                "value": "chibougamau-northern-quebec",
                                 "key": "1700284",
                                 "name": "Chibougamau / Northern Québec",
                                 "geoInfo": { "postal_code": "V9R 3A5", "lat": 49.9132, "lng": -74.3692 }
                             },
                             {
-                                "value": "gaspé",
+                                "value": "gaspe",
                                 "key": "1700066",
                                 "name": "Gaspé",
                                 "geoInfo": { "postal_code": "V9R 3A5", "lat": 48.8316, "lng": -64.4869 }
@@ -1492,13 +1492,13 @@
                                 "geoInfo": { "postal_code": "V9R 3A5", "lat": 45.4032, "lng": -72.7341 }
                             },
                             {
-                                "value": "greater-montréal",
+                                "value": "greater-montreal",
                                 "key": "80002",
                                 "name": "All of Greater Montréal",
                                 "geoInfo": { "postal_code": "V9R 3A5", "lat": 45.5552, "lng": -73.5748 },
                                 "children": [
                                     {
-                                        "value": "city-of-montréal",
+                                        "value": "city-of-montreal",
                                         "key": "1700281",
                                         "name": "City of Montréal",
                                         "geoInfo": { "postal_code": "V9R 3A5", "lat": 45.5017, "lng": -73.5673 }
@@ -1524,7 +1524,7 @@
                                 ]
                             },
                             {
-                                "value": "lanaudière",
+                                "value": "lanaudiere",
                                 "key": "1700283",
                                 "name": "Lanaudière",
                                 "geoInfo": { "postal_code": "V9R 3A5", "lat": 46.1256, "lng": -73.7042 }
@@ -1548,7 +1548,7 @@
                                         "geoInfo": { "postal_code": "V9R 3A5", "lat": 46.5619, "lng": -72.7435 }
                                     },
                                     {
-                                        "value": "trois-rivières",
+                                        "value": "trois-rivieres",
                                         "key": "1700150",
                                         "name": "Trois-Rivières",
                                         "geoInfo": { "postal_code": "V9R 3A5", "lat": 46.3430, "lng": -72.5421 }
@@ -1556,7 +1556,7 @@
                                 ]
                             },
                             {
-                                "value": "québec-city",
+                                "value": "quebec-city",
                                 "key": "1700124",
                                 "name": "Québec City",
                                 "geoInfo": { "postal_code": "V9R 3A5", "lat": 46.8139, "lng": -71.2080 }
@@ -1600,7 +1600,7 @@
                                 "geoInfo": { "postal_code": "V9R 3A5", "lat": 45.3058, "lng": -73.2545 }
                             },
                             {
-                                "value": "sept-îles",
+                                "value": "sept-iles",
                                 "key": "1700071",
                                 "name": "Sept-Îles",
                                 "geoInfo": { "postal_code": "V9R 3A5", "lat": 50.2133, "lng": -66.3758 }
