@@ -129,6 +129,7 @@
                         {"caption":"|", "insert": "|", "width": 38},
                         {"caption":"*", "insert": "*", "width": 38},
                         {"caption":"\"", "insert": "\"", "width": 38},
+                        {"caption":"-", "insert": "-", "width": 38},
                         {"caption":"HowTo", "openUrl":"https://www.craigslist.org/about/help/search#NarrowingSearch"},
                         {"spacer": "flex"}
                     ]},
