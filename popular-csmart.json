@@ -338,7 +338,96 @@
             "mpa":{"parent":"sss"},
             "msa":{"parent":"sss"},
             "pha":{"parent":"sss"},
-            "rva":{"parent":"sss"},
+            "rva":{            
+                "catName": "RVs",
+                "parent": "priceSearch",
+                "pattern": "${locSearchPattern}/${category.value}?${priceSearch}${auto_make_model}${minYear}${maxYear}${minOdo}${maxOdo}${auto_cylinders}${auto_drivetrain}${auto_fuel_type}${auto_paint}${auto_title_status}${auto_transmission}${rv_type}",
+                "groupTitle": "RVs",
+                "fields": {
+                    "auto_cylinders": { "type":"numeric", "prefix":"&auto_cylinders=", "listSep":"&auto_cylinders=", "placeholder":"Cylinders", "selections":[
+                        {"label":"3 cylinders"},
+                        {"label":"4 cylinders"},
+                        {"label":"5 cylinders"},
+                        {"label":"6 cylinders"},
+                        {"label":"8 cylinders"},
+                        {"label":"10 cylinders"},
+                        {"label":"12 cylinders"},
+                        {"label":"other"}
+                    ]},
+                    "auto_drivetrain": { "type":"numeric", "prefix":"&auto_drivetrain=", "listSep":"&auto_drivetrain=", "placeholder":"Drive", "selections":[
+                        {"label":"fwd"},
+                        {"label":"rwd"},
+                        {"label":"4wd"}
+                    ]},
+                    "auto_fuel_type": { "type":"numeric", "prefix":"&auto_fuel_type=", "listSep":"&auto_fuel_type=", "placeholder":"Fuel", "selections":[
+                        {"label":"gas"},
+                        {"label":"diesel"},
+                        {"label":"hybrid"},
+                        {"label":"electric"},
+                        {"label":"other", "value":"6"}
+                    ]},
+                    "auto_paint": { "type":"numeric", "prefix":"&auto_paint=", "listSep":"&auto_paint=", "placeholder":"Color", "selections":[
+                        {"label":"black", "value":"1"},
+                        {"label":"blue", "value":"2"},
+                        {"label":"brown", "value":"20"},
+                        {"label":"green", "value":"3"},
+                        {"label":"grey", "value":"4"},
+                        {"label":"orange", "value":"5"},
+                        {"label":"purple", "value":"6"},
+                        {"label":"red", "value":"7"},
+                        {"label":"silver", "value":"8"},
+                        {"label":"white", "value":"9"},
+                        {"label":"yellow", "value":"10"},
+                        {"label":"custom", "value":"11"}
+                    ]},
+                    "rv_type": { "type":"numeric", "prefix":"&rv_type=", "listSep":"&rv_type=", "placeholder":"RV Type", "selections":[
+                        {"label":"class A", "value":"1"},
+                        {"label":"class B", "value":"2"},
+                        {"label":"class C", "value":"3"},
+                        {"label":"fifth wheel trailer", "value":"4"},
+                        {"label":"travel trailer", "value":"5"},
+                        {"label":"hybrid trailer", "value":"6"},
+                        {"label":"folding/popup trailer", "value":"7"},
+                        {"label":"teardrop/compact trailer", "value":"8"},
+                        {"label":"toy hauler", "value":"9"},
+                        {"label":"truck camper", "value":"10"},
+                        {"label":"other", "value":"11"}
+                    ]},
+                    "auto_title_status": { "type":"numeric", "prefix":"&auto_title_status=", "listSep":"&auto_title_status=", "placeholder":"Title", "selections":[
+                        {"label":"clean"},
+                        {"label":"salvage"},
+                        {"label":"rebuilt"},
+                        {"label":"parts only"},
+                        {"label":"lien"},
+                        {"label":"missing"}
+                    ]},
+                    "auto_transmission": { "type":"numeric", "prefix":"&auto_transmission=", "listSep":"&auto_transmission=", "placeholder":"Trans", "selections":[
+                        {"label":"manual"},
+                        {"label":"automatic"},
+                        {"label":"other"}
+                    ]},
+                    "auto_make_model": { "type":"text", "prefix":"&auto_make_model=", "placeholder": "Make / Model"},
+                    "minYear": { "type":"numeric", "prefix":"&min_auto_year=", "placeholder": "Min Year"},
+                    "maxYear": { "type":"numeric", "prefix":"&max_auto_year=", "placeholder": "Max Year"},
+                    "minOdo": { "type":"numeric", "prefix":"&min_auto_miles=", "placeholder": "Min"},
+                    "maxOdo": { "type":"numeric", "prefix":"&max_auto_miles=", "placeholder": "Max"}
+                },
+                "groupCaption": "RVs",
+                "fieldsLayout": {
+                    "type":"grid",
+                    "columns": 2,
+                    "fields": [
+                        {"f": "auto_make_model", "width": 2},
+                        {"f": "minYear", "width": 1}, {"f": "maxYear", "width": 1},
+                        {"label":"ODOMETER", "width": 2},
+                        {"f": "minOdo", "width": 1}, {"f": "maxOdo", "width": 1},
+                        {"f": "auto_cylinders", "width": 1}, {"f": "auto_drivetrain", "width": 1},
+                        {"f": "auto_fuel_type", "width": 1}, {"f": "auto_paint", "width": 1},
+                        {"f": "auto_transmission", "width": 1},{"f": "rv_type", "width": 1}
+                    ]
+                }            
+            
+            },
             "sga":{"parent":"sss"},
             "tia":{"parent":"sss"},
             "tla":{"parent":"sss"},
