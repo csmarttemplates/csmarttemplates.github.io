@@ -4463,43 +4463,43 @@
                                             "postUrl": "https://post.craigslist.org/c/clg?lang=en", "geoInfo": {"postal_code": "T2G 5E6", "lat": 51.0453246, "lng": -114.0581012 },
                                             "key": "calgary.craigslist.ca",
                                             "name": "calgary",
-                                            "url": "https://calgary.craigslist.ca"
+                                            "url": "https://calgary.craigslist.org"
                                         },
                                         {
                                             "postUrl": "https://post.craigslist.org/c/edm?lang=en", "geoInfo": {"postal_code": "T5J 0Y2", "lat": 53.544389, "lng": -113.4909267 },
                                             "key": "edmonton.craigslist.ca",
                                             "name": "edmonton",
-                                            "url": "https://edmonton.craigslist.ca"
+                                            "url": "https://edmonton.craigslist.org"
                                         },
                                         {
                                             "postUrl": "https://post.craigslist.org/c/fmc?lang=en", "geoInfo": {"postal_code": "T9H 5C7", "lat": 56.72637959999999, "lng": -111.3803407 },
                                             "key": "ftmcmurray.craigslist.ca",
                                             "name": "ft mcmurray",
-                                            "url": "https://ftmcmurray.craigslist.ca"
+                                            "url": "https://ftmcmurray.craigslist.org"
                                         },
                                         {
                                             "postUrl": "https://post.craigslist.org/c/lth?lang=en", "geoInfo": {"postal_code": "T1J 4C9", "lat": 49.69349, "lng": -112.84184 },
                                             "key": "lethbridge.craigslist.ca",
                                             "name": "lethbridge",
-                                            "url": "https://lethbridge.craigslist.ca"
+                                            "url": "https://lethbridge.craigslist.org"
                                         },
                                         {
                                             "postUrl": "https://post.craigslist.org/c/hat?lang=en", "geoInfo": {"postal_code": "T1A 0C5", "lat": 50.0405486, "lng": -110.6764258 },
                                             "key": "hat.craigslist.ca",
                                             "name": "medicine hat",
-                                            "url": "https://hat.craigslist.ca"
+                                            "url": "https://hat.craigslist.org"
                                         },
                                         {
                                             "postUrl": "https://post.craigslist.org/c/pax?lang=en", "geoInfo": {"postal_code": "T0E", "lat": 53.9332706, "lng": -116.5765035 },
                                             "key": "peace.craigslist.ca",
                                             "name": "peace river country",
-                                            "url": "https://peace.craigslist.ca"
+                                            "url": "https://peace.craigslist.org"
                                         },
                                         {
                                             "postUrl": "https://post.craigslist.org/c/red?lang=en", "geoInfo": {"postal_code": "T4N 3T3", "lat": 52.2681118, "lng": -113.8112386 },
                                             "key": "reddeer.craigslist.ca",
                                             "name": "red deer",
-                                            "url": "https://reddeer.craigslist.ca"
+                                            "url": "https://reddeer.craigslist.org"
                                         }
                                     ],
                                     "name": "Alberta"
@@ -4510,61 +4510,61 @@
                                             "postUrl": "https://post.craigslist.org/c/cbo?lang=en", "geoInfo": {"postal_code": "V0L", "lat": 52.4031805, "lng": -123.4553619 },
                                             "key": "cariboo.craigslist.ca",
                                             "name": "cariboo",
-                                            "url": "https://cariboo.craigslist.ca"
+                                            "url": "https://cariboo.craigslist.org"
                                         },
                                         {
                                             "postUrl": "https://post.craigslist.org/c/cmx?lang=en", "geoInfo": {"postal_code": "V9J 1P3", "lat": 49.70641879999997, "lng": -125.021945 },
                                             "key": "comoxvalley.craigslist.ca",
                                             "name": "comox valley",
-                                            "url": "https://comoxvalley.craigslist.ca"
+                                            "url": "https://comoxvalley.craigslist.org"
                                         },
                                         {
                                             "postUrl": "https://post.craigslist.org/c/abb?lang=en", "geoInfo": {"postal_code": "V0M 1A1", "lat": 49.054633, "lng": -122.327627 },
                                             "key": "abbotsford.craigslist.ca",
                                             "name": "fraser valley",
-                                            "url": "https://abbotsford.craigslist.ca"
+                                            "url": "https://abbotsford.craigslist.org"
                                         },
                                         {
                                             "postUrl": "https://post.craigslist.org/c/kml?lang=en", "geoInfo": {"postal_code": "V2C 3R4", "lat": 50.67452200000001, "lng": -120.3272674 },
                                             "key": "kamloops.craigslist.ca",
                                             "name": "kamloops",
-                                            "url": "https://kamloops.craigslist.ca"
+                                            "url": "https://kamloops.craigslist.org"
                                         },
                                         {
                                             "postUrl": "https://post.craigslist.org/c/kel?lang=en", "geoInfo": {"postal_code": "V1W 1Y3", "lat": 49.83385, "lng": -119.5236098 },
                                             "key": "kelowna.craigslist.ca",
                                             "name": "kelowna / okanagan",
-                                            "url": "https://kelowna.craigslist.ca"
+                                            "url": "https://kelowna.craigslist.org"
                                         },
                                         {
                                             "postUrl": "https://post.craigslist.org/c/koo?lang=en", "geoInfo": {"postal_code": "V0B", "lat": 50.12841050000001, "lng": -115.7568033 },
                                             "key": "cranbrook.craigslist.ca",
                                             "name": "kootenays",
-                                            "url": "https://cranbrook.craigslist.ca"
+                                            "url": "https://cranbrook.craigslist.org"
                                         },
                                         {
                                             "postUrl": "https://post.craigslist.org/c/nmo?lang=en", "geoInfo": {"postal_code": "V9R 3A5", "lat": 49.16588359999999, "lng": -123.9400647 },
                                             "key": "nanaimo.craigslist.ca",
                                             "name": "nanaimo",
-                                            "url": "https://nanaimo.craigslist.ca"
+                                            "url": "https://nanaimo.craigslist.org"
                                         },
                                         {
                                             "postUrl": "https://post.craigslist.org/c/yxs?lang=en", "geoInfo": {"postal_code": "V2L 3K2", "lat": 53.9170641, "lng": -122.7496693 },
                                             "key": "princegeorge.craigslist.ca",
                                             "name": "prince george",
-                                            "url": "https://princegeorge.craigslist.ca"
+                                            "url": "https://princegeorge.craigslist.org"
                                         },
                                         {
                                             "postUrl": "https://post.craigslist.org/c/ske?lang=en", "geoInfo": {"postal_code": "V0J 2N0", "lat": 54.7882676, "lng": -127.164868 },
                                             "key": "skeena.craigslist.ca",
                                             "name": "skeena-bulkley",
-                                            "url": "https://skeena.craigslist.ca"
+                                            "url": "https://skeena.craigslist.org"
                                         },
                                         {
                                             "postUrl": "https://post.craigslist.org/c/sun?lang=en", "geoInfo": {"postal_code": "V0N 3A5", "lat": 49.7604377, "lng": -123.7643986 },
                                             "key": "sunshine.craigslist.ca",
                                             "name": "sunshine coast",
-                                            "url": "https://sunshine.craigslist.ca"
+                                            "url": "https://sunshine.craigslist.org"
                                         },
                                         {
                                             "children": [
@@ -4573,60 +4573,60 @@
                                                     "postUrl": "https://post.craigslist.org/c/van?lang=en", "geoInfo": {"postal_code": "V5Y", "lat": 49.261226, "lng": -123.1139268 },
                                                     "key": "vancouver.craigslist.ca.van",
                                                     "name": "vancouver",
-                                                    "url": "https://vancouver.craigslist.ca"
+                                                    "url": "https://vancouver.craigslist.org"
                                                 },
                                                 {
                                                     "subcode": "nvn",
                                                     "postUrl": "https://post.craigslist.org/c/van?lang=en", "geoInfo": {"postal_code": "V5Y", "lat": 49.337204, "lng": -123.113533 },
                                                     "key": "vancouver.craigslist.ca.nvn",
                                                     "name": "north shore",
-                                                    "url": "https://vancouver.craigslist.ca"
+                                                    "url": "https://vancouver.craigslist.org"
                                                 },
                                                 {
                                                     "subcode": "bnc",
                                                     "postUrl": "https://post.craigslist.org/c/van?lang=en", "geoInfo": {"postal_code": "V5Y", "lat": 49.237103, "lng": -122.977577 },
                                                     "key": "vancouver.craigslist.ca.bnc",
                                                     "name": "burnaby/newwest",
-                                                    "url": "https://vancouver.craigslist.ca"
+                                                    "url": "https://vancouver.craigslist.org"
                                                 },
                                                 {
                                                     "subcode": "rds",
                                                     "postUrl": "https://post.craigslist.org/c/van?lang=en", "geoInfo": {"postal_code": "V5Y", "lat": 49.13050999999999, "lng": -122.758698 },
                                                     "key": "vancouver.craigslist.ca.rds",
                                                     "name": "delta/surrey/langley",
-                                                    "url": "https://vancouver.craigslist.ca"
+                                                    "url": "https://vancouver.craigslist.org"
                                                 },
                                                 {
                                                     "subcode": "pml",
                                                     "postUrl": "https://post.craigslist.org/c/van?lang=en", "geoInfo": {"postal_code": "V5Y", "lat": 49.251224, "lng": -122.719452 },
                                                     "key": "vancouver.craigslist.ca.pml",
                                                     "name": "tricities/pitt/maple",
-                                                    "url": "https://vancouver.craigslist.ca"
+                                                    "url": "https://vancouver.craigslist.org"
                                                 },
                                                 {
                                                     "subcode": "rch",
                                                     "postUrl": "https://post.craigslist.org/c/van?lang=en", "geoInfo": {"postal_code": "V5Y", "lat": 49.159257, "lng": -123.132126 },
                                                     "key": "vancouver.craigslist.ca.rch",
                                                     "name": "richmond",
-                                                    "url": "https://vancouver.craigslist.ca"
+                                                    "url": "https://vancouver.craigslist.org"
                                                 }
                                             ],
                                             "postUrl": "https://post.craigslist.org/c/van?lang=en", "geoInfo": {"postal_code": "V5Y", "lat": 49.261226, "lng": -123.1139268 },
                                             "key": "vancouver.craigslist.ca",
                                             "name": "vancouver ",
-                                            "url": "https://vancouver.craigslist.ca"
+                                            "url": "https://vancouver.craigslist.org"
                                         },
                                         {
                                             "postUrl": "https://post.craigslist.org/c/vic?lang=en", "geoInfo": {"postal_code": "V8W 1P6", "lat": 48.4284207, "lng": -123.3656444 },
                                             "key": "victoria.craigslist.ca",
                                             "name": "victoria",
-                                            "url": "https://victoria.craigslist.ca"
+                                            "url": "https://victoria.craigslist.org"
                                         },
                                         {
                                             "postUrl": "https://post.craigslist.org/c/whi?lang=en", "geoInfo": {"postal_code": "V0N", "lat": 50.11631960000001, "lng": -122.9573563 },
                                             "key": "whistler.craigslist.ca",
                                             "name": "whistler",
-                                            "url": "https://whistler.craigslist.ca"
+                                            "url": "https://whistler.craigslist.org"
                                         }
                                     ],
                                     "name": "British Columbia"
@@ -4637,7 +4637,7 @@
                                             "postUrl": "https://post.craigslist.org/c/win?lang=en", "geoInfo": {"postal_code": "R3B", "lat": 49.89975410000001, "lng": -97.13749370000002 },
                                             "key": "winnipeg.craigslist.ca",
                                             "name": "winnipeg",
-                                            "url": "https://winnipeg.craigslist.ca"
+                                            "url": "https://winnipeg.craigslist.org"
                                         }
                                     ],
                                     "name": "Manitoba"
@@ -4648,7 +4648,7 @@
                                             "postUrl": "https://post.craigslist.org/c/nbw?lang=en", "geoInfo": {"postal_code": "E6A 1Y5", "lat": 46.56531629999999, "lng": -66.46191639999998 },
                                             "key": "newbrunswick.craigslist.ca",
                                             "name": "new brunswick",
-                                            "url": "https://newbrunswick.craigslist.ca"
+                                            "url": "https://newbrunswick.craigslist.org"
                                         }
                                     ],
                                     "name": "New Brunswick"
@@ -4659,7 +4659,7 @@
                                             "postUrl": "https://post.craigslist.org/c/nfl?lang=en", "geoInfo": {"postal_code": "A1C 1J5", "lat": 47.5605413, "lng": -52.71283150000001 },
                                             "key": "newfoundland.craigslist.ca",
                                             "name": "st john's",
-                                            "url": "https://newfoundland.craigslist.ca"
+                                            "url": "https://newfoundland.craigslist.org"
                                         }
                                     ],
                                     "name": "Newfoundland and Labrador"
@@ -4670,13 +4670,13 @@
                                             "postUrl": "https://post.craigslist.org/c/toc?lang=en", "geoInfo": {"postal_code": "X0E", "lat": 64.8255441, "lng": -124.8457334 },
                                             "key": "territories.craigslist.ca",
                                             "name": "territories",
-                                            "url": "https://territories.craigslist.ca"
+                                            "url": "https://territories.craigslist.org"
                                         },
                                         {
                                             "postUrl": "https://post.craigslist.org/c/ykf?lang=en", "geoInfo": {"postal_code": "X0E", "lat": 62.45397169999999, "lng": -114.3717886 },
                                             "key": "yellowknife.craigslist.ca",
                                             "name": "yellowknife",
-                                            "url": "https://yellowknife.craigslist.ca"
+                                            "url": "https://yellowknife.craigslist.org"
                                         }
                                     ],
                                     "name": "Northwest Territories"
@@ -4687,7 +4687,7 @@
                                             "postUrl": "https://post.craigslist.org/c/hfx?lang=en", "geoInfo": {"postal_code": "B3J 3N8", "lat": 44.64886250000001, "lng": -63.5753196 },
                                             "key": "halifax.craigslist.ca",
                                             "name": "halifax",
-                                            "url": "https://halifax.craigslist.ca"
+                                            "url": "https://halifax.craigslist.org"
                                         }
                                     ],
                                     "name": "Nova Scotia"
@@ -4698,109 +4698,109 @@
                                             "postUrl": "https://post.craigslist.org/c/brr?lang=en", "geoInfo": {"postal_code": "L4N 2K8", "lat": 44.37809020000001, "lng": -79.70161590000001 },
                                             "key": "barrie.craigslist.ca",
                                             "name": "barrie",
-                                            "url": "https://barrie.craigslist.ca"
+                                            "url": "https://barrie.craigslist.org"
                                         },
                                         {
                                             "postUrl": "https://post.craigslist.org/c/bel?lang=en", "geoInfo": {"postal_code": "K8N 2Y7", "lat": 44.1627589, "lng": -77.38323150000001 },
                                             "key": "belleville.craigslist.ca",
                                             "name": "belleville",
-                                            "url": "https://belleville.craigslist.ca"
+                                            "url": "https://belleville.craigslist.org"
                                         },
                                         {
                                             "postUrl": "https://post.craigslist.org/c/bfd?lang=en", "geoInfo": {"postal_code": "N4S 6Y9", "lat": 43.13149660000001, "lng": -80.74716509999999 },
                                             "key": "brantford.craigslist.ca",
                                             "name": "brantford-woodstock",
-                                            "url": "https://brantford.craigslist.ca"
+                                            "url": "https://brantford.craigslist.org"
                                         },
                                         {
                                             "postUrl": "https://post.craigslist.org/c/chk?lang=en", "geoInfo": {"postal_code": "N7M 1E9", "lat": 42.40480279999998, "lng": -82.19103779999998 },
                                             "key": "chatham.craigslist.ca",
                                             "name": "chatham-kent",
-                                            "url": "https://chatham.craigslist.ca"
+                                            "url": "https://chatham.craigslist.org"
                                         },
                                         {
                                             "postUrl": "https://post.craigslist.org/c/ycc?lang=en", "geoInfo": {"postal_code": "K6J 3P9", "lat": 45.0212762, "lng": -74.730345 },
                                             "key": "cornwall.craigslist.ca",
                                             "name": "cornwall",
-                                            "url": "https://cornwall.craigslist.ca"
+                                            "url": "https://cornwall.craigslist.org"
                                         },
                                         {
                                             "postUrl": "https://post.craigslist.org/c/gph?lang=en", "geoInfo": {"postal_code": "N1H 4E5", "lat": 43.5448048, "lng": -80.24816659999999 },
                                             "key": "guelph.craigslist.ca",
                                             "name": "guelph",
-                                            "url": "https://guelph.craigslist.ca"
+                                            "url": "https://guelph.craigslist.org"
                                         },
                                         {
                                             "postUrl": "https://post.craigslist.org/c/hml?lang=en", "geoInfo": {"postal_code": "L7S 1G6", "lat": 43.32551959999999, "lng": -79.7990319 },
                                             "key": "hamilton.craigslist.ca",
                                             "name": "hamilton-burlington",
-                                            "url": "https://hamilton.craigslist.ca"
+                                            "url": "https://hamilton.craigslist.org"
                                         },
                                         {
                                             "postUrl": "https://post.craigslist.org/c/kng?lang=en", "geoInfo": {"postal_code": "K7L 1S4", "lat": 44.23117169999999, "lng": -76.4859544 },
                                             "key": "kingston.craigslist.ca",
                                             "name": "kingston",
-                                            "url": "https://kingston.craigslist.ca"
+                                            "url": "https://kingston.craigslist.org"
                                         },
                                         {
                                             "postUrl": "https://post.craigslist.org/c/kch?lang=en", "geoInfo": {"postal_code": "N2P", "lat": 43.40524060000001, "lng": -80.38888220000001 },
                                             "key": "kitchener.craigslist.ca",
                                             "name": "kitchener-waterloo-cambridge",
-                                            "url": "https://kitchener.craigslist.ca"
+                                            "url": "https://kitchener.craigslist.org"
                                         },
                                         {
                                             "postUrl": "https://post.craigslist.org/c/lon?lang=en", "geoInfo": {"postal_code": "N6B 1X2", "lat": 42.98695020000001, "lng": -81.24317699999999 },
                                             "key": "londonon.craigslist.ca",
                                             "name": "london ",
-                                            "url": "https://londonon.craigslist.ca"
+                                            "url": "https://londonon.craigslist.org"
                                         },
                                         {
                                             "postUrl": "https://post.craigslist.org/c/nsc?lang=en", "geoInfo": {"postal_code": "L0S 1E6", "lat": 43.0581645, "lng": -79.29021329999998 },
                                             "key": "niagara.craigslist.ca",
                                             "name": "niagara region",
-                                            "url": "https://niagara.craigslist.ca"
+                                            "url": "https://niagara.craigslist.org"
                                         },
                                         {
                                             "postUrl": "https://post.craigslist.org/c/ott?lang=en", "geoInfo": {"postal_code": "J8X", "lat": 45.42873099999998, "lng": -75.71336579999999 },
                                             "key": "ottawa.craigslist.ca",
                                             "name": "ottawa-hull-gatineau",
-                                            "url": "https://ottawa.craigslist.ca"
+                                            "url": "https://ottawa.craigslist.org"
                                         },
                                         {
                                             "postUrl": "https://post.craigslist.org/c/ows?lang=en", "geoInfo": {"postal_code": "N4K 5R1", "lat": 44.5690305, "lng": -80.94056020000001 },
                                             "key": "owensound.craigslist.ca",
                                             "name": "owen sound",
-                                            "url": "https://owensound.craigslist.ca"
+                                            "url": "https://owensound.craigslist.org"
                                         },
                                         {
                                             "postUrl": "https://post.craigslist.org/c/ypq?lang=en", "geoInfo": {"postal_code": "K9H 3R9", "lat": 44.30905799999999, "lng": -78.31974699999998 },
                                             "key": "peterborough.craigslist.ca",
                                             "name": "peterborough",
-                                            "url": "https://peterborough.craigslist.ca"
+                                            "url": "https://peterborough.craigslist.org"
                                         },
                                         {
                                             "postUrl": "https://post.craigslist.org/c/srn?lang=en", "geoInfo": {"postal_code": "N7T 5V2", "lat": 42.974536, "lng": -82.40659009999999 },
                                             "key": "sarnia.craigslist.ca",
                                             "name": "sarnia",
-                                            "url": "https://sarnia.craigslist.ca"
+                                            "url": "https://sarnia.craigslist.org"
                                         },
                                         {
                                             "postUrl": "https://post.craigslist.org/c/soo?lang=en", "geoInfo": {"postal_code": "P6A 1P7", "lat": 46.52185799999999, "lng": -84.3460896 },
                                             "key": "soo.craigslist.ca",
                                             "name": "sault ste marie",
-                                            "url": "https://soo.craigslist.ca"
+                                            "url": "https://soo.craigslist.org"
                                         },
                                         {
                                             "postUrl": "https://post.craigslist.org/c/sud?lang=en", "geoInfo": {"postal_code": "P3C 3X3", "lat": 46.48999999999998, "lng": -81.00999999999996 },
                                             "key": "sudbury.craigslist.ca",
                                             "name": "sudbury",
-                                            "url": "https://sudbury.craigslist.ca"
+                                            "url": "https://sudbury.craigslist.org"
                                         },
                                         {
                                             "postUrl": "https://post.craigslist.org/c/tby?lang=en", "geoInfo": {"postal_code": "P7E 1E3", "lat": 48.3808951, "lng": -89.24768230000002 },
                                             "key": "thunderbay.craigslist.ca",
                                             "name": "thunder bay",
-                                            "url": "https://thunderbay.craigslist.ca"
+                                            "url": "https://thunderbay.craigslist.org"
                                         },
                                         {
                                             "children": [
@@ -4809,54 +4809,54 @@
                                                     "postUrl": "https://post.craigslist.org/c/tor?lang=en", "geoInfo": {"postal_code": "M5H 2N1", "lat": 43.653226, "lng": -79.3831843 },
                                                     "key": "toronto.craigslist.ca.tor",
                                                     "name": "city of toronto",
-                                                    "url": "https://toronto.craigslist.ca"
+                                                    "url": "https://toronto.craigslist.org"
                                                 },
                                                 {
                                                     "subcode": "drh",
                                                     "postUrl": "https://post.craigslist.org/c/tor?lang=en", "geoInfo": {"postal_code": "M5H 2N1", "lat": 43.975028, "lng": -78.91522399999999 },
                                                     "key": "toronto.craigslist.ca.drh",
                                                     "name": "durham region",
-                                                    "url": "https://toronto.craigslist.ca"
+                                                    "url": "https://toronto.craigslist.org"
                                                 },
                                                 {
                                                     "subcode": "yrk",
                                                     "postUrl": "https://post.craigslist.org/c/tor?lang=en", "geoInfo": {"postal_code": "M5H 2N1", "lat": 44.024422, "lng": -79.47003400000001 },
                                                     "key": "toronto.craigslist.ca.yrk",
                                                     "name": "york region",
-                                                    "url": "https://toronto.craigslist.ca"
+                                                    "url": "https://toronto.craigslist.org"
                                                 },
                                                 {
                                                     "subcode": "bra",
                                                     "postUrl": "https://post.craigslist.org/c/tor?lang=en", "geoInfo": {"postal_code": "M5H 2N1", "lat": 43.704615, "lng": -79.760957 },
                                                     "key": "toronto.craigslist.ca.bra",
                                                     "name": "brampton",
-                                                    "url": "https://toronto.craigslist.ca"
+                                                    "url": "https://toronto.craigslist.org"
                                                 },
                                                 {
                                                     "subcode": "mss",
                                                     "postUrl": "https://post.craigslist.org/c/tor?lang=en", "geoInfo": {"postal_code": "M5H 2N1", "lat": 43.598792, "lng": -79.642746 },
                                                     "key": "toronto.craigslist.ca.mss",
                                                     "name": "mississauga",
-                                                    "url": "https://toronto.craigslist.ca"
+                                                    "url": "https://toronto.craigslist.org"
                                                 },
                                                 {
                                                     "subcode": "oak",
                                                     "postUrl": "https://post.craigslist.org/c/tor?lang=en", "geoInfo": {"postal_code": "M5H 2N1", "lat": 43.47684, "lng": -79.685318 },
                                                     "key": "toronto.craigslist.ca.oak",
                                                     "name": "oakville",
-                                                    "url": "https://toronto.craigslist.ca"
+                                                    "url": "https://toronto.craigslist.org"
                                                 }
                                             ],
                                             "postUrl": "https://post.craigslist.org/c/tor?lang=en", "geoInfo": {"postal_code": "M5H 2N1", "lat": 43.653226, "lng": -79.3831843 },
                                             "key": "toronto.craigslist.ca",
                                             "name": "toronto",
-                                            "url": "https://toronto.craigslist.ca"
+                                            "url": "https://toronto.craigslist.org"
                                         },
                                         {
                                             "postUrl": "https://post.craigslist.org/c/wsr?lang=en", "geoInfo": {"postal_code": "N8X 3Y4", "lat": 42.279609, "lng": -83.00853289999995 },
                                             "key": "windsor.craigslist.ca",
                                             "name": "windsor",
-                                            "url": "https://windsor.craigslist.ca"
+                                            "url": "https://windsor.craigslist.org"
                                         }
                                     ],
                                     "name": "Ontario"
@@ -4867,7 +4867,7 @@
                                             "postUrl": "https://post.craigslist.org/c/pei?lang=en", "geoInfo": {"postal_code": "C0A 1M0", "lat": 46.510712, "lng": -63.41681359999997 },
                                             "key": "pei.craigslist.ca",
                                             "name": "prince edward island",
-                                            "url": "https://pei.craigslist.ca"
+                                            "url": "https://pei.craigslist.org"
                                         }
                                     ],
                                     "name": "Prince Edward Island"
@@ -4878,31 +4878,31 @@
                                             "postUrl": "https://post.craigslist.org/c/mon?lang=en", "geoInfo": {"postal_code": "H2Y 1C6", "lat": 45.50866990000001, "lng": -73.55399249999996 },
                                             "key": "montreal.craigslist.ca",
                                             "name": "montreal",
-                                            "url": "https://montreal.craigslist.ca"
+                                            "url": "https://montreal.craigslist.org"
                                         },
                                         {
                                             "postUrl": "https://post.craigslist.org/c/qbc?lang=en", "geoInfo": {"postal_code": "G1N 3L6", "lat": 46.8032826, "lng": -71.242796 },
                                             "key": "quebec.craigslist.ca",
                                             "name": "quebec city",
-                                            "url": "https://quebec.craigslist.ca"
+                                            "url": "https://quebec.craigslist.org"
                                         },
                                         {
                                             "postUrl": "https://post.craigslist.org/c/sgy?lang=en", "geoInfo": {"postal_code": "G7J 1E2", "lat": 48.4280529, "lng": -71.0684923 },
                                             "key": "saguenay.craigslist.ca",
                                             "name": "saguenay",
-                                            "url": "https://saguenay.craigslist.ca"
+                                            "url": "https://saguenay.craigslist.org"
                                         },
                                         {
                                             "postUrl": "https://post.craigslist.org/c/shb?lang=en", "geoInfo": {"postal_code": "J1G 2H9", "lat": 45.4009928, "lng": -71.8824288 },
                                             "key": "sherbrooke.craigslist.ca",
                                             "name": "sherbrooke",
-                                            "url": "https://sherbrooke.craigslist.ca"
+                                            "url": "https://sherbrooke.craigslist.org"
                                         },
                                         {
                                             "postUrl": "https://post.craigslist.org/c/trs?lang=en", "geoInfo": {"postal_code": "G9A 4J4", "lat": 46.34323970000001, "lng": -72.54328339999999 },
                                             "key": "troisrivieres.craigslist.ca",
                                             "name": "trois-rivieres",
-                                            "url": "https://troisrivieres.craigslist.ca"
+                                            "url": "https://troisrivieres.craigslist.org"
                                         }
                                     ],
                                     "name": "Quebec"
@@ -4913,13 +4913,13 @@
                                             "postUrl": "https://post.craigslist.org/c/reg?lang=en", "geoInfo": {"postal_code": "S4R 8R2", "lat": 50.45472220000001, "lng": -104.6066667 },
                                             "key": "regina.craigslist.ca",
                                             "name": "regina",
-                                            "url": "https://regina.craigslist.ca"
+                                            "url": "https://regina.craigslist.org"
                                         },
                                         {
                                             "postUrl": "https://post.craigslist.org/c/skt?lang=en", "geoInfo": {"postal_code": "S7K 3H6", "lat": 52.1343699, "lng": -106.647656 },
                                             "key": "saskatoon.craigslist.ca",
                                             "name": "saskatoon",
-                                            "url": "https://saskatoon.craigslist.ca"
+                                            "url": "https://saskatoon.craigslist.org"
                                         }
                                     ],
                                     "name": "Saskatchewan"
@@ -4930,7 +4930,7 @@
                                             "postUrl": "https://post.craigslist.org/c/whh?lang=en", "geoInfo": {"postal_code": "Y1A 2H3", "lat": 60.72118710000001, "lng": -135.0568449 },
                                             "key": "whitehorse.craigslist.ca",
                                             "name": "whitehorse",
-                                            "url": "https://whitehorse.craigslist.ca"
+                                            "url": "https://whitehorse.craigslist.org"
                                         }
                                     ],
                                     "name": "Yukon Territory"
