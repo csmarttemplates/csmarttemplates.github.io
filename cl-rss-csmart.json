@@ -4946,7 +4946,7 @@
                                         "postUrl": "https://post.craigslist.org/c/vie?lang=de", "geoInfo": {"postal_code": "1010", "lat": 48.2081743, "lng": 16.3738189 },
                                         "key": "vienna.craigslist.at",
                                         "name": "vienna",
-                                        "url": "https://vienna.craigslist.at"
+                                        "url": "https://vienna.craigslist.org"
                                     }
                                 ],
                                 "name": "Austria"
@@ -4990,7 +4990,7 @@
                                         "postUrl": "https://post.craigslist.org/c/prg?lang=en", "geoInfo": {"postal_code": "120 00", "lat": 50.0755381, "lng": 14.4378005 },
                                         "key": "prague.craigslist.cz",
                                         "name": "prague",
-                                        "url": "https://prague.craigslist.cz"
+                                        "url": "https://prague.craigslist.org"
                                     }
                                 ],
                                 "name": "Czech Republic"
@@ -5012,7 +5012,7 @@
                                         "postUrl": "https://post.craigslist.org/c/hel?lang=fi", "geoInfo": {"postal_code": "41880", "lat": 61.92410999999998, "lng": 25.748151 },
                                         "key": "helsinki.craigslist.fi",
                                         "name": "finland",
-                                        "url": "https://helsinki.craigslist.fi"
+                                        "url": "https://helsinki.craigslist.org"
                                     }
                                 ],
                                 "name": "Finland"
@@ -5106,91 +5106,91 @@
                                         "postUrl": "https://post.craigslist.org/c/ber?lang=de", "geoInfo": {"postal_code": "10178", "lat": 52.51917099999999, "lng": 13.4060912 },
                                         "key": "berlin.craigslist.de",
                                         "name": "berlin",
-                                        "url": "https://berlin.craigslist.de"
+                                        "url": "https://berlin.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/brm?lang=de", "geoInfo": {"postal_code": "28195", "lat": 53.07929619999997, "lng": 8.8016937 },
                                         "key": "bremen.craigslist.de",
                                         "name": "bremen",
-                                        "url": "https://bremen.craigslist.de"
+                                        "url": "https://bremen.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/cgn?lang=de", "geoInfo": {"postal_code": "50667", "lat": 50.937531, "lng": 6.9602786 },
                                         "key": "cologne.craigslist.de",
                                         "name": "cologne",
-                                        "url": "https://cologne.craigslist.de"
+                                        "url": "https://cologne.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/drs?lang=de", "geoInfo": {"postal_code": "01067", "lat": 51.0504088, "lng": 13.7372621 },
                                         "key": "dresden.craigslist.de",
                                         "name": "dresden",
-                                        "url": "https://dresden.craigslist.de"
+                                        "url": "https://dresden.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/dus?lang=de", "geoInfo": {"postal_code": "40213", "lat": 51.2277411, "lng": 6.7734556 },
                                         "key": "dusseldorf.craigslist.de",
                                         "name": "dusseldorf",
-                                        "url": "https://dusseldorf.craigslist.de"
+                                        "url": "https://dusseldorf.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/ess?lang=de", "geoInfo": {"postal_code": "45127", "lat": 51.45564320000001, "lng": 7.011555200000001 },
                                         "key": "essen.craigslist.de",
                                         "name": "essen / ruhr",
-                                        "url": "https://essen.craigslist.de"
+                                        "url": "https://essen.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/fra?lang=de", "geoInfo": {"postal_code": "60311", "lat": 50.1109221, "lng": 8.6821267 },
                                         "key": "frankfurt.craigslist.de",
                                         "name": "frankfurt",
-                                        "url": "https://frankfurt.craigslist.de"
+                                        "url": "https://frankfurt.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/ham?lang=de", "geoInfo": {"postal_code": "20095", "lat": 53.5510846, "lng": 9.993681800000001 },
                                         "key": "hamburg.craigslist.de",
                                         "name": "hamburg",
-                                        "url": "https://hamburg.craigslist.de"
+                                        "url": "https://hamburg.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/haj?lang=de", "geoInfo": {"postal_code": "30159", "lat": 52.3758916, "lng": 9.732010400000004 },
                                         "key": "hannover.craigslist.de",
                                         "name": "hannover",
-                                        "url": "https://hannover.craigslist.de"
+                                        "url": "https://hannover.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/hdb?lang=de", "geoInfo": {"postal_code": "69115", "lat": 49.3987524, "lng": 8.6724335 },
                                         "key": "heidelberg.craigslist.de",
                                         "name": "heidelberg",
-                                        "url": "https://heidelberg.craigslist.de"
+                                        "url": "https://heidelberg.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/klt?lang=de", "geoInfo": {"postal_code": "67659", "lat": 49.4400657, "lng": 7.7491265 },
                                         "key": "kaiserslautern.craigslist.de",
                                         "name": "kaiserslautern",
-                                        "url": "https://kaiserslautern.craigslist.de"
+                                        "url": "https://kaiserslautern.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/lej?lang=de", "geoInfo": {"postal_code": "04109", "lat": 51.33969549999999, "lng": 12.3730747 },
                                         "key": "leipzig.craigslist.de",
                                         "name": "leipzig",
-                                        "url": "https://leipzig.craigslist.de"
+                                        "url": "https://leipzig.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/muc?lang=de", "geoInfo": {"postal_code": "80331", "lat": 48.13672029999999, "lng": 11.576754 },
                                         "key": "munich.craigslist.de",
                                         "name": "munich",
-                                        "url": "https://munich.craigslist.de"
+                                        "url": "https://munich.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/nue?lang=de", "geoInfo": {"postal_code": "90403", "lat": 49.45202999999999, "lng": 11.07675 },
                                         "key": "nuremberg.craigslist.de",
                                         "name": "nuremberg",
-                                        "url": "https://nuremberg.craigslist.de"
+                                        "url": "https://nuremberg.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/str?lang=de", "geoInfo": {"postal_code": "70173", "lat": 48.77541810000001, "lng": 9.181758800000001 },
                                         "key": "stuttgart.craigslist.de",
                                         "name": "stuttgart",
-                                        "url": "https://stuttgart.craigslist.de"
+                                        "url": "https://stuttgart.craigslist.org"
                                     }
                                 ],
                                 "name": "Germany"
@@ -5201,7 +5201,7 @@
                                         "postUrl": "https://post.craigslist.org/c/ath?lang=en", "geoInfo": {"postal_code": "360 80", "lat": 39.074208, "lng": 21.824312 },
                                         "key": "athens.craigslist.gr",
                                         "name": "greece",
-                                        "url": "https://athens.craigslist.gr"
+                                        "url": "https://athens.craigslist.org"
                                     }
                                 ],
                                 "name": "Greece"
@@ -5245,67 +5245,67 @@
                                         "postUrl": "https://post.craigslist.org/c/blq?lang=it", "geoInfo": {"postal_code": "40125", "lat": 44.494887, "lng": 11.3426163 },
                                         "key": "bologna.craigslist.it",
                                         "name": "bologna",
-                                        "url": "https://bologna.craigslist.it"
+                                        "url": "https://bologna.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/flr?lang=it", "geoInfo": {"postal_code": "50123", "lat": 43.7710332, "lng": 11.2480006 },
                                         "key": "florence.craigslist.it",
                                         "name": "florence / tuscany",
-                                        "url": "https://florence.craigslist.it"
+                                        "url": "https://florence.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/gen?lang=it", "geoInfo": {"postal_code": "16121", "lat": 44.40564990000001, "lng": 8.946256 },
                                         "key": "genoa.craigslist.it",
                                         "name": "genoa",
-                                        "url": "https://genoa.craigslist.it"
+                                        "url": "https://genoa.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/mxp?lang=it", "geoInfo": {"postal_code": "", "lat": 45.4654542, "lng": 9.186515999999999 },
                                         "key": "milan.craigslist.it",
                                         "name": "milan",
-                                        "url": "https://milan.craigslist.it"
+                                        "url": "https://milan.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/nap?lang=it", "geoInfo": {"postal_code": "80142", "lat": 40.8517746, "lng": 14.2681244 },
                                         "key": "naples.craigslist.it",
                                         "name": "napoli / campania",
-                                        "url": "https://naples.craigslist.it"
+                                        "url": "https://naples.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/peg?lang=it", "geoInfo": {"postal_code": "06121", "lat": 43.11071679999999, "lng": 12.3908279 },
                                         "key": "perugia.craigslist.it",
                                         "name": "perugia",
-                                        "url": "https://perugia.craigslist.it"
+                                        "url": "https://perugia.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/rom?lang=it", "geoInfo": {"postal_code": "00186", "lat": 41.8929163, "lng": 12.4825199 },
                                         "key": "rome.craigslist.it",
                                         "name": "rome",
-                                        "url": "https://rome.craigslist.it"
+                                        "url": "https://rome.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/srd?lang=it", "geoInfo": {"postal_code": "08030", "lat": 40.1208752, "lng": 9.012892600000001 },
                                         "key": "sardinia.craigslist.it",
                                         "name": "sardinia",
-                                        "url": "https://sardinia.craigslist.it"
+                                        "url": "https://sardinia.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/sic?lang=it", "geoInfo": {"postal_code": "90027", "lat": 37.5999938, "lng": 14.0153557 },
                                         "key": "sicily.craigslist.it",
                                         "name": "sicilia",
-                                        "url": "https://sicily.craigslist.it"
+                                        "url": "https://sicily.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/trn?lang=it", "geoInfo": {"postal_code": "10123", "lat": 45.07098200000001, "lng": 7.685675999999999 },
                                         "key": "torino.craigslist.it",
                                         "name": "torino",
-                                        "url": "https://torino.craigslist.it"
+                                        "url": "https://torino.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/vce?lang=it", "geoInfo": {"postal_code": "30135", "lat": 45.4408474, "lng": 12.3155151 },
                                         "key": "venice.craigslist.it",
                                         "name": "venice / veneto",
-                                        "url": "https://venice.craigslist.it"
+                                        "url": "https://venice.craigslist.org"
                                     }
                                 ],
                                 "name": "Italy"
@@ -5349,7 +5349,7 @@
                                         "postUrl": "https://post.craigslist.org/c/waw?lang=en", "geoInfo": {"postal_code": "", "lat": 51.919438, "lng": 19.145136 },
                                         "key": "warsaw.craigslist.pl",
                                         "name": "poland",
-                                        "url": "https://warsaw.craigslist.pl"
+                                        "url": "https://warsaw.craigslist.org"
                                     }
                                 ],
                                 "name": "Poland"
@@ -5360,19 +5360,19 @@
                                         "postUrl": "https://post.craigslist.org/c/fro?lang=pt", "geoInfo": {"postal_code": "8000-368", "lat": 37.01935479999999, "lng": -7.930439699999999 },
                                         "key": "faro.craigslist.pt",
                                         "name": "faro / algarve",
-                                        "url": "https://faro.craigslist.pt"
+                                        "url": "https://faro.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/lis?lang=pt", "geoInfo": {"postal_code": "1269-133", "lat": 38.7252993, "lng": -9.150036400000001 },
                                         "key": "lisbon.craigslist.pt",
                                         "name": "lisbon",
-                                        "url": "https://lisbon.craigslist.pt"
+                                        "url": "https://lisbon.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/pto?lang=pt", "geoInfo": {"postal_code": "4050-536", "lat": 41.15668920000001, "lng": -8.623925400000001 },
                                         "key": "porto.craigslist.pt",
                                         "name": "porto",
-                                        "url": "https://porto.craigslist.pt"
+                                        "url": "https://porto.craigslist.org"
                                     }
                                 ],
                                 "name": "Portugal"
@@ -5411,67 +5411,67 @@
                                         "postUrl": "https://post.craigslist.org/c/alc?lang=ca", "geoInfo": {"postal_code": "03003", "lat": 38.3459963, "lng": -0.4906855 },
                                         "key": "alicante.craigslist.es",
                                         "name": "alicante",
-                                        "url": "https://alicante.craigslist.es"
+                                        "url": "https://alicante.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/ibz?lang=ca", "geoInfo": {"postal_code": "07210", "lat": 39.53417889999999, "lng": 2.8577105 },
                                         "key": "baleares.craigslist.es",
                                         "name": "baleares",
-                                        "url": "https://baleares.craigslist.es"
+                                        "url": "https://baleares.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/bar?lang=ca", "geoInfo": {"postal_code": "08002", "lat": 41.38506389999999, "lng": 2.1734035 },
                                         "key": "barcelona.craigslist.es",
                                         "name": "barcelona",
-                                        "url": "https://barcelona.craigslist.es"
+                                        "url": "https://barcelona.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/bio?lang=ca", "geoInfo": {"postal_code": "48005", "lat": 43.2566901, "lng": -2.9240616 },
                                         "key": "bilbao.craigslist.es",
                                         "name": "bilbao",
-                                        "url": "https://bilbao.craigslist.es"
+                                        "url": "https://bilbao.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/cdz?lang=ca", "geoInfo": {"postal_code": "11006", "lat": 36.52706120000001, "lng": -6.288596199999999 },
                                         "key": "cadiz.craigslist.es",
                                         "name": "cadiz",
-                                        "url": "https://cadiz.craigslist.es"
+                                        "url": "https://cadiz.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/tfn?lang=ca", "geoInfo": {"postal_code": "38413", "lat": 28.29156369999999, "lng": -16.6291304 },
                                         "key": "canarias.craigslist.es",
                                         "name": "canarias",
-                                        "url": "https://canarias.craigslist.es"
+                                        "url": "https://canarias.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/grx?lang=ca", "geoInfo": {"postal_code": "18001", "lat": 37.1773363, "lng": -3.598557100000001 },
                                         "key": "granada.craigslist.es",
                                         "name": "granada",
-                                        "url": "https://granada.craigslist.es"
+                                        "url": "https://granada.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/mdd?lang=ca", "geoInfo": {"postal_code": "28013", "lat": 40.41677539999999, "lng": -3.7037902 },
                                         "key": "madrid.craigslist.es",
                                         "name": "madrid",
-                                        "url": "https://madrid.craigslist.es"
+                                        "url": "https://madrid.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/agp?lang=ca", "geoInfo": {"postal_code": "29015", "lat": 36.721261, "lng": -4.4212655 },
                                         "key": "malaga.craigslist.es",
                                         "name": "malaga",
-                                        "url": "https://malaga.craigslist.es"
+                                        "url": "https://malaga.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/sev?lang=ca", "geoInfo": {"postal_code": "41018", "lat": 37.3880961, "lng": -5.9823299 },
                                         "key": "sevilla.craigslist.es",
                                         "name": "sevilla",
-                                        "url": "https://sevilla.craigslist.es"
+                                        "url": "https://sevilla.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/val?lang=ca", "geoInfo": {"postal_code": "46002", "lat": 39.4699075, "lng": -0.3762881 },
                                         "key": "valencia.craigslist.es",
                                         "name": "valencia",
-                                        "url": "https://valencia.craigslist.es"
+                                        "url": "https://valencia.craigslist.org"
                                     }
                                 ],
                                 "name": "Spain"
@@ -5482,7 +5482,7 @@
                                         "postUrl": "https://post.craigslist.org/c/sth?lang=sv", "geoInfo": {"postal_code": "76049", "lat": 59.33494, "lng": 18.062103 },
                                         "key": "stockholm.craigslist.se",
                                         "name": "sweden",
-                                        "url": "https://stockholm.craigslist.se"
+                                        "url": "https://stockholm.craigslist.org"
                                     }
                                 ],
                                 "name": "Sweden"
@@ -5493,31 +5493,31 @@
                                         "postUrl": "https://post.craigslist.org/c/bsl?lang=de", "geoInfo": {"postal_code": "4051", "lat": 47.55742099999999, "lng": 7.592572699999998 },
                                         "key": "basel.craigslist.ch",
                                         "name": "basel",
-                                        "url": "https://basel.craigslist.ch"
+                                        "url": "https://basel.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/brn?lang=de", "geoInfo": {"postal_code": "3011", "lat": 46.94792220000001, "lng": 7.444608499999997 },
                                         "key": "bern.craigslist.ch",
                                         "name": "bern",
-                                        "url": "https://bern.craigslist.ch"
+                                        "url": "https://bern.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/gva?lang=de", "geoInfo": {"postal_code": "1204", "lat": 46.19839220000001, "lng": 6.142296099999998 },
                                         "key": "geneva.craigslist.ch",
                                         "name": "geneva",
-                                        "url": "https://geneva.craigslist.ch"
+                                        "url": "https://geneva.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/lau?lang=en", "geoInfo": {"postal_code": "1003", "lat": 46.5199617, "lng": 6.633597099999998 },
                                         "key": "lausanne.craigslist.ch",
                                         "name": "lausanne",
-                                        "url": "https://lausanne.craigslist.ch"
+                                        "url": "https://lausanne.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/zur?lang=en", "geoInfo": {"postal_code": "8001", "lat": 47.3686498, "lng": 8.539182499999997 },
                                         "key": "zurich.craigslist.ch",
                                         "name": "zurich",
-                                        "url": "https://zurich.craigslist.ch"
+                                        "url": "https://zurich.craigslist.org"
                                     }
                                 ],
                                 "name": "Switzerland"
@@ -5528,7 +5528,7 @@
                                         "postUrl": "https://post.craigslist.org/c/ist?lang=tr", "geoInfo": {"postal_code": "", "lat": 41.02342700000001, "lng": 28.97897200000001 },
                                         "key": "istanbul.craigslist.com.tr",
                                         "name": "turkey",
-                                        "url": "https://istanbul.craigslist.com.tr"
+                                        "url": "https://istanbul.craigslist.org"
                                     }
                                 ],
                                 "name": "Turkey"
@@ -5550,163 +5550,163 @@
                                         "postUrl": "https://post.craigslist.org/c/abz?lang=en", "geoInfo": {"postal_code": "AB10 1AN", "lat": 57.149717, "lng": -2.094278 },
                                         "key": "aberdeen.craigslist.co.uk",
                                         "name": "aberdeen",
-                                        "url": "https://aberdeen.craigslist.co.uk"
+                                        "url": "https://aberdeen.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/bth?lang=en", "geoInfo": {"postal_code": "BA2", "lat": 51.37580099999999, "lng": -2.3599039 },
                                         "key": "bath.craigslist.co.uk",
                                         "name": "bath",
-                                        "url": "https://bath.craigslist.co.uk"
+                                        "url": "https://bath.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/blf?lang=en", "geoInfo": {"postal_code": "BT1 5GB", "lat": 54.59728500000002, "lng": -5.93012 },
                                         "key": "belfast.craigslist.co.uk",
                                         "name": "belfast",
-                                        "url": "https://belfast.craigslist.co.uk"
+                                        "url": "https://belfast.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/bhx?lang=en", "geoInfo": {"postal_code": "B4 7ES", "lat": 52.48624299999999, "lng": -1.890401 },
                                         "key": "birmingham.craigslist.co.uk",
                                         "name": "birmingham / west mids",
-                                        "url": "https://birmingham.craigslist.co.uk"
+                                        "url": "https://birmingham.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/bri?lang=en", "geoInfo": {"postal_code": "BN1 1EE", "lat": 50.82253000000001, "lng": -0.137163 },
                                         "key": "brighton.craigslist.co.uk",
                                         "name": "brighton",
-                                        "url": "https://brighton.craigslist.co.uk"
+                                        "url": "https://brighton.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/brs?lang=en", "geoInfo": {"postal_code": "BS2 0HQ", "lat": 51.454513, "lng": -2.58791 },
                                         "key": "bristol.craigslist.co.uk",
                                         "name": "bristol",
-                                        "url": "https://bristol.craigslist.co.uk"
+                                        "url": "https://bristol.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/cam?lang=en", "geoInfo": {"postal_code": "CB2 3AX", "lat": 52.205337, "lng": 0.121817 },
                                         "key": "cambridge.craigslist.co.uk",
                                         "name": "cambridge, UK",
-                                        "url": "https://cambridge.craigslist.co.uk"
+                                        "url": "https://cambridge.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/cym?lang=en", "geoInfo": {"postal_code": "CF10 1AS", "lat": 51.48158100000003, "lng": -3.17909 },
                                         "key": "cardiff.craigslist.co.uk",
                                         "name": "cardiff / wales",
-                                        "url": "https://cardiff.craigslist.co.uk"
+                                        "url": "https://cardiff.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/cov?lang=en", "geoInfo": {"postal_code": "CV1 3LD", "lat": 52.406822, "lng": -1.519693 },
                                         "key": "coventry.craigslist.co.uk",
                                         "name": "coventry",
-                                        "url": "https://coventry.craigslist.co.uk"
+                                        "url": "https://coventry.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/dby?lang=en", "geoInfo": {"postal_code": "DE1 2AW", "lat": 52.9225301, "lng": -1.4746186 },
                                         "key": "derby.craigslist.co.uk",
                                         "name": "derby",
-                                        "url": "https://derby.craigslist.co.uk"
+                                        "url": "https://derby.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/dvc?lang=en", "geoInfo": {"postal_code": "PL10 1AA", "lat": 50.34714389999999, "lng": -4.2186718 },
                                         "key": "devon.craigslist.co.uk",
                                         "name": "devon &amp; cornwall",
-                                        "url": "https://devon.craigslist.co.uk"
+                                        "url": "https://devon.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/dnd?lang=en", "geoInfo": {"postal_code": "DD1", "lat": 56.462018, "lng": -2.970721 },
                                         "key": "dundee.craigslist.co.uk",
                                         "name": "dundee",
-                                        "url": "https://dundee.craigslist.co.uk"
+                                        "url": "https://dundee.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/nwh?lang=en", "geoInfo": {"postal_code": "NN6 7GY", "lat": 52.35551769999999, "lng": -1.1743197 },
                                         "key": "norwich.craigslist.co.uk",
                                         "name": "east anglia",
-                                        "url": "https://norwich.craigslist.co.uk"
+                                        "url": "https://norwich.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/eml?lang=en", "geoInfo": {"postal_code": "DE74 2SA", "lat": 52.82937399999999, "lng": -1.332134 },
                                         "key": "eastmids.craigslist.co.uk",
                                         "name": "east midlands",
-                                        "url": "https://eastmids.craigslist.co.uk"
+                                        "url": "https://eastmids.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/edi?lang=en", "geoInfo": {"postal_code": "EH1 3EG", "lat": 55.953252, "lng": -3.188267 },
                                         "key": "edinburgh.craigslist.co.uk",
                                         "name": "edinburgh",
-                                        "url": "https://edinburgh.craigslist.co.uk"
+                                        "url": "https://edinburgh.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/esx?lang=en", "geoInfo": {"postal_code": "", "lat": 51.76590779999999, "lng": 0.6673664999999998 },
                                         "key": "essex.craigslist.co.uk",
                                         "name": "essex",
-                                        "url": "https://essex.craigslist.co.uk"
+                                        "url": "https://essex.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/gla?lang=en", "geoInfo": {"postal_code": "G2", "lat": 55.864237, "lng": -4.251806 },
                                         "key": "glasgow.craigslist.co.uk",
                                         "name": "glasgow",
-                                        "url": "https://glasgow.craigslist.co.uk"
+                                        "url": "https://glasgow.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/sou?lang=en", "geoInfo": {"postal_code": "SO21 1DA", "lat": 51.08952029999999, "lng": -1.216844 },
                                         "key": "hampshire.craigslist.co.uk",
                                         "name": "hampshire",
-                                        "url": "https://hampshire.craigslist.co.uk"
+                                        "url": "https://hampshire.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/ken?lang=en", "geoInfo": {"postal_code": "ME14", "lat": 51.2787075, "lng": 0.5217254000000002 },
                                         "key": "kent.craigslist.co.uk",
                                         "name": "kent",
-                                        "url": "https://kent.craigslist.co.uk"
+                                        "url": "https://kent.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/lds?lang=en", "geoInfo": {"postal_code": "LS1 3DA", "lat": 53.801279, "lng": -1.548567 },
                                         "key": "leeds.craigslist.co.uk",
                                         "name": "leeds",
-                                        "url": "https://leeds.craigslist.co.uk"
+                                        "url": "https://leeds.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/liv?lang=en", "geoInfo": {"postal_code": "L2", "lat": 53.40837139999999, "lng": -2.9915726 },
                                         "key": "liverpool.craigslist.co.uk",
                                         "name": "liverpool",
-                                        "url": "https://liverpool.craigslist.co.uk"
+                                        "url": "https://liverpool.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/ldn?lang=en", "geoInfo": {"postal_code": "WC2R 0HS", "lat": 51.51121389999999, "lng": -0.1198244 },
                                         "key": "london.craigslist.co.uk",
                                         "name": "london",
-                                        "url": "https://london.craigslist.co.uk"
+                                        "url": "https://london.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/man?lang=en", "geoInfo": {"postal_code": "M2 5AB", "lat": 53.479324, "lng": -2.2484851 },
                                         "key": "manchester.craigslist.co.uk",
                                         "name": "manchester",
-                                        "url": "https://manchester.craigslist.co.uk"
+                                        "url": "https://manchester.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/ncl?lang=en", "geoInfo": {"postal_code": "NE1 4LF", "lat": 54.978252, "lng": -1.61778 },
                                         "key": "newcastle.craigslist.co.uk",
                                         "name": "newcastle / NE england",
-                                        "url": "https://newcastle.craigslist.co.uk"
+                                        "url": "https://newcastle.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/not?lang=en", "geoInfo": {"postal_code": "NG1", "lat": 52.95478319999999, "lng": -1.1581086 },
                                         "key": "nottingham.craigslist.co.uk",
                                         "name": "nottingham",
-                                        "url": "https://nottingham.craigslist.co.uk"
+                                        "url": "https://nottingham.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/oxf?lang=en", "geoInfo": {"postal_code": "OX1 4DB", "lat": 51.75202090000001, "lng": -1.2577263 },
                                         "key": "oxford.craigslist.co.uk",
                                         "name": "oxford",
-                                        "url": "https://oxford.craigslist.co.uk"
+                                        "url": "https://oxford.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/shf?lang=en", "geoInfo": {"postal_code": "S1 2FB", "lat": 53.38112899999999, "lng": -1.470085 },
                                         "key": "sheffield.craigslist.co.uk",
                                         "name": "sheffield",
-                                        "url": "https://sheffield.craigslist.co.uk"
+                                        "url": "https://sheffield.craigslist.org"
                                     }
                                 ],
                                 "name": "United Kingdom"
@@ -5734,73 +5734,73 @@
                                         "postUrl": "https://post.craigslist.org/c/pek?lang=en", "geoInfo": {"postal_code": "100006", "lat": 39.90403, "lng": 116.407526 },
                                         "key": "beijing.craigslist.com.cn",
                                         "name": "beijing",
-                                        "url": "https://beijing.craigslist.com.cn"
+                                        "url": "https://beijing.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/ctu?lang=en", "geoInfo": {"postal_code": "", "lat": 30.572269, "lng": 104.066541 },
                                         "key": "chengdu.craigslist.com.cn",
                                         "name": "chengdu",
-                                        "url": "https://chengdu.craigslist.com.cn"
+                                        "url": "https://chengdu.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/ckg?lang=en", "geoInfo": {"postal_code": "400012", "lat": 29.56301, "lng": 106.551557 },
                                         "key": "chongqing.craigslist.com.cn",
                                         "name": "chongqing",
-                                        "url": "https://chongqing.craigslist.com.cn"
+                                        "url": "https://chongqing.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/dlc?lang=en", "geoInfo": {"postal_code": "116000", "lat": 38.91400300000002, "lng": 121.614682 },
                                         "key": "dalian.craigslist.com.cn",
                                         "name": "dalian",
-                                        "url": "https://dalian.craigslist.com.cn"
+                                        "url": "https://dalian.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/can?lang=en", "geoInfo": {"postal_code": "", "lat": 23.129163, "lng": 113.264435 },
                                         "key": "guangzhou.craigslist.com.cn",
                                         "name": "guangzhou",
-                                        "url": "https://guangzhou.craigslist.com.cn"
+                                        "url": "https://guangzhou.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/hgh?lang=en", "geoInfo": {"postal_code": "310011", "lat": 30.274085, "lng": 120.15507 },
                                         "key": "hangzhou.craigslist.com.cn",
                                         "name": "hangzhou",
-                                        "url": "https://hangzhou.craigslist.com.cn"
+                                        "url": "https://hangzhou.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/nkg?lang=en", "geoInfo": {"postal_code": "210008", "lat": 32.060255, "lng": 118.796877 },
                                         "key": "nanjing.craigslist.com.cn",
                                         "name": "nanjing",
-                                        "url": "https://nanjing.craigslist.com.cn"
+                                        "url": "https://nanjing.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/sha?lang=en", "geoInfo": {"postal_code": "200003", "lat": 31.230393, "lng": 121.473704 },
                                         "key": "shanghai.craigslist.com.cn",
                                         "name": "shanghai",
-                                        "url": "https://shanghai.craigslist.com.cn"
+                                        "url": "https://shanghai.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/she?lang=en", "geoInfo": {"postal_code": "110000", "lat": 41.80569799999999, "lng": 123.431475 },
                                         "key": "shenyang.craigslist.com.cn",
                                         "name": "shenyang",
-                                        "url": "https://shenyang.craigslist.com.cn"
+                                        "url": "https://shenyang.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/szx?lang=en", "geoInfo": {"postal_code": "518048", "lat": 22.543099, "lng": 114.057868 },
                                         "key": "shenzhen.craigslist.com.cn",
                                         "name": "shenzhen",
-                                        "url": "https://shenzhen.craigslist.com.cn"
+                                        "url": "https://shenzhen.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/wuh?lang=en", "geoInfo": {"postal_code": "430010", "lat": 30.593099, "lng": 114.305393 },
                                         "key": "wuhan.craigslist.com.cn",
                                         "name": "wuhan",
-                                        "url": "https://wuhan.craigslist.com.cn"
+                                        "url": "https://wuhan.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/xiy?lang=en", "geoInfo": {"postal_code": "", "lat": 34.341568, "lng": 108.940175 },
                                         "key": "xian.craigslist.com.cn",
                                         "name": "xi'an",
-                                        "url": "https://xian.craigslist.com.cn"
+                                        "url": "https://xian.craigslist.org"
                                     }
                                 ],
                                 "name": "China"
@@ -5822,7 +5822,7 @@
                                         "postUrl": "https://post.craigslist.org/c/hkg?lang=en", "geoInfo": {"postal_code": "", "lat": 22.2478599, "lng": 114.2033843 },
                                         "key": "hongkong.craigslist.hk",
                                         "name": "hong kong",
-                                        "url": "https://hongkong.craigslist.hk"
+                                        "url": "https://hongkong.craigslist.org"
                                     }
                                 ],
                                 "name": "Hong Kong"
@@ -5833,97 +5833,97 @@
                                         "postUrl": "https://post.craigslist.org/c/amd?lang=en", "geoInfo": {"postal_code": "380001", "lat": 23.03, "lng": 72.58 },
                                         "key": "ahmedabad.craigslist.co.in",
                                         "name": "ahmedabad",
-                                        "url": "https://ahmedabad.craigslist.co.in"
+                                        "url": "https://ahmedabad.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/bng?lang=en", "geoInfo": {"postal_code": "560001", "lat": 12.9715987, "lng": 77.59456270000001 },
                                         "key": "bangalore.craigslist.co.in",
                                         "name": "bangalore",
-                                        "url": "https://bangalore.craigslist.co.in"
+                                        "url": "https://bangalore.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/bbi?lang=en", "geoInfo": {"postal_code": "751013", "lat": 20.2960587, "lng": 85.8245398 },
                                         "key": "bhubaneswar.craigslist.co.in",
                                         "name": "bhubaneswar",
-                                        "url": "https://bhubaneswar.craigslist.co.in"
+                                        "url": "https://bhubaneswar.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/ixc?lang=en", "geoInfo": {"postal_code": "160022", "lat": 30.7333148, "lng": 76.77941790000003 },
                                         "key": "chandigarh.craigslist.co.in",
                                         "name": "chandigarh",
-                                        "url": "https://chandigarh.craigslist.co.in"
+                                        "url": "https://chandigarh.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/che?lang=en", "geoInfo": {"postal_code": "600027", "lat": 13.060422, "lng": 80.249583 },
                                         "key": "chennai.craigslist.co.in",
                                         "name": "chennai (madras)",
-                                        "url": "https://chennai.craigslist.co.in"
+                                        "url": "https://chennai.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/del?lang=en", "geoInfo": {"postal_code": "110001", "lat": 28.635308, "lng": 77.22495999999998 },
                                         "key": "delhi.craigslist.co.in",
                                         "name": "delhi",
-                                        "url": "https://delhi.craigslist.co.in"
+                                        "url": "https://delhi.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/goa?lang=en", "geoInfo": {"postal_code": "403706", "lat": 15.2993265, "lng": 74.12399599999996 },
                                         "key": "goa.craigslist.co.in",
                                         "name": "goa",
-                                        "url": "https://goa.craigslist.co.in"
+                                        "url": "https://goa.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/hyd?lang=en", "geoInfo": {"postal_code": "500095", "lat": 17.385044, "lng": 78.486671 },
                                         "key": "hyderabad.craigslist.co.in",
                                         "name": "hyderabad",
-                                        "url": "https://hyderabad.craigslist.co.in"
+                                        "url": "https://hyderabad.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/idr?lang=en", "geoInfo": {"postal_code": "452007", "lat": 22.7195687, "lng": 75.8577258 },
                                         "key": "indore.craigslist.co.in",
                                         "name": "indore",
-                                        "url": "https://indore.craigslist.co.in"
+                                        "url": "https://indore.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/jai?lang=en", "geoInfo": {"postal_code": "302006", "lat": 26.9124165, "lng": 75.78728790000001 },
                                         "key": "jaipur.craigslist.co.in",
                                         "name": "jaipur",
-                                        "url": "https://jaipur.craigslist.co.in"
+                                        "url": "https://jaipur.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/cok?lang=en", "geoInfo": {"postal_code": "679335", "lat": 10.8505159, "lng": 76.2710833 },
                                         "key": "kerala.craigslist.co.in",
                                         "name": "kerala",
-                                        "url": "https://kerala.craigslist.co.in"
+                                        "url": "https://kerala.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/kol?lang=en", "geoInfo": {"postal_code": "700009", "lat": 22.572646, "lng": 88.36389500000004 },
                                         "key": "kolkata.craigslist.co.in",
                                         "name": "kolkata (calcutta)",
-                                        "url": "https://kolkata.craigslist.co.in"
+                                        "url": "https://kolkata.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/lko?lang=en", "geoInfo": {"postal_code": "226001", "lat": 26.8465108, "lng": 80.9466832 },
                                         "key": "lucknow.craigslist.co.in",
                                         "name": "lucknow",
-                                        "url": "https://lucknow.craigslist.co.in"
+                                        "url": "https://lucknow.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/mum?lang=en", "geoInfo": {"postal_code": "400070", "lat": 19.0759837, "lng": 72.87765590000001 },
                                         "key": "mumbai.craigslist.co.in",
                                         "name": "mumbai",
-                                        "url": "https://mumbai.craigslist.co.in"
+                                        "url": "https://mumbai.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/pnq?lang=en", "geoInfo": {"postal_code": "411011", "lat": 18.5204303, "lng": 73.85674370000001 },
                                         "key": "pune.craigslist.co.in",
                                         "name": "pune",
-                                        "url": "https://pune.craigslist.co.in"
+                                        "url": "https://pune.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/svt?lang=en", "geoInfo": {"postal_code": "395003", "lat": 21.195, "lng": 72.81944399999998 },
                                         "key": "surat.craigslist.co.in",
                                         "name": "surat surat",
-                                        "url": "https://surat.craigslist.co.in"
+                                        "url": "https://surat.craigslist.org"
                                     }
                                 ],
                                 "name": "India"
@@ -5996,49 +5996,49 @@
                                         "postUrl": "https://post.craigslist.org/c/fuk?lang=en", "geoInfo": {"postal_code": "810-8621", "lat": 33.5903547, "lng": 130.4017155 },
                                         "key": "fukuoka.craigslist.jp",
                                         "name": "fukuoka",
-                                        "url": "https://fukuoka.craigslist.jp"
+                                        "url": "https://fukuoka.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/hij?lang=en", "geoInfo": {"postal_code": "", "lat": 34.3852029, "lng": 132.4552927 },
                                         "key": "hiroshima.craigslist.jp",
                                         "name": "hiroshima",
-                                        "url": "https://hiroshima.craigslist.jp"
+                                        "url": "https://hiroshima.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/ngo?lang=en", "geoInfo": {"postal_code": "460-8508", "lat": 35.1814464, "lng": 136.906398 },
                                         "key": "nagoya.craigslist.jp",
                                         "name": "nagoya",
-                                        "url": "https://nagoya.craigslist.jp"
+                                        "url": "https://nagoya.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/oka?lang=en", "geoInfo": {"postal_code": "900-8571", "lat": 26.2124013, "lng": 127.6809317 },
                                         "key": "okinawa.craigslist.jp",
                                         "name": "okinawa",
-                                        "url": "https://okinawa.craigslist.jp"
+                                        "url": "https://okinawa.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/osa?lang=en", "geoInfo": {"postal_code": "", "lat": 35.0116363, "lng": 135.7680294 },
                                         "key": "osaka.craigslist.jp",
                                         "name": "osaka-kobe-kyoto",
-                                        "url": "https://osaka.craigslist.jp"
+                                        "url": "https://osaka.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/spp?lang=en", "geoInfo": {"postal_code": "", "lat": 43.06209579999999, "lng": 141.3543763 },
                                         "key": "sapporo.craigslist.jp",
                                         "name": "sapporo",
-                                        "url": "https://sapporo.craigslist.jp"
+                                        "url": "https://sapporo.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/sdj?lang=en", "geoInfo": {"postal_code": "980-8671", "lat": 38.268215, "lng": 140.8693558 },
                                         "key": "sendai.craigslist.jp",
                                         "name": "sendai",
-                                        "url": "https://sendai.craigslist.jp"
+                                        "url": "https://sendai.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/tok?lang=en", "geoInfo": {"postal_code": "", "lat": 35.68948750000001, "lng": 139.6917064 },
                                         "key": "tokyo.craigslist.jp",
                                         "name": "tokyo",
-                                        "url": "https://tokyo.craigslist.jp"
+                                        "url": "https://tokyo.craigslist.org"
                                     }
                                 ],
                                 "name": "Japan"
@@ -6049,7 +6049,7 @@
                                         "postUrl": "https://post.craigslist.org/c/sel?lang=en", "geoInfo": {"postal_code": "100-101", "lat": 37.56653499999999, "lng": 126.9779692 },
                                         "key": "seoul.craigslist.co.kr",
                                         "name": "seoul",
-                                        "url": "https://seoul.craigslist.co.kr"
+                                        "url": "https://seoul.craigslist.org"
                                     }
                                 ],
                                 "name": "Korea"
@@ -6104,55 +6104,55 @@
                                         "postUrl": "https://post.craigslist.org/c/bcd?lang=tl", "geoInfo": {"postal_code": "", "lat": 10.6407389, "lng": 122.9689565 },
                                         "key": "bacolod.craigslist.com.ph",
                                         "name": "bacolod",
-                                        "url": "https://bacolod.craigslist.com.ph"
+                                        "url": "https://bacolod.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/wnp?lang=tl", "geoInfo": {"postal_code": "", "lat": 13.4209885, "lng": 123.4136736 },
                                         "key": "naga.craigslist.com.ph",
                                         "name": "bicol region",
-                                        "url": "https://naga.craigslist.com.ph"
+                                        "url": "https://naga.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/cdo?lang=tl", "geoInfo": {"postal_code": "", "lat": 8.4542363, "lng": 124.6318977 },
                                         "key": "cdo.craigslist.com.ph",
                                         "name": "cagayan de oro",
-                                        "url": "https://cdo.craigslist.com.ph"
+                                        "url": "https://cdo.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/ceb?lang=tl", "geoInfo": {"postal_code": "", "lat": 10.3156992, "lng": 123.8854366 },
                                         "key": "cebu.craigslist.com.ph",
                                         "name": "cebu",
-                                        "url": "https://cebu.craigslist.com.ph"
+                                        "url": "https://cebu.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/dvo?lang=tl", "geoInfo": {"postal_code": "", "lat": 7.190708000000001, "lng": 125.455341 },
                                         "key": "davaocity.craigslist.com.ph",
                                         "name": "davao city",
-                                        "url": "https://davaocity.craigslist.com.ph"
+                                        "url": "https://davaocity.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/ilo?lang=tl", "geoInfo": {"postal_code": "", "lat": 10.7201501, "lng": 122.5621063 },
                                         "key": "iloilo.craigslist.com.ph",
                                         "name": "iloilo",
-                                        "url": "https://iloilo.craigslist.com.ph"
+                                        "url": "https://iloilo.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/mnl?lang=tl", "geoInfo": {"postal_code": "", "lat": 14.5995124, "lng": 120.9842195 },
                                         "key": "manila.craigslist.com.ph",
                                         "name": "manila",
-                                        "url": "https://manila.craigslist.com.ph"
+                                        "url": "https://manila.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/crk?lang=tl", "geoInfo": {"postal_code": "", "lat": 15.079409, "lng": 120.6199895 },
                                         "key": "pampanga.craigslist.com.ph",
                                         "name": "pampanga",
-                                        "url": "https://pampanga.craigslist.com.ph"
+                                        "url": "https://pampanga.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/zam?lang=tl", "geoInfo": {"postal_code": "", "lat": 6.921442399999999, "lng": 122.0790267 },
                                         "key": "zamboanga.craigslist.com.ph",
                                         "name": "zamboanga",
-                                        "url": "https://zamboanga.craigslist.com.ph"
+                                        "url": "https://zamboanga.craigslist.org"
                                     }
                                 ],
                                 "name": "Philippines"
@@ -6163,7 +6163,7 @@
                                         "postUrl": "https://post.craigslist.org/c/sng?lang=en", "geoInfo": {"postal_code": "", "lat": 1.2800945, "lng": 103.8509491 },
                                         "key": "singapore.craigslist.com.sg",
                                         "name": "singapore",
-                                        "url": "https://singapore.craigslist.com.sg"
+                                        "url": "https://singapore.craigslist.org"
                                     }
                                 ],
                                 "name": "Singapore"
@@ -6174,7 +6174,7 @@
                                         "postUrl": "https://post.craigslist.org/c/twd?lang=en", "geoInfo": {"postal_code": "556", "lat": 23.69781, "lng": 120.960515 },
                                         "key": "taipei.craigslist.com.tw",
                                         "name": "taiwan",
-                                        "url": "https://taipei.craigslist.com.tw"
+                                        "url": "https://taipei.craigslist.org"
                                     }
                                 ],
                                 "name": "Taiwan"
@@ -6185,7 +6185,7 @@
                                         "postUrl": "https://post.craigslist.org/c/bkk?lang=en", "geoInfo": {"postal_code": "67160", "lat": 15.870032, "lng": 100.992541 },
                                         "key": "bangkok.craigslist.co.th",
                                         "name": "thailand",
-                                        "url": "https://bangkok.craigslist.co.th"
+                                        "url": "https://bangkok.craigslist.org"
                                     }
                                 ],
                                 "name": "Thailand"
@@ -6224,73 +6224,73 @@
                                         "postUrl": "https://post.craigslist.org/c/adl?lang=en", "geoInfo": {"postal_code": "5000", "lat": -34.92862119999999, "lng": 138.5999594 },
                                         "key": "adelaide.craigslist.com.au",
                                         "name": "adelaide",
-                                        "url": "https://adelaide.craigslist.com.au"
+                                        "url": "https://adelaide.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/bne?lang=en", "geoInfo": {"postal_code": "4000", "lat": -27.4710107, "lng": 153.0234489 },
                                         "key": "brisbane.craigslist.com.au",
                                         "name": "brisbane",
-                                        "url": "https://brisbane.craigslist.com.au"
+                                        "url": "https://brisbane.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/cns?lang=en", "geoInfo": {"postal_code": "4870", "lat": -16.9203338, "lng": 145.7708595 },
                                         "key": "cairns.craigslist.com.au",
                                         "name": "cairns",
-                                        "url": "https://cairns.craigslist.com.au"
+                                        "url": "https://cairns.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/cbr?lang=en", "geoInfo": {"postal_code": "2601", "lat": -35.2819998, "lng": 149.1286843 },
                                         "key": "canberra.craigslist.com.au",
                                         "name": "canberra",
-                                        "url": "https://canberra.craigslist.com.au"
+                                        "url": "https://canberra.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/drw?lang=en", "geoInfo": {"postal_code": "0800", "lat": -12.4628271, "lng": 130.8417772 },
                                         "key": "darwin.craigslist.com.au",
                                         "name": "darwin",
-                                        "url": "https://darwin.craigslist.com.au"
+                                        "url": "https://darwin.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/ool?lang=en", "geoInfo": {"postal_code": "4218", "lat": -28.0172605, "lng": 153.4256987 },
                                         "key": "goldcoast.craigslist.com.au",
                                         "name": "gold coast",
-                                        "url": "https://goldcoast.craigslist.com.au"
+                                        "url": "https://goldcoast.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/mel?lang=en", "geoInfo": {"postal_code": "3000", "lat": -37.814107, "lng": 144.96328 },
                                         "key": "melbourne.craigslist.com.au",
                                         "name": "melbourne",
-                                        "url": "https://melbourne.craigslist.com.au"
+                                        "url": "https://melbourne.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/ntl?lang=en", "geoInfo": {"postal_code": "2300", "lat": -32.926689, "lng": 151.7789205 },
                                         "key": "ntl.craigslist.com.au",
                                         "name": "newcastle, NSW",
-                                        "url": "https://ntl.craigslist.com.au"
+                                        "url": "https://ntl.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/per?lang=en", "geoInfo": {"postal_code": "6000", "lat": -31.9530044, "lng": 115.8574693 },
                                         "key": "perth.craigslist.com.au",
                                         "name": "perth",
-                                        "url": "https://perth.craigslist.com.au"
+                                        "url": "https://perth.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/syd?lang=en", "geoInfo": {"postal_code": "2000", "lat": -33.8674869, "lng": 151.2069902 },
                                         "key": "sydney.craigslist.com.au",
                                         "name": "sydney",
-                                        "url": "https://sydney.craigslist.com.au"
+                                        "url": "https://sydney.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/hba?lang=en", "geoInfo": {"postal_code": "7304", "lat": -41.36504189999999, "lng": 146.6284905 },
                                         "key": "hobart.craigslist.com.au",
                                         "name": "tasmania",
-                                        "url": "https://hobart.craigslist.com.au"
+                                        "url": "https://hobart.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/wol?lang=en", "geoInfo": {"postal_code": "2500", "lat": -34.4250728, "lng": 150.8931494 },
                                         "key": "wollongong.craigslist.com.au",
                                         "name": "wollongong",
-                                        "url": "https://wollongong.craigslist.com.au"
+                                        "url": "https://wollongong.craigslist.org"
                                     }
                                 ],
                                 "name": "Australia"
@@ -6313,7 +6313,7 @@
                                         "postUrl": "https://post.craigslist.org/c/dud?lang=en", "geoInfo": {"postal_code": "9016", "lat": -45.8787605, "lng": 170.5027976 },
                                         "key": "dunedin.craigslist.co.nz",
                                         "name": "dunedin",
-                                        "url": "https://dunedin.craigslist.co.nz"
+                                        "url": "https://dunedin.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/wll?lang=en", "geoInfo": {"postal_code": "6011", "lat": -41.2864603, "lng": 174.776236 },
@@ -6505,97 +6505,97 @@
                                         "postUrl": "https://post.craigslist.org/c/aca?lang=es", "geoInfo": {"postal_code": "39670", "lat": 16.863794, "lng": -99.88161400000001 },
                                         "key": "acapulco.craigslist.com.mx",
                                         "name": "acapulco",
-                                        "url": "https://acapulco.craigslist.com.mx"
+                                        "url": "https://acapulco.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/bcs?lang=es", "geoInfo": {"postal_code": "", "lat": 26.0444446, "lng": -111.6660725 },
                                         "key": "bajasur.craigslist.com.mx",
                                         "name": "baja california sur",
-                                        "url": "https://bajasur.craigslist.com.mx"
+                                        "url": "https://bajasur.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/chh?lang=es", "geoInfo": {"postal_code": "31000", "lat": 28.630581, "lng": -106.0737 },
                                         "key": "chihuahua.craigslist.com.mx",
                                         "name": "chihuahua",
-                                        "url": "https://chihuahua.craigslist.com.mx"
+                                        "url": "https://chihuahua.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/cjs?lang=es", "geoInfo": {"postal_code": "32000", "lat": 31.7388497, "lng": -106.4830782 },
                                         "key": "juarez.craigslist.com.mx",
                                         "name": "ciudad juarez",
-                                        "url": "https://juarez.craigslist.com.mx"
+                                        "url": "https://juarez.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/gdl?lang=es", "geoInfo": {"postal_code": "44100", "lat": 20.67359, "lng": -103.343803 },
                                         "key": "guadalajara.craigslist.com.mx",
                                         "name": "guadalajara",
-                                        "url": "https://guadalajara.craigslist.com.mx"
+                                        "url": "https://guadalajara.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/bjx?lang=es", "geoInfo": {"postal_code": "36000", "lat": 21.018111, "lng": -101.25832 },
                                         "key": "guanajuato.craigslist.com.mx",
                                         "name": "guanajuato",
-                                        "url": "https://guanajuato.craigslist.com.mx"
+                                        "url": "https://guanajuato.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/hrm?lang=es", "geoInfo": {"postal_code": "83260", "lat": 29.07366360000001, "lng": -110.9625854 },
                                         "key": "hermosillo.craigslist.com.mx",
                                         "name": "hermosillo",
-                                        "url": "https://hermosillo.craigslist.com.mx"
+                                        "url": "https://hermosillo.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/mzt?lang=es", "geoInfo": {"postal_code": "82158", "lat": 23.2494148, "lng": -106.4111425 },
                                         "key": "mazatlan.craigslist.com.mx",
                                         "name": "mazatlan",
-                                        "url": "https://mazatlan.craigslist.com.mx"
+                                        "url": "https://mazatlan.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/mex?lang=es", "geoInfo": {"postal_code": "06000", "lat": 19.4326077, "lng": -99.13320800000001 },
                                         "key": "mexicocity.craigslist.com.mx",
                                         "name": "mexico city",
-                                        "url": "https://mexicocity.craigslist.com.mx"
+                                        "url": "https://mexicocity.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/mty?lang=es", "geoInfo": {"postal_code": "64000", "lat": 25.6732109, "lng": -100.309201 },
                                         "key": "monterrey.craigslist.com.mx",
                                         "name": "monterrey",
-                                        "url": "https://monterrey.craigslist.com.mx"
+                                        "url": "https://monterrey.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/oax?lang=es", "geoInfo": {"postal_code": "68000", "lat": 17.0594169, "lng": -96.72162190000002 },
                                         "key": "oaxaca.craigslist.com.mx",
                                         "name": "oaxaca",
-                                        "url": "https://oaxaca.craigslist.com.mx"
+                                        "url": "https://oaxaca.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/pbl?lang=es", "geoInfo": {"postal_code": "", "lat": 19.0412967, "lng": -98.20619960000001 },
                                         "key": "puebla.craigslist.com.mx",
                                         "name": "puebla",
-                                        "url": "https://puebla.craigslist.com.mx"
+                                        "url": "https://puebla.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/pvr?lang=es", "geoInfo": {"postal_code": "48350", "lat": 20.615845, "lng": -105.230256 },
                                         "key": "pv.craigslist.com.mx",
                                         "name": "puerto vallarta",
-                                        "url": "https://pv.craigslist.com.mx"
+                                        "url": "https://pv.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/tij?lang=es", "geoInfo": {"postal_code": "", "lat": 32.5149469, "lng": -117.0382471 },
                                         "key": "tijuana.craigslist.com.mx",
                                         "name": "tijuana",
-                                        "url": "https://tijuana.craigslist.com.mx"
+                                        "url": "https://tijuana.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/vcz?lang=es", "geoInfo": {"postal_code": "91918", "lat": 19.173773, "lng": -96.13422410000001 },
                                         "key": "veracruz.craigslist.com.mx",
                                         "name": "veracruz",
-                                        "url": "https://veracruz.craigslist.com.mx"
+                                        "url": "https://veracruz.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/yuc?lang=es", "geoInfo": {"postal_code": "", "lat": 20.7098786, "lng": -89.0943377 },
                                         "key": "yucatan.craigslist.com.mx",
                                         "name": "yucatan",
-                                        "url": "https://yucatan.craigslist.com.mx"
+                                        "url": "https://yucatan.craigslist.org"
                                     }
                                 ],
                                 "name": "Mexico"
@@ -6744,25 +6744,25 @@
                                         "postUrl": "https://post.craigslist.org/c/cpt?lang=af", "geoInfo": {"postal_code": "8000", "lat": -33.9248685, "lng": 18.4240553 },
                                         "key": "capetown.craigslist.co.za",
                                         "name": "cape town",
-                                        "url": "https://capetown.craigslist.co.za"
+                                        "url": "https://capetown.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/dur?lang=af", "geoInfo": {"postal_code": "4001", "lat": -29.857876, "lng": 31.027581 },
                                         "key": "durban.craigslist.co.za",
                                         "name": "durban",
-                                        "url": "https://durban.craigslist.co.za"
+                                        "url": "https://durban.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/jnb?lang=af", "geoInfo": {"postal_code": "2000", "lat": -26.2041028, "lng": 28.04730510000001 },
                                         "key": "johannesburg.craigslist.co.za",
                                         "name": "johannesburg",
-                                        "url": "https://johannesburg.craigslist.co.za"
+                                        "url": "https://johannesburg.craigslist.org"
                                     },
                                     {
                                         "postUrl": "https://post.craigslist.org/c/hpr?lang=af", "geoInfo": {"postal_code": "0084", "lat": -25.73134, "lng": 28.21837 },
                                         "key": "pretoria.craigslist.co.za",
                                         "name": "pretoria",
-                                        "url": "https://pretoria.craigslist.co.za"
+                                        "url": "https://pretoria.craigslist.org"
                                     }
                                 ],
                                 "name": "South Africa"
