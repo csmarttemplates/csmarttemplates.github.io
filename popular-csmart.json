@@ -5012,7 +5012,7 @@
                                         {
                                             "postUrl": "https://post.craigslist.org/c/hel?lang=fi", "geoInfo": {"postal_code": "41880", "lat": 61.92410999999998, "lng": 25.748151 },
                                             "key": "helsinki.craigslist.fi",
-                                            "name": "finland",
+                                            "name": "finland ",
                                             "url": "https://helsinki.craigslist.org"
                                         }
                                     ],
