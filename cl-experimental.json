@@ -16,13 +16,13 @@
             "finders": [
                 {
                     "finderType": "RegexFinder",
-                    "pattern": "result-row\" data-pid=\"(.*?)\".*?data-ids=\"3:(.*?)[,\"].*?>.*?result-price\">(.*?)<\/span>.*?result-info.*?datetime=\"(.*?)\".*?<a href=\"(.*?)\".*?>(.*?)<\/a>",
+                    "pattern": "result-row\" data-pid=\"(.*?)\".*?(data-ids=\".:(.*?)[,\"].*?>|image gallery empty).*?datetime=\"(.*?)\".*?.*?<a href=\"(.*?)\".*?>(.*?)<\/a>.*?result-price\">(.*?)<\/span>",
                     "context": "object",
                     "findersOFF": [
                         {
                             "finderType": "RegexFinder",
                             "pattern": "(.*?) (\\w+) ago",
-                            "textParam": "0",
+                            "textParam": "2",
                             "handlers": [
                                 {
                                     "property": "blah",
@@ -56,23 +56,27 @@
                             "property": "imageDataID",
                             "key": "2",
                             "removeTags": true,
-                            "decodeHtml": true
+                            "decodeHtml": true,
+                            "replace": "data-ids=\".:(.*?)[,\"].*?>",
+                            "replaceWithString": "$1"
                         },
                         {
                             "property": "thumbnailFileName",
                             "key": "fmt:https://images.craigslist.org/${imageDataID}_300x300.jpg",
-                            "removeTags": true
+                            "removeTags": true,
+                            "replace": ".*?image gallery empty.+",
+                            "replaceWithString": ""
                         },
                         {
                             "property": "price",
-                            "key": "3",
+                            "key": "7",
                             "removeTags": true,
                             "decodeHtml": true,
                             "trim": true
                         },
                         {
                             "property": "priceText",
-                            "key": "3",
+                            "key": "7",
                             "removeTags": true,
                             "decodeHtml": true,
                             "trim": true
