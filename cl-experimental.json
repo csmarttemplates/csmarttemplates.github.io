@@ -124,7 +124,7 @@
         "scrollOffset": 0
     },
     "incrementalLoad":{
-        "step": 25,
+        "step": 120,
         "modelKey": "scrollOffset"
     },
     "browse":{
