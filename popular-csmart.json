@@ -18,27 +18,6 @@
                         "finderType": "RegexFinder",
                         "pattern": "result-row\" data-pid=\"(.*?)\".*?(data-ids=\".:(.*?)[,\"].*?>|image gallery empty).*?datetime=\"(.*?)\".*?.*?<a href=\"(.*?)\".*?>(.*?)<\/a>.*?result-price\">(.*?)<\/span>",
                         "context": "object",
-                        "findersOFF": [
-                            {
-                                "finderType": "RegexFinder",
-                                "pattern": "(.*?) (\\w+) ago",
-                                "textParam": "2",
-                                "handlers": [
-                                    {
-                                        "property": "blah",
-                                        "key": "0",
-                                        "removeTags": true,
-                                        "decodeHtml": true
-                                    },
-                                    {
-                                        "property": "blah2",
-                                        "key": "0",
-                                        "removeTags": true,
-                                        "decodeHtml": true
-                                    }
-                                ]
-                            }
-                        ],
                         "handlers": [
                             {
                                 "property": "permanentID",
