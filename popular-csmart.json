@@ -16,7 +16,7 @@
                 "finders": [
                     {
                         "finderType": "RegexFinder",
-                        "pattern": "result-row\" data-pid=\"(.*?)\".*?(data-ids=\".:(.*?)[,\"].*?>|image gallery empty).*?datetime=\"(.*?)\".*?.*?<a href=\"(.*?)\".*?>(.*?)<\/a>.*?result-price\">(.*?)<\/span>",
+                        "pattern": "result-row\" data-pid=\"(.*?)\".*?(data-ids=\".:(.*?)[,\"].*?>|image gallery empty).*?datetime=\"(.*?)\".*?.*?<a href=\"(.*?)\".*?>(.*?)<\/a>.*?(result-price\">(.*?)<\/span>|result-tags)",
                         "context": "object",
                         "handlers": [
                             {
@@ -48,14 +48,14 @@
                             },
                             {
                                 "property": "price",
-                                "key": "7",
+                                "key": "8",
                                 "removeTags": true,
                                 "decodeHtml": true,
                                 "trim": true
                             },
                             {
                                 "property": "priceText",
-                                "key": "7",
+                                "key": "8",
                                 "removeTags": true,
                                 "decodeHtml": true,
                                 "trim": true
