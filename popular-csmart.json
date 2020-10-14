@@ -1,11 +1,112 @@
 [
     {
-        "searchUUID": "craigslist.org.rss", 
-        "name":"craigslist.org RSS",
-        "subtitle":"RSS Search",
+        "searchUUID": "craigslist.org.rss",
+        "name":"craigslist.org",
+        "subtitle":"CL Search",
         "postLink": "https://post.craigslist.org",
         "loader": {
-            "type":"RSS",
+            "type":"ObjectParser",
+            "parser":
+            {
+                "finderType": "DelimitedFinder",
+                "start": "<ul class=\"rows\">",
+                "end": "<div class=\"search-legend bottom\">",
+                "useRegex": false,
+                "context": "list",
+                "finders": [
+                    {
+                        "finderType": "RegexFinder",
+                        "pattern": "result-row\" data-pid=\"(.*?)\".*?(data-ids=\".:(.*?)[,\"].*?>|image gallery empty).*?datetime=\"(.*?)\".*?.*?<a href=\"(.*?)\".*?>(.*?)<\/a>.*?result-price\">(.*?)<\/span>",
+                        "context": "object",
+                        "findersOFF": [
+                            {
+                                "finderType": "RegexFinder",
+                                "pattern": "(.*?) (\\w+) ago",
+                                "textParam": "2",
+                                "handlers": [
+                                    {
+                                        "property": "blah",
+                                        "key": "0",
+                                        "removeTags": true,
+                                        "decodeHtml": true
+                                    },
+                                    {
+                                        "property": "blah2",
+                                        "key": "0",
+                                        "removeTags": true,
+                                        "decodeHtml": true
+                                    }
+                                ]
+                            }
+                        ],
+                        "handlers": [
+                            {
+                                "property": "permanentID",
+                                "key": "1",
+                                "removeTags": true,
+                                "decodeHtml": true
+                            },
+                            {
+                                "property": "postingID",
+                                "key": "1",
+                                "removeTags": true,
+                                "decodeHtml": true
+                            },
+                            {
+                                "property": "imageDataID",
+                                "key": "2",
+                                "removeTags": true,
+                                "decodeHtml": true,
+                                "replace": "data-ids=\".:(.*?)[,\"].*?>",
+                                "replaceWithString": "$1"
+                            },
+                            {
+                                "property": "thumbnailFileName",
+                                "key": "fmt:https://images.craigslist.org/${imageDataID}_300x300.jpg",
+                                "removeTags": true,
+                                "replace": ".*?image gallery empty.+",
+                                "replaceWithString": ""
+                            },
+                            {
+                                "property": "price",
+                                "key": "7",
+                                "removeTags": true,
+                                "decodeHtml": true,
+                                "trim": true
+                            },
+                            {
+                                "property": "priceText",
+                                "key": "7",
+                                "removeTags": true,
+                                "decodeHtml": true,
+                                "trim": true
+                            },
+                            {
+                                "property": "postingUrl",
+                                "key": "5",
+                                "removeTags": true
+                            },
+                            {
+                                "property": "title",
+                                "key": "6",
+                                "removeTags": true,
+                                "decodeHtml": true
+                            },
+                            {
+                                "property": "date",
+                                "algo": ["parseDate"],
+                                "algo-off": ["agoComputed","parseDate","natlang"],
+                                "key": "4",
+                                "pattern": "yyyy-MM-dd hh:mm",
+                                "removeTags": true,
+                                "decodeHtml": true
+                            }
+                        ]
+                    }
+                ]
+            }        
+            
+            ,
             "context":{
                 "city":{
                     "name": "${location.name}",
@@ -27,7 +128,7 @@
             "scrollOffset": 0
         },
         "incrementalLoad":{
-            "step": 25,
+            "step": 120,
             "modelKey": "scrollOffset"
         },
         "browse":{
@@ -119,7 +220,7 @@
                 }
             },
             "generic": {
-                "pattern": "format=rss${scrollOffset}&query=${keywords}${hasImages}${titleOnly}",
+                "pattern": "${scrollOffset}&query=${keywords}${hasImages}${titleOnly}",
                 "fields": {
                     "location": {"type":"text", "layoutOnChange":true, "selectTreeRef": "locations", "buttonStyle": "cancel", "title": "Location", "prefix": "🌎 ", "required":true, "autoSelect":"nearest"},
                     "category": {"type":"text", "layoutOnChange":true, "selectTreeRef": "categories", "buttonStyle": "cancel", "title": "Category", "required":true},
@@ -279,7 +380,7 @@
                 "cat": "mca",
                 "catName": "motorcycles",
                 "parent": "priceSearch",
-                "pattern": "${locSearchPattern}/${category.value}?format=rss&${priceSearch}${minYear}${maxYear}${minOdo}${maxOdo}${minDisp}${maxDisp}",
+                "pattern": "${locSearchPattern}/${category.value}?${priceSearch}${minYear}${maxYear}${minOdo}${maxOdo}${minDisp}${maxDisp}",
                 "groupTitle": "Motocycles",
                 "fields": {
                     "minYear": { "type":"numeric", "prefix":"&min_auto_year=", "placeholder": "Min Year"},
