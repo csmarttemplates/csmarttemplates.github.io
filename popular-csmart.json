@@ -10,8 +10,8 @@
             {
                 "finderType": "DelimitedFinder",
                 "start": "<ul class=\"rows\">",
-                "end": "<div class=\"search-legend bottom\">",
-                "useRegex": false,
+                "end": "(Zero local results|class=\"search-legend bottom\">)",
+                "useRegex": true,                
                 "context": "list",
                 "finders": [
                     {
