@@ -188,7 +188,7 @@
             },
             "headerLayout":{
                 "fields": {
-                    "domain": {"type":"text", "placeholder": "domain (eg. some-classifieds-website.org)", "keepOnReset":true, "required":true},
+                    "domain": {"type":"text", "placeholder": "domain (ex. example-classifieds.org)", "keepOnReset":true, "required":true},
                     "location": {"type":"text", "selectTreeRef": "locations", "buttonStyle": "cancel", "title": "Location", "prefix": "🌎 ", "required":true, "autoSelect":"nearest"}
                 },
                 "fieldsLayout": {
@@ -203,7 +203,7 @@
             "generic": {
                 "pattern": "${scrollOffset}&query=${keywords}${hasImages}${titleOnly}",
                 "fields": {
-                    "domain": {"type":"text", "placeholder": "domain (eg. some-classifieds-website.org)", "keepOnReset":true, "required":true},
+                    "domain": {"type":"text", "placeholder": "domain (ex. example-classifieds.org)", "keepOnReset":true, "required":true},
                     "location": {"type":"text", "layoutOnChange":true, "selectTreeRef": "locations", "buttonStyle": "cancel", "title": "Location", "prefix": "🌎 ", "required":true, "autoSelect":"nearest"},
                     "category": {"type":"text", "layoutOnChange":true, "selectTreeRef": "categories", "buttonStyle": "cancel", "title": "Category", "required":true},
                     "keywords": {"type":"text", "placeholder": "keywords", "keyboardAccessoryButtons":[
