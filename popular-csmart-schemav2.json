@@ -3,6 +3,7 @@
         "searchUUID": "domain.classifieds.listings",
         "name":"Classifieds",
         "subtitle":"Domain Specific Classifieds",
+        "//comment":"",
         "loader": {
             "type":"ObjectParser",
             "parser":
