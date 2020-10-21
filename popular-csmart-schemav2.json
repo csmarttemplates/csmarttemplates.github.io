@@ -4545,43 +4545,43 @@
                                     "children": [
                                         {
                                             "geoInfo": {"postal_code": "T2G 5E6", "lat": 51.0453246, "lng": -114.0581012 },
-                                            "key": "calgary.craigslist.ca",
+                                            "key": "calgary.ca",
                                             "name": "calgary",
                                             "url": "calgary"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "T5J 0Y2", "lat": 53.544389, "lng": -113.4909267 },
-                                            "key": "edmonton.craigslist.ca",
+                                            "key": "edmonton.ca",
                                             "name": "edmonton",
                                             "url": "edmonton"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "T9H 5C7", "lat": 56.72637959999999, "lng": -111.3803407 },
-                                            "key": "ftmcmurray.craigslist.ca",
+                                            "key": "ftmcmurray.ca",
                                             "name": "ft mcmurray",
                                             "url": "ftmcmurray"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "T1J 4C9", "lat": 49.69349, "lng": -112.84184 },
-                                            "key": "lethbridge.craigslist.ca",
+                                            "key": "lethbridge.ca",
                                             "name": "lethbridge",
                                             "url": "lethbridge"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "T1A 0C5", "lat": 50.0405486, "lng": -110.6764258 },
-                                            "key": "hat.craigslist.ca",
+                                            "key": "hat.ca",
                                             "name": "medicine hat",
                                             "url": "hat"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "T0E", "lat": 53.9332706, "lng": -116.5765035 },
-                                            "key": "peace.craigslist.ca",
+                                            "key": "peace.ca",
                                             "name": "peace river country",
                                             "url": "peace"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "T4N 3T3", "lat": 52.2681118, "lng": -113.8112386 },
-                                            "key": "reddeer.craigslist.ca",
+                                            "key": "reddeer.ca",
                                             "name": "red deer",
                                             "url": "reddeer"
                                         }
@@ -4592,61 +4592,61 @@
                                     "children": [
                                         {
                                             "geoInfo": {"postal_code": "V0L", "lat": 52.4031805, "lng": -123.4553619 },
-                                            "key": "cariboo.craigslist.ca",
+                                            "key": "cariboo.ca",
                                             "name": "cariboo",
                                             "url": "cariboo"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "V9J 1P3", "lat": 49.70641879999997, "lng": -125.021945 },
-                                            "key": "comoxvalley.craigslist.ca",
+                                            "key": "comoxvalley.ca",
                                             "name": "comox valley",
                                             "url": "comoxvalley"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "V0M 1A1", "lat": 49.054633, "lng": -122.327627 },
-                                            "key": "abbotsford.craigslist.ca",
+                                            "key": "abbotsford.ca",
                                             "name": "fraser valley",
                                             "url": "abbotsford"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "V2C 3R4", "lat": 50.67452200000001, "lng": -120.3272674 },
-                                            "key": "kamloops.craigslist.ca",
+                                            "key": "kamloops.ca",
                                             "name": "kamloops",
                                             "url": "kamloops"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "V1W 1Y3", "lat": 49.83385, "lng": -119.5236098 },
-                                            "key": "kelowna.craigslist.ca",
+                                            "key": "kelowna.ca",
                                             "name": "kelowna / okanagan",
                                             "url": "kelowna"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "V0B", "lat": 50.12841050000001, "lng": -115.7568033 },
-                                            "key": "cranbrook.craigslist.ca",
+                                            "key": "cranbrook.ca",
                                             "name": "kootenays",
                                             "url": "cranbrook"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "V9R 3A5", "lat": 49.16588359999999, "lng": -123.9400647 },
-                                            "key": "nanaimo.craigslist.ca",
+                                            "key": "nanaimo.ca",
                                             "name": "nanaimo",
                                             "url": "nanaimo"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "V2L 3K2", "lat": 53.9170641, "lng": -122.7496693 },
-                                            "key": "princegeorge.craigslist.ca",
+                                            "key": "princegeorge.ca",
                                             "name": "prince george",
                                             "url": "princegeorge"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "V0J 2N0", "lat": 54.7882676, "lng": -127.164868 },
-                                            "key": "skeena.craigslist.ca",
+                                            "key": "skeena.ca",
                                             "name": "skeena-bulkley",
                                             "url": "skeena"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "V0N 3A5", "lat": 49.7604377, "lng": -123.7643986 },
-                                            "key": "sunshine.craigslist.ca",
+                                            "key": "sunshine.ca",
                                             "name": "sunshine coast",
                                             "url": "sunshine"
                                         },
@@ -4655,60 +4655,60 @@
                                                 {
                                                     "subcode": "van",
                                                     "geoInfo": {"postal_code": "V5Y", "lat": 49.261226, "lng": -123.1139268 },
-                                                    "key": "vancouver.craigslist.ca.van",
+                                                    "key": "vancouver.van",
                                                     "name": "vancouver",
                                                     "url": "vancouver"
                                                 },
                                                 {
                                                     "subcode": "nvn",
                                                     "geoInfo": {"postal_code": "V5Y", "lat": 49.337204, "lng": -123.113533 },
-                                                    "key": "vancouver.craigslist.ca.nvn",
+                                                    "key": "vancouver.nvn",
                                                     "name": "north shore",
                                                     "url": "vancouver"
                                                 },
                                                 {
                                                     "subcode": "bnc",
                                                     "geoInfo": {"postal_code": "V5Y", "lat": 49.237103, "lng": -122.977577 },
-                                                    "key": "vancouver.craigslist.ca.bnc",
+                                                    "key": "vancouver.bnc",
                                                     "name": "burnaby/newwest",
                                                     "url": "vancouver"
                                                 },
                                                 {
                                                     "subcode": "rds",
                                                     "geoInfo": {"postal_code": "V5Y", "lat": 49.13050999999999, "lng": -122.758698 },
-                                                    "key": "vancouver.craigslist.ca.rds",
+                                                    "key": "vancouver.rds",
                                                     "name": "delta/surrey/langley",
                                                     "url": "vancouver"
                                                 },
                                                 {
                                                     "subcode": "pml",
                                                     "geoInfo": {"postal_code": "V5Y", "lat": 49.251224, "lng": -122.719452 },
-                                                    "key": "vancouver.craigslist.ca.pml",
+                                                    "key": "vancouver.pml",
                                                     "name": "tricities/pitt/maple",
                                                     "url": "vancouver"
                                                 },
                                                 {
                                                     "subcode": "rch",
                                                     "geoInfo": {"postal_code": "V5Y", "lat": 49.159257, "lng": -123.132126 },
-                                                    "key": "vancouver.craigslist.ca.rch",
+                                                    "key": "vancouver.rch",
                                                     "name": "richmond",
                                                     "url": "vancouver"
                                                 }
                                             ],
                                             "geoInfo": {"postal_code": "V5Y", "lat": 49.261226, "lng": -123.1139268 },
-                                            "key": "vancouver.craigslist.ca",
+                                            "key": "vancouver.ca",
                                             "name": "vancouver ",
                                             "url": "vancouver"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "V8W 1P6", "lat": 48.4284207, "lng": -123.3656444 },
-                                            "key": "victoria.craigslist.ca",
+                                            "key": "victoria.ca",
                                             "name": "victoria",
                                             "url": "victoria"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "V0N", "lat": 50.11631960000001, "lng": -122.9573563 },
-                                            "key": "whistler.craigslist.ca",
+                                            "key": "whistler.ca",
                                             "name": "whistler",
                                             "url": "whistler"
                                         }
@@ -4719,7 +4719,7 @@
                                     "children": [
                                         {
                                             "geoInfo": {"postal_code": "R3B", "lat": 49.89975410000001, "lng": -97.13749370000002 },
-                                            "key": "winnipeg.craigslist.ca",
+                                            "key": "winnipeg.ca",
                                             "name": "winnipeg",
                                             "url": "winnipeg"
                                         }
@@ -4730,7 +4730,7 @@
                                     "children": [
                                         {
                                             "geoInfo": {"postal_code": "E6A 1Y5", "lat": 46.56531629999999, "lng": -66.46191639999998 },
-                                            "key": "newbrunswick.craigslist.ca",
+                                            "key": "newbrunswick.ca",
                                             "name": "new brunswick",
                                             "url": "newbrunswick"
                                         }
@@ -4741,7 +4741,7 @@
                                     "children": [
                                         {
                                             "geoInfo": {"postal_code": "A1C 1J5", "lat": 47.5605413, "lng": -52.71283150000001 },
-                                            "key": "newfoundland.craigslist.ca",
+                                            "key": "newfoundland.ca",
                                             "name": "st john's",
                                             "url": "newfoundland"
                                         }
@@ -4752,13 +4752,13 @@
                                     "children": [
                                         {
                                             "geoInfo": {"postal_code": "X0E", "lat": 64.8255441, "lng": -124.8457334 },
-                                            "key": "territories.craigslist.ca",
+                                            "key": "territories.ca",
                                             "name": "territories",
                                             "url": "territories"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "X0E", "lat": 62.45397169999999, "lng": -114.3717886 },
-                                            "key": "yellowknife.craigslist.ca",
+                                            "key": "yellowknife.ca",
                                             "name": "yellowknife",
                                             "url": "yellowknife"
                                         }
@@ -4769,7 +4769,7 @@
                                     "children": [
                                         {
                                             "geoInfo": {"postal_code": "B3J 3N8", "lat": 44.64886250000001, "lng": -63.5753196 },
-                                            "key": "halifax.craigslist.ca",
+                                            "key": "halifax.ca",
                                             "name": "halifax",
                                             "url": "halifax"
                                         }
@@ -4780,109 +4780,109 @@
                                     "children": [
                                         {
                                             "geoInfo": {"postal_code": "L4N 2K8", "lat": 44.37809020000001, "lng": -79.70161590000001 },
-                                            "key": "barrie.craigslist.ca",
+                                            "key": "barrie.ca",
                                             "name": "barrie",
                                             "url": "barrie"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "K8N 2Y7", "lat": 44.1627589, "lng": -77.38323150000001 },
-                                            "key": "belleville.craigslist.ca",
+                                            "key": "belleville.ca",
                                             "name": "belleville",
                                             "url": "belleville"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "N4S 6Y9", "lat": 43.13149660000001, "lng": -80.74716509999999 },
-                                            "key": "brantford.craigslist.ca",
+                                            "key": "brantford.ca",
                                             "name": "brantford-woodstock",
                                             "url": "brantford"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "N7M 1E9", "lat": 42.40480279999998, "lng": -82.19103779999998 },
-                                            "key": "chatham.craigslist.ca",
+                                            "key": "chatham.ca",
                                             "name": "chatham-kent",
                                             "url": "chatham"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "K6J 3P9", "lat": 45.0212762, "lng": -74.730345 },
-                                            "key": "cornwall.craigslist.ca",
+                                            "key": "cornwall.ca",
                                             "name": "cornwall",
                                             "url": "cornwall"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "N1H 4E5", "lat": 43.5448048, "lng": -80.24816659999999 },
-                                            "key": "guelph.craigslist.ca",
+                                            "key": "guelph.ca",
                                             "name": "guelph",
                                             "url": "guelph"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "L7S 1G6", "lat": 43.32551959999999, "lng": -79.7990319 },
-                                            "key": "hamilton.craigslist.ca",
+                                            "key": "hamilton.ca",
                                             "name": "hamilton-burlington",
                                             "url": "hamilton"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "K7L 1S4", "lat": 44.23117169999999, "lng": -76.4859544 },
-                                            "key": "kingston.craigslist.ca",
+                                            "key": "kingston.ca",
                                             "name": "kingston",
                                             "url": "kingston"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "N2P", "lat": 43.40524060000001, "lng": -80.38888220000001 },
-                                            "key": "kitchener.craigslist.ca",
+                                            "key": "kitchener.ca",
                                             "name": "kitchener-waterloo-cambridge",
                                             "url": "kitchener"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "N6B 1X2", "lat": 42.98695020000001, "lng": -81.24317699999999 },
-                                            "key": "londonon.craigslist.ca",
+                                            "key": "londonon.ca",
                                             "name": "london ",
                                             "url": "londonon"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "L0S 1E6", "lat": 43.0581645, "lng": -79.29021329999998 },
-                                            "key": "niagara.craigslist.ca",
+                                            "key": "niagara.ca",
                                             "name": "niagara region",
                                             "url": "niagara"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "J8X", "lat": 45.42873099999998, "lng": -75.71336579999999 },
-                                            "key": "ottawa.craigslist.ca",
+                                            "key": "ottawa.ca",
                                             "name": "ottawa-hull-gatineau",
                                             "url": "ottawa"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "N4K 5R1", "lat": 44.5690305, "lng": -80.94056020000001 },
-                                            "key": "owensound.craigslist.ca",
+                                            "key": "owensound.ca",
                                             "name": "owen sound",
                                             "url": "owensound"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "K9H 3R9", "lat": 44.30905799999999, "lng": -78.31974699999998 },
-                                            "key": "peterborough.craigslist.ca",
+                                            "key": "peterborough.ca",
                                             "name": "peterborough",
                                             "url": "peterborough"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "N7T 5V2", "lat": 42.974536, "lng": -82.40659009999999 },
-                                            "key": "sarnia.craigslist.ca",
+                                            "key": "sarnia.ca",
                                             "name": "sarnia",
                                             "url": "sarnia"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "P6A 1P7", "lat": 46.52185799999999, "lng": -84.3460896 },
-                                            "key": "soo.craigslist.ca",
+                                            "key": "soo.ca",
                                             "name": "sault ste marie",
                                             "url": "soo"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "P3C 3X3", "lat": 46.48999999999998, "lng": -81.00999999999996 },
-                                            "key": "sudbury.craigslist.ca",
+                                            "key": "sudbury.ca",
                                             "name": "sudbury",
                                             "url": "sudbury"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "P7E 1E3", "lat": 48.3808951, "lng": -89.24768230000002 },
-                                            "key": "thunderbay.craigslist.ca",
+                                            "key": "thunderbay.ca",
                                             "name": "thunder bay",
                                             "url": "thunderbay"
                                         },
@@ -4891,54 +4891,54 @@
                                                 {
                                                     "subcode": "tor",
                                                     "geoInfo": {"postal_code": "M5H 2N1", "lat": 43.653226, "lng": -79.3831843 },
-                                                    "key": "toronto.craigslist.ca.tor",
+                                                    "key": "toronto.tor",
                                                     "name": "city of toronto",
                                                     "url": "toronto"
                                                 },
                                                 {
                                                     "subcode": "drh",
                                                     "geoInfo": {"postal_code": "M5H 2N1", "lat": 43.975028, "lng": -78.91522399999999 },
-                                                    "key": "toronto.craigslist.ca.drh",
+                                                    "key": "toronto.drh",
                                                     "name": "durham region",
                                                     "url": "toronto"
                                                 },
                                                 {
                                                     "subcode": "yrk",
                                                     "geoInfo": {"postal_code": "M5H 2N1", "lat": 44.024422, "lng": -79.47003400000001 },
-                                                    "key": "toronto.craigslist.ca.yrk",
+                                                    "key": "toronto.yrk",
                                                     "name": "york region",
                                                     "url": "toronto"
                                                 },
                                                 {
                                                     "subcode": "bra",
                                                     "geoInfo": {"postal_code": "M5H 2N1", "lat": 43.704615, "lng": -79.760957 },
-                                                    "key": "toronto.craigslist.ca.bra",
+                                                    "key": "toronto.bra",
                                                     "name": "brampton",
                                                     "url": "toronto"
                                                 },
                                                 {
                                                     "subcode": "mss",
                                                     "geoInfo": {"postal_code": "M5H 2N1", "lat": 43.598792, "lng": -79.642746 },
-                                                    "key": "toronto.craigslist.ca.mss",
+                                                    "key": "toronto.mss",
                                                     "name": "mississauga",
                                                     "url": "toronto"
                                                 },
                                                 {
                                                     "subcode": "oak",
                                                     "geoInfo": {"postal_code": "M5H 2N1", "lat": 43.47684, "lng": -79.685318 },
-                                                    "key": "toronto.craigslist.ca.oak",
+                                                    "key": "toronto.oak",
                                                     "name": "oakville",
                                                     "url": "toronto"
                                                 }
                                             ],
                                             "geoInfo": {"postal_code": "M5H 2N1", "lat": 43.653226, "lng": -79.3831843 },
-                                            "key": "toronto.craigslist.ca",
+                                            "key": "toronto.ca",
                                             "name": "toronto",
                                             "url": "toronto"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "N8X 3Y4", "lat": 42.279609, "lng": -83.00853289999995 },
-                                            "key": "windsor.craigslist.ca",
+                                            "key": "windsor.ca",
                                             "name": "windsor",
                                             "url": "windsor"
                                         }
@@ -4949,7 +4949,7 @@
                                     "children": [
                                         {
                                             "geoInfo": {"postal_code": "C0A 1M0", "lat": 46.510712, "lng": -63.41681359999997 },
-                                            "key": "pei.craigslist.ca",
+                                            "key": "pei.ca",
                                             "name": "prince edward island",
                                             "url": "pei"
                                         }
@@ -4960,31 +4960,31 @@
                                     "children": [
                                         {
                                             "geoInfo": {"postal_code": "H2Y 1C6", "lat": 45.50866990000001, "lng": -73.55399249999996 },
-                                            "key": "montreal.craigslist.ca",
+                                            "key": "montreal.ca",
                                             "name": "montreal",
                                             "url": "montreal"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "G1N 3L6", "lat": 46.8032826, "lng": -71.242796 },
-                                            "key": "quebec.craigslist.ca",
+                                            "key": "quebec.ca",
                                             "name": "quebec city",
                                             "url": "quebec"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "G7J 1E2", "lat": 48.4280529, "lng": -71.0684923 },
-                                            "key": "saguenay.craigslist.ca",
+                                            "key": "saguenay.ca",
                                             "name": "saguenay",
                                             "url": "saguenay"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "J1G 2H9", "lat": 45.4009928, "lng": -71.8824288 },
-                                            "key": "sherbrooke.craigslist.ca",
+                                            "key": "sherbrooke.ca",
                                             "name": "sherbrooke",
                                             "url": "sherbrooke"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "G9A 4J4", "lat": 46.34323970000001, "lng": -72.54328339999999 },
-                                            "key": "troisrivieres.craigslist.ca",
+                                            "key": "troisrivieres.ca",
                                             "name": "trois-rivieres",
                                             "url": "troisrivieres"
                                         }
@@ -4995,13 +4995,13 @@
                                     "children": [
                                         {
                                             "geoInfo": {"postal_code": "S4R 8R2", "lat": 50.45472220000001, "lng": -104.6066667 },
-                                            "key": "regina.craigslist.ca",
+                                            "key": "regina.ca",
                                             "name": "regina",
                                             "url": "regina"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "S7K 3H6", "lat": 52.1343699, "lng": -106.647656 },
-                                            "key": "saskatoon.craigslist.ca",
+                                            "key": "saskatoon.ca",
                                             "name": "saskatoon",
                                             "url": "saskatoon"
                                         }
@@ -5012,7 +5012,7 @@
                                     "children": [
                                         {
                                             "geoInfo": {"postal_code": "Y1A 2H3", "lat": 60.72118710000001, "lng": -135.0568449 },
-                                            "key": "whitehorse.craigslist.ca",
+                                            "key": "whitehorse.ca",
                                             "name": "whitehorse",
                                             "url": "whitehorse"
                                         }
@@ -5029,7 +5029,7 @@
                                     "children": [
                                         {
                                             "geoInfo": {"postal_code": "1010", "lat": 48.2081743, "lng": 16.3738189 },
-                                            "key": "vienna.craigslist.at",
+                                            "key": "vienna.at",
                                             "name": "vienna",
                                             "url": "vienna"
                                         }
@@ -5073,7 +5073,7 @@
                                     "children": [
                                         {
                                             "geoInfo": {"postal_code": "120 00", "lat": 50.0755381, "lng": 14.4378005 },
-                                            "key": "prague.craigslist.cz",
+                                            "key": "prague.cz",
                                             "name": "prague",
                                             "url": "prague"
                                         }
@@ -5095,7 +5095,7 @@
                                     "children": [
                                         {
                                             "geoInfo": {"postal_code": "41880", "lat": 61.92410999999998, "lng": 25.748151 },
-                                            "key": "helsinki.craigslist.fi",
+                                            "key": "helsinki.fi",
                                             "name": "finland ",
                                             "url": "helsinki"
                                         }
@@ -5189,91 +5189,91 @@
                                     "children": [
                                         {
                                             "geoInfo": {"postal_code": "10178", "lat": 52.51917099999999, "lng": 13.4060912 },
-                                            "key": "berlin.craigslist.de",
+                                            "key": "berlin.de",
                                             "name": "berlin",
                                             "url": "berlin"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "28195", "lat": 53.07929619999997, "lng": 8.8016937 },
-                                            "key": "bremen.craigslist.de",
+                                            "key": "bremen.de",
                                             "name": "bremen",
                                             "url": "bremen"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "50667", "lat": 50.937531, "lng": 6.9602786 },
-                                            "key": "cologne.craigslist.de",
+                                            "key": "cologne.de",
                                             "name": "cologne",
                                             "url": "cologne"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "01067", "lat": 51.0504088, "lng": 13.7372621 },
-                                            "key": "dresden.craigslist.de",
+                                            "key": "dresden.de",
                                             "name": "dresden",
                                             "url": "dresden"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "40213", "lat": 51.2277411, "lng": 6.7734556 },
-                                            "key": "dusseldorf.craigslist.de",
+                                            "key": "dusseldorf.de",
                                             "name": "dusseldorf",
                                             "url": "dusseldorf"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "45127", "lat": 51.45564320000001, "lng": 7.011555200000001 },
-                                            "key": "essen.craigslist.de",
+                                            "key": "essen.de",
                                             "name": "essen / ruhr",
                                             "url": "essen"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "60311", "lat": 50.1109221, "lng": 8.6821267 },
-                                            "key": "frankfurt.craigslist.de",
+                                            "key": "frankfurt.de",
                                             "name": "frankfurt",
                                             "url": "frankfurt"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "20095", "lat": 53.5510846, "lng": 9.993681800000001 },
-                                            "key": "hamburg.craigslist.de",
+                                            "key": "hamburg.de",
                                             "name": "hamburg",
                                             "url": "hamburg"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "30159", "lat": 52.3758916, "lng": 9.732010400000004 },
-                                            "key": "hannover.craigslist.de",
+                                            "key": "hannover.de",
                                             "name": "hannover",
                                             "url": "hannover"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "69115", "lat": 49.3987524, "lng": 8.6724335 },
-                                            "key": "heidelberg.craigslist.de",
+                                            "key": "heidelberg.de",
                                             "name": "heidelberg",
                                             "url": "heidelberg"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "67659", "lat": 49.4400657, "lng": 7.7491265 },
-                                            "key": "kaiserslautern.craigslist.de",
+                                            "key": "kaiserslautern.de",
                                             "name": "kaiserslautern",
                                             "url": "kaiserslautern"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "04109", "lat": 51.33969549999999, "lng": 12.3730747 },
-                                            "key": "leipzig.craigslist.de",
+                                            "key": "leipzig.de",
                                             "name": "leipzig",
                                             "url": "leipzig"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "80331", "lat": 48.13672029999999, "lng": 11.576754 },
-                                            "key": "munich.craigslist.de",
+                                            "key": "munich.de",
                                             "name": "munich",
                                             "url": "munich"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "90403", "lat": 49.45202999999999, "lng": 11.07675 },
-                                            "key": "nuremberg.craigslist.de",
+                                            "key": "nuremberg.de",
                                             "name": "nuremberg",
                                             "url": "nuremberg"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "70173", "lat": 48.77541810000001, "lng": 9.181758800000001 },
-                                            "key": "stuttgart.craigslist.de",
+                                            "key": "stuttgart.de",
                                             "name": "stuttgart",
                                             "url": "stuttgart"
                                         }
@@ -5284,7 +5284,7 @@
                                     "children": [
                                         {
                                             "geoInfo": {"postal_code": "360 80", "lat": 39.074208, "lng": 21.824312 },
-                                            "key": "athens.craigslist.gr",
+                                            "key": "athens.gr",
                                             "name": "greece",
                                             "url": "athens"
                                         }
@@ -5328,67 +5328,67 @@
                                     "children": [
                                         {
                                             "geoInfo": {"postal_code": "40125", "lat": 44.494887, "lng": 11.3426163 },
-                                            "key": "bologna.craigslist.it",
+                                            "key": "bologna.it",
                                             "name": "bologna",
                                             "url": "bologna"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "50123", "lat": 43.7710332, "lng": 11.2480006 },
-                                            "key": "florence.craigslist.it",
+                                            "key": "florence.it",
                                             "name": "florence / tuscany",
                                             "url": "florence"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "16121", "lat": 44.40564990000001, "lng": 8.946256 },
-                                            "key": "genoa.craigslist.it",
+                                            "key": "genoa.it",
                                             "name": "genoa",
                                             "url": "genoa"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "", "lat": 45.4654542, "lng": 9.186515999999999 },
-                                            "key": "milan.craigslist.it",
+                                            "key": "milan.it",
                                             "name": "milan",
                                             "url": "milan"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "80142", "lat": 40.8517746, "lng": 14.2681244 },
-                                            "key": "naples.craigslist.it",
+                                            "key": "naples.it",
                                             "name": "napoli / campania",
                                             "url": "naples"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "06121", "lat": 43.11071679999999, "lng": 12.3908279 },
-                                            "key": "perugia.craigslist.it",
+                                            "key": "perugia.it",
                                             "name": "perugia",
                                             "url": "perugia"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "00186", "lat": 41.8929163, "lng": 12.4825199 },
-                                            "key": "rome.craigslist.it",
+                                            "key": "rome.it",
                                             "name": "rome",
                                             "url": "rome"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "08030", "lat": 40.1208752, "lng": 9.012892600000001 },
-                                            "key": "sardinia.craigslist.it",
+                                            "key": "sardinia.it",
                                             "name": "sardinia",
                                             "url": "sardinia"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "90027", "lat": 37.5999938, "lng": 14.0153557 },
-                                            "key": "sicily.craigslist.it",
+                                            "key": "sicily.it",
                                             "name": "sicilia",
                                             "url": "sicily"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "10123", "lat": 45.07098200000001, "lng": 7.685675999999999 },
-                                            "key": "torino.craigslist.it",
+                                            "key": "torino.it",
                                             "name": "torino",
                                             "url": "torino"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "30135", "lat": 45.4408474, "lng": 12.3155151 },
-                                            "key": "venice.craigslist.it",
+                                            "key": "venice.it",
                                             "name": "venice / veneto",
                                             "url": "venice"
                                         }
@@ -5432,7 +5432,7 @@
                                     "children": [
                                         {
                                             "geoInfo": {"postal_code": "", "lat": 51.919438, "lng": 19.145136 },
-                                            "key": "warsaw.craigslist.pl",
+                                            "key": "warsaw.pl",
                                             "name": "poland",
                                             "url": "warsaw"
                                         }
@@ -5443,19 +5443,19 @@
                                     "children": [
                                         {
                                             "geoInfo": {"postal_code": "8000-368", "lat": 37.01935479999999, "lng": -7.930439699999999 },
-                                            "key": "faro.craigslist.pt",
+                                            "key": "faro.pt",
                                             "name": "faro / algarve",
                                             "url": "faro"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "1269-133", "lat": 38.7252993, "lng": -9.150036400000001 },
-                                            "key": "lisbon.craigslist.pt",
+                                            "key": "lisbon.pt",
                                             "name": "lisbon",
                                             "url": "lisbon"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "4050-536", "lat": 41.15668920000001, "lng": -8.623925400000001 },
-                                            "key": "porto.craigslist.pt",
+                                            "key": "porto.pt",
                                             "name": "porto",
                                             "url": "porto"
                                         }
@@ -5494,67 +5494,67 @@
                                     "children": [
                                         {
                                             "geoInfo": {"postal_code": "03003", "lat": 38.3459963, "lng": -0.4906855 },
-                                            "key": "alicante.craigslist.es",
+                                            "key": "alicante.es",
                                             "name": "alicante",
                                             "url": "alicante"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "07210", "lat": 39.53417889999999, "lng": 2.8577105 },
-                                            "key": "baleares.craigslist.es",
+                                            "key": "baleares.es",
                                             "name": "baleares",
                                             "url": "baleares"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "08002", "lat": 41.38506389999999, "lng": 2.1734035 },
-                                            "key": "barcelona.craigslist.es",
+                                            "key": "barcelona.es",
                                             "name": "barcelona",
                                             "url": "barcelona"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "48005", "lat": 43.2566901, "lng": -2.9240616 },
-                                            "key": "bilbao.craigslist.es",
+                                            "key": "bilbao.es",
                                             "name": "bilbao",
                                             "url": "bilbao"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "11006", "lat": 36.52706120000001, "lng": -6.288596199999999 },
-                                            "key": "cadiz.craigslist.es",
+                                            "key": "cadiz.es",
                                             "name": "cadiz",
                                             "url": "cadiz"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "38413", "lat": 28.29156369999999, "lng": -16.6291304 },
-                                            "key": "canarias.craigslist.es",
+                                            "key": "canarias.es",
                                             "name": "canarias",
                                             "url": "canarias"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "18001", "lat": 37.1773363, "lng": -3.598557100000001 },
-                                            "key": "granada.craigslist.es",
+                                            "key": "granada.es",
                                             "name": "granada",
                                             "url": "granada"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "28013", "lat": 40.41677539999999, "lng": -3.7037902 },
-                                            "key": "madrid.craigslist.es",
+                                            "key": "madrid.es",
                                             "name": "madrid",
                                             "url": "madrid"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "29015", "lat": 36.721261, "lng": -4.4212655 },
-                                            "key": "malaga.craigslist.es",
+                                            "key": "malaga.es",
                                             "name": "malaga",
                                             "url": "malaga"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "41018", "lat": 37.3880961, "lng": -5.9823299 },
-                                            "key": "sevilla.craigslist.es",
+                                            "key": "sevilla.es",
                                             "name": "sevilla",
                                             "url": "sevilla"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "46002", "lat": 39.4699075, "lng": -0.3762881 },
-                                            "key": "valencia.craigslist.es",
+                                            "key": "valencia.es",
                                             "name": "valencia",
                                             "url": "valencia"
                                         }
@@ -5565,7 +5565,7 @@
                                     "children": [
                                         {
                                             "geoInfo": {"postal_code": "76049", "lat": 59.33494, "lng": 18.062103 },
-                                            "key": "stockholm.craigslist.se",
+                                            "key": "stockholm.se",
                                             "name": "sweden",
                                             "url": "stockholm"
                                         }
@@ -5576,31 +5576,31 @@
                                     "children": [
                                         {
                                             "geoInfo": {"postal_code": "4051", "lat": 47.55742099999999, "lng": 7.592572699999998 },
-                                            "key": "basel.craigslist.ch",
+                                            "key": "basel.ch",
                                             "name": "basel",
                                             "url": "basel"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "3011", "lat": 46.94792220000001, "lng": 7.444608499999997 },
-                                            "key": "bern.craigslist.ch",
+                                            "key": "bern.ch",
                                             "name": "bern",
                                             "url": "bern"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "1204", "lat": 46.19839220000001, "lng": 6.142296099999998 },
-                                            "key": "geneva.craigslist.ch",
+                                            "key": "geneva.ch",
                                             "name": "geneva",
                                             "url": "geneva"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "1003", "lat": 46.5199617, "lng": 6.633597099999998 },
-                                            "key": "lausanne.craigslist.ch",
+                                            "key": "lausanne.ch",
                                             "name": "lausanne",
                                             "url": "lausanne"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "8001", "lat": 47.3686498, "lng": 8.539182499999997 },
-                                            "key": "zurich.craigslist.ch",
+                                            "key": "zurich.ch",
                                             "name": "zurich",
                                             "url": "zurich"
                                         }
@@ -5611,7 +5611,7 @@
                                     "children": [
                                         {
                                             "geoInfo": {"postal_code": "", "lat": 41.02342700000001, "lng": 28.97897200000001 },
-                                            "key": "istanbul.craigslist.com.tr",
+                                            "key": "istanbul.tr",
                                             "name": "turkey",
                                             "url": "istanbul"
                                         }
@@ -5633,163 +5633,163 @@
                                     "children": [
                                         {
                                             "geoInfo": {"postal_code": "AB10 1AN", "lat": 57.149717, "lng": -2.094278 },
-                                            "key": "aberdeen.craigslist.co.uk",
+                                            "key": "aberdeen.uk",
                                             "name": "aberdeen",
                                             "url": "aberdeen"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "BA2", "lat": 51.37580099999999, "lng": -2.3599039 },
-                                            "key": "bath.craigslist.co.uk",
+                                            "key": "bath.uk",
                                             "name": "bath",
                                             "url": "bath"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "BT1 5GB", "lat": 54.59728500000002, "lng": -5.93012 },
-                                            "key": "belfast.craigslist.co.uk",
+                                            "key": "belfast.uk",
                                             "name": "belfast",
                                             "url": "belfast"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "B4 7ES", "lat": 52.48624299999999, "lng": -1.890401 },
-                                            "key": "birmingham.craigslist.co.uk",
+                                            "key": "birmingham.uk",
                                             "name": "birmingham / west mids",
                                             "url": "birmingham"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "BN1 1EE", "lat": 50.82253000000001, "lng": -0.137163 },
-                                            "key": "brighton.craigslist.co.uk",
+                                            "key": "brighton.uk",
                                             "name": "brighton",
                                             "url": "brighton"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "BS2 0HQ", "lat": 51.454513, "lng": -2.58791 },
-                                            "key": "bristol.craigslist.co.uk",
+                                            "key": "bristol.uk",
                                             "name": "bristol",
                                             "url": "bristol"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "CB2 3AX", "lat": 52.205337, "lng": 0.121817 },
-                                            "key": "cambridge.craigslist.co.uk",
+                                            "key": "cambridge.uk",
                                             "name": "cambridge, UK",
                                             "url": "cambridge"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "CF10 1AS", "lat": 51.48158100000003, "lng": -3.17909 },
-                                            "key": "cardiff.craigslist.co.uk",
+                                            "key": "cardiff.uk",
                                             "name": "cardiff / wales",
                                             "url": "cardiff"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "CV1 3LD", "lat": 52.406822, "lng": -1.519693 },
-                                            "key": "coventry.craigslist.co.uk",
+                                            "key": "coventry.uk",
                                             "name": "coventry",
                                             "url": "coventry"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "DE1 2AW", "lat": 52.9225301, "lng": -1.4746186 },
-                                            "key": "derby.craigslist.co.uk",
+                                            "key": "derby.uk",
                                             "name": "derby",
                                             "url": "derby"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "PL10 1AA", "lat": 50.34714389999999, "lng": -4.2186718 },
-                                            "key": "devon.craigslist.co.uk",
+                                            "key": "devon.uk",
                                             "name": "devon &amp; cornwall",
                                             "url": "devon"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "DD1", "lat": 56.462018, "lng": -2.970721 },
-                                            "key": "dundee.craigslist.co.uk",
+                                            "key": "dundee.uk",
                                             "name": "dundee",
                                             "url": "dundee"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "NN6 7GY", "lat": 52.35551769999999, "lng": -1.1743197 },
-                                            "key": "norwich.craigslist.co.uk",
+                                            "key": "norwich.uk",
                                             "name": "east anglia",
                                             "url": "norwich"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "DE74 2SA", "lat": 52.82937399999999, "lng": -1.332134 },
-                                            "key": "eastmids.craigslist.co.uk",
+                                            "key": "eastmids.uk",
                                             "name": "east midlands",
                                             "url": "eastmids"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "EH1 3EG", "lat": 55.953252, "lng": -3.188267 },
-                                            "key": "edinburgh.craigslist.co.uk",
+                                            "key": "edinburgh.uk",
                                             "name": "edinburgh",
                                             "url": "edinburgh"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "", "lat": 51.76590779999999, "lng": 0.6673664999999998 },
-                                            "key": "essex.craigslist.co.uk",
+                                            "key": "essex.uk",
                                             "name": "essex",
                                             "url": "essex"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "G2", "lat": 55.864237, "lng": -4.251806 },
-                                            "key": "glasgow.craigslist.co.uk",
+                                            "key": "glasgow.uk",
                                             "name": "glasgow",
                                             "url": "glasgow"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "SO21 1DA", "lat": 51.08952029999999, "lng": -1.216844 },
-                                            "key": "hampshire.craigslist.co.uk",
+                                            "key": "hampshire.uk",
                                             "name": "hampshire",
                                             "url": "hampshire"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "ME14", "lat": 51.2787075, "lng": 0.5217254000000002 },
-                                            "key": "kent.craigslist.co.uk",
+                                            "key": "kent.uk",
                                             "name": "kent",
                                             "url": "kent"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "LS1 3DA", "lat": 53.801279, "lng": -1.548567 },
-                                            "key": "leeds.craigslist.co.uk",
+                                            "key": "leeds.uk",
                                             "name": "leeds",
                                             "url": "leeds"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "L2", "lat": 53.40837139999999, "lng": -2.9915726 },
-                                            "key": "liverpool.craigslist.co.uk",
+                                            "key": "liverpool.uk",
                                             "name": "liverpool",
                                             "url": "liverpool"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "WC2R 0HS", "lat": 51.51121389999999, "lng": -0.1198244 },
-                                            "key": "london.craigslist.co.uk",
+                                            "key": "london.uk",
                                             "name": "london",
                                             "url": "london"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "M2 5AB", "lat": 53.479324, "lng": -2.2484851 },
-                                            "key": "manchester.craigslist.co.uk",
+                                            "key": "manchester.uk",
                                             "name": "manchester",
                                             "url": "manchester"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "NE1 4LF", "lat": 54.978252, "lng": -1.61778 },
-                                            "key": "newcastle.craigslist.co.uk",
+                                            "key": "newcastle.uk",
                                             "name": "newcastle / NE england",
                                             "url": "newcastle"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "NG1", "lat": 52.95478319999999, "lng": -1.1581086 },
-                                            "key": "nottingham.craigslist.co.uk",
+                                            "key": "nottingham.uk",
                                             "name": "nottingham",
                                             "url": "nottingham"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "OX1 4DB", "lat": 51.75202090000001, "lng": -1.2577263 },
-                                            "key": "oxford.craigslist.co.uk",
+                                            "key": "oxford.uk",
                                             "name": "oxford",
                                             "url": "oxford"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "S1 2FB", "lat": 53.38112899999999, "lng": -1.470085 },
-                                            "key": "sheffield.craigslist.co.uk",
+                                            "key": "sheffield.uk",
                                             "name": "sheffield",
                                             "url": "sheffield"
                                         }
@@ -5817,73 +5817,73 @@
                                     "children": [
                                         {
                                             "geoInfo": {"postal_code": "100006", "lat": 39.90403, "lng": 116.407526 },
-                                            "key": "beijing.craigslist.com.cn",
+                                            "key": "beijing.cn",
                                             "name": "beijing",
                                             "url": "beijing"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "", "lat": 30.572269, "lng": 104.066541 },
-                                            "key": "chengdu.craigslist.com.cn",
+                                            "key": "chengdu.cn",
                                             "name": "chengdu",
                                             "url": "chengdu"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "400012", "lat": 29.56301, "lng": 106.551557 },
-                                            "key": "chongqing.craigslist.com.cn",
+                                            "key": "chongqing.cn",
                                             "name": "chongqing",
                                             "url": "chongqing"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "116000", "lat": 38.91400300000002, "lng": 121.614682 },
-                                            "key": "dalian.craigslist.com.cn",
+                                            "key": "dalian.cn",
                                             "name": "dalian",
                                             "url": "dalian"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "", "lat": 23.129163, "lng": 113.264435 },
-                                            "key": "guangzhou.craigslist.com.cn",
+                                            "key": "guangzhou.cn",
                                             "name": "guangzhou",
                                             "url": "guangzhou"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "310011", "lat": 30.274085, "lng": 120.15507 },
-                                            "key": "hangzhou.craigslist.com.cn",
+                                            "key": "hangzhou.cn",
                                             "name": "hangzhou",
                                             "url": "hangzhou"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "210008", "lat": 32.060255, "lng": 118.796877 },
-                                            "key": "nanjing.craigslist.com.cn",
+                                            "key": "nanjing.cn",
                                             "name": "nanjing",
                                             "url": "nanjing"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "200003", "lat": 31.230393, "lng": 121.473704 },
-                                            "key": "shanghai.craigslist.com.cn",
+                                            "key": "shanghai.cn",
                                             "name": "shanghai",
                                             "url": "shanghai"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "110000", "lat": 41.80569799999999, "lng": 123.431475 },
-                                            "key": "shenyang.craigslist.com.cn",
+                                            "key": "shenyang.cn",
                                             "name": "shenyang",
                                             "url": "shenyang"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "518048", "lat": 22.543099, "lng": 114.057868 },
-                                            "key": "shenzhen.craigslist.com.cn",
+                                            "key": "shenzhen.cn",
                                             "name": "shenzhen",
                                             "url": "shenzhen"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "430010", "lat": 30.593099, "lng": 114.305393 },
-                                            "key": "wuhan.craigslist.com.cn",
+                                            "key": "wuhan.cn",
                                             "name": "wuhan",
                                             "url": "wuhan"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "", "lat": 34.341568, "lng": 108.940175 },
-                                            "key": "xian.craigslist.com.cn",
+                                            "key": "xian.cn",
                                             "name": "xi'an",
                                             "url": "xian"
                                         }
@@ -5905,7 +5905,7 @@
                                     "children": [
                                         {
                                             "geoInfo": {"postal_code": "", "lat": 22.2478599, "lng": 114.2033843 },
-                                            "key": "hongkong.craigslist.hk",
+                                            "key": "hongkong.hk",
                                             "name": "hong kong",
                                             "url": "hongkong"
                                         }
@@ -5916,97 +5916,97 @@
                                     "children": [
                                         {
                                             "geoInfo": {"postal_code": "380001", "lat": 23.03, "lng": 72.58 },
-                                            "key": "ahmedabad.craigslist.co.in",
+                                            "key": "ahmedabad.in",
                                             "name": "ahmedabad",
                                             "url": "ahmedabad"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "560001", "lat": 12.9715987, "lng": 77.59456270000001 },
-                                            "key": "bangalore.craigslist.co.in",
+                                            "key": "bangalore.in",
                                             "name": "bangalore",
                                             "url": "bangalore"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "751013", "lat": 20.2960587, "lng": 85.8245398 },
-                                            "key": "bhubaneswar.craigslist.co.in",
+                                            "key": "bhubaneswar.in",
                                             "name": "bhubaneswar",
                                             "url": "bhubaneswar"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "160022", "lat": 30.7333148, "lng": 76.77941790000003 },
-                                            "key": "chandigarh.craigslist.co.in",
+                                            "key": "chandigarh.in",
                                             "name": "chandigarh",
                                             "url": "chandigarh"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "600027", "lat": 13.060422, "lng": 80.249583 },
-                                            "key": "chennai.craigslist.co.in",
+                                            "key": "chennai.in",
                                             "name": "chennai (madras)",
                                             "url": "chennai"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "110001", "lat": 28.635308, "lng": 77.22495999999998 },
-                                            "key": "delhi.craigslist.co.in",
+                                            "key": "delhi.in",
                                             "name": "delhi",
                                             "url": "delhi"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "403706", "lat": 15.2993265, "lng": 74.12399599999996 },
-                                            "key": "goa.craigslist.co.in",
+                                            "key": "goa.in",
                                             "name": "goa",
                                             "url": "goa"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "500095", "lat": 17.385044, "lng": 78.486671 },
-                                            "key": "hyderabad.craigslist.co.in",
+                                            "key": "hyderabad.in",
                                             "name": "hyderabad",
                                             "url": "hyderabad"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "452007", "lat": 22.7195687, "lng": 75.8577258 },
-                                            "key": "indore.craigslist.co.in",
+                                            "key": "indore.in",
                                             "name": "indore",
                                             "url": "indore"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "302006", "lat": 26.9124165, "lng": 75.78728790000001 },
-                                            "key": "jaipur.craigslist.co.in",
+                                            "key": "jaipur.in",
                                             "name": "jaipur",
                                             "url": "jaipur"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "679335", "lat": 10.8505159, "lng": 76.2710833 },
-                                            "key": "kerala.craigslist.co.in",
+                                            "key": "kerala.in",
                                             "name": "kerala",
                                             "url": "kerala"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "700009", "lat": 22.572646, "lng": 88.36389500000004 },
-                                            "key": "kolkata.craigslist.co.in",
+                                            "key": "kolkata.in",
                                             "name": "kolkata (calcutta)",
                                             "url": "kolkata"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "226001", "lat": 26.8465108, "lng": 80.9466832 },
-                                            "key": "lucknow.craigslist.co.in",
+                                            "key": "lucknow.in",
                                             "name": "lucknow",
                                             "url": "lucknow"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "400070", "lat": 19.0759837, "lng": 72.87765590000001 },
-                                            "key": "mumbai.craigslist.co.in",
+                                            "key": "mumbai.in",
                                             "name": "mumbai",
                                             "url": "mumbai"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "411011", "lat": 18.5204303, "lng": 73.85674370000001 },
-                                            "key": "pune.craigslist.co.in",
+                                            "key": "pune.in",
                                             "name": "pune",
                                             "url": "pune"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "395003", "lat": 21.195, "lng": 72.81944399999998 },
-                                            "key": "surat.craigslist.co.in",
+                                            "key": "surat.in",
                                             "name": "surat surat",
                                             "url": "surat"
                                         }
@@ -6079,49 +6079,49 @@
                                     "children": [
                                         {
                                             "geoInfo": {"postal_code": "810-8621", "lat": 33.5903547, "lng": 130.4017155 },
-                                            "key": "fukuoka.craigslist.jp",
+                                            "key": "fukuoka.jp",
                                             "name": "fukuoka",
                                             "url": "fukuoka"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "", "lat": 34.3852029, "lng": 132.4552927 },
-                                            "key": "hiroshima.craigslist.jp",
+                                            "key": "hiroshima.jp",
                                             "name": "hiroshima",
                                             "url": "hiroshima"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "460-8508", "lat": 35.1814464, "lng": 136.906398 },
-                                            "key": "nagoya.craigslist.jp",
+                                            "key": "nagoya.jp",
                                             "name": "nagoya",
                                             "url": "nagoya"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "900-8571", "lat": 26.2124013, "lng": 127.6809317 },
-                                            "key": "okinawa.craigslist.jp",
+                                            "key": "okinawa.jp",
                                             "name": "okinawa",
                                             "url": "okinawa"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "", "lat": 35.0116363, "lng": 135.7680294 },
-                                            "key": "osaka.craigslist.jp",
+                                            "key": "osaka.jp",
                                             "name": "osaka-kobe-kyoto",
                                             "url": "osaka"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "", "lat": 43.06209579999999, "lng": 141.3543763 },
-                                            "key": "sapporo.craigslist.jp",
+                                            "key": "sapporo.jp",
                                             "name": "sapporo",
                                             "url": "sapporo"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "980-8671", "lat": 38.268215, "lng": 140.8693558 },
-                                            "key": "sendai.craigslist.jp",
+                                            "key": "sendai.jp",
                                             "name": "sendai",
                                             "url": "sendai"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "", "lat": 35.68948750000001, "lng": 139.6917064 },
-                                            "key": "tokyo.craigslist.jp",
+                                            "key": "tokyo.jp",
                                             "name": "tokyo",
                                             "url": "tokyo"
                                         }
@@ -6132,7 +6132,7 @@
                                     "children": [
                                         {
                                             "geoInfo": {"postal_code": "100-101", "lat": 37.56653499999999, "lng": 126.9779692 },
-                                            "key": "seoul.craigslist.co.kr",
+                                            "key": "seoul.kr",
                                             "name": "seoul",
                                             "url": "seoul"
                                         }
@@ -6187,55 +6187,55 @@
                                     "children": [
                                         {
                                             "geoInfo": {"postal_code": "", "lat": 10.6407389, "lng": 122.9689565 },
-                                            "key": "bacolod.craigslist.com.ph",
+                                            "key": "bacolod.ph",
                                             "name": "bacolod",
                                             "url": "bacolod"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "", "lat": 13.4209885, "lng": 123.4136736 },
-                                            "key": "naga.craigslist.com.ph",
+                                            "key": "naga.ph",
                                             "name": "bicol region",
                                             "url": "naga"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "", "lat": 8.4542363, "lng": 124.6318977 },
-                                            "key": "cdo.craigslist.com.ph",
+                                            "key": "cdo.ph",
                                             "name": "cagayan de oro",
                                             "url": "cdo"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "", "lat": 10.3156992, "lng": 123.8854366 },
-                                            "key": "cebu.craigslist.com.ph",
+                                            "key": "cebu.ph",
                                             "name": "cebu",
                                             "url": "cebu"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "", "lat": 7.190708000000001, "lng": 125.455341 },
-                                            "key": "davaocity.craigslist.com.ph",
+                                            "key": "davaocity.ph",
                                             "name": "davao city",
                                             "url": "davaocity"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "", "lat": 10.7201501, "lng": 122.5621063 },
-                                            "key": "iloilo.craigslist.com.ph",
+                                            "key": "iloilo.ph",
                                             "name": "iloilo",
                                             "url": "iloilo"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "", "lat": 14.5995124, "lng": 120.9842195 },
-                                            "key": "manila.craigslist.com.ph",
+                                            "key": "manila.ph",
                                             "name": "manila",
                                             "url": "manila"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "", "lat": 15.079409, "lng": 120.6199895 },
-                                            "key": "pampanga.craigslist.com.ph",
+                                            "key": "pampanga.ph",
                                             "name": "pampanga",
                                             "url": "pampanga"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "", "lat": 6.921442399999999, "lng": 122.0790267 },
-                                            "key": "zamboanga.craigslist.com.ph",
+                                            "key": "zamboanga.ph",
                                             "name": "zamboanga",
                                             "url": "zamboanga"
                                         }
@@ -6246,7 +6246,7 @@
                                     "children": [
                                         {
                                             "geoInfo": {"postal_code": "", "lat": 1.2800945, "lng": 103.8509491 },
-                                            "key": "singapore.craigslist.com.sg",
+                                            "key": "singapore.sg",
                                             "name": "singapore",
                                             "url": "singapore"
                                         }
@@ -6257,7 +6257,7 @@
                                     "children": [
                                         {
                                             "geoInfo": {"postal_code": "556", "lat": 23.69781, "lng": 120.960515 },
-                                            "key": "taipei.craigslist.com.tw",
+                                            "key": "taipei.tw",
                                             "name": "taiwan",
                                             "url": "taipei"
                                         }
@@ -6268,7 +6268,7 @@
                                     "children": [
                                         {
                                             "geoInfo": {"postal_code": "67160", "lat": 15.870032, "lng": 100.992541 },
-                                            "key": "bangkok.craigslist.co.th",
+                                            "key": "bangkok.th",
                                             "name": "thailand",
                                             "url": "bangkok"
                                         }
@@ -6307,73 +6307,73 @@
                                     "children": [
                                         {
                                             "geoInfo": {"postal_code": "5000", "lat": -34.92862119999999, "lng": 138.5999594 },
-                                            "key": "adelaide.craigslist.com.au",
+                                            "key": "adelaide.au",
                                             "name": "adelaide",
                                             "url": "adelaide"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "4000", "lat": -27.4710107, "lng": 153.0234489 },
-                                            "key": "brisbane.craigslist.com.au",
+                                            "key": "brisbane.au",
                                             "name": "brisbane",
                                             "url": "brisbane"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "4870", "lat": -16.9203338, "lng": 145.7708595 },
-                                            "key": "cairns.craigslist.com.au",
+                                            "key": "cairns.au",
                                             "name": "cairns",
                                             "url": "cairns"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "2601", "lat": -35.2819998, "lng": 149.1286843 },
-                                            "key": "canberra.craigslist.com.au",
+                                            "key": "canberra.au",
                                             "name": "canberra",
                                             "url": "canberra"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "0800", "lat": -12.4628271, "lng": 130.8417772 },
-                                            "key": "darwin.craigslist.com.au",
+                                            "key": "darwin.au",
                                             "name": "darwin",
                                             "url": "darwin"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "4218", "lat": -28.0172605, "lng": 153.4256987 },
-                                            "key": "goldcoast.craigslist.com.au",
+                                            "key": "goldcoast.au",
                                             "name": "gold coast",
                                             "url": "goldcoast"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "3000", "lat": -37.814107, "lng": 144.96328 },
-                                            "key": "melbourne.craigslist.com.au",
+                                            "key": "melbourne.au",
                                             "name": "melbourne",
                                             "url": "melbourne"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "2300", "lat": -32.926689, "lng": 151.7789205 },
-                                            "key": "ntl.craigslist.com.au",
+                                            "key": "ntl.au",
                                             "name": "newcastle, NSW",
                                             "url": "ntl"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "6000", "lat": -31.9530044, "lng": 115.8574693 },
-                                            "key": "perth.craigslist.com.au",
+                                            "key": "perth.au",
                                             "name": "perth",
                                             "url": "perth"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "2000", "lat": -33.8674869, "lng": 151.2069902 },
-                                            "key": "sydney.craigslist.com.au",
+                                            "key": "sydney.au",
                                             "name": "sydney",
                                             "url": "sydney"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "7304", "lat": -41.36504189999999, "lng": 146.6284905 },
-                                            "key": "hobart.craigslist.com.au",
+                                            "key": "hobart.au",
                                             "name": "tasmania",
                                             "url": "hobart"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "2500", "lat": -34.4250728, "lng": 150.8931494 },
-                                            "key": "wollongong.craigslist.com.au",
+                                            "key": "wollongong.au",
                                             "name": "wollongong",
                                             "url": "wollongong"
                                         }
@@ -6396,7 +6396,7 @@
                                         },
                                         {
                                             "geoInfo": {"postal_code": "9016", "lat": -45.8787605, "lng": 170.5027976 },
-                                            "key": "dunedin.craigslist.co.nz",
+                                            "key": "dunedin.nz",
                                             "name": "dunedin",
                                             "url": "dunedin"
                                         },
@@ -6588,97 +6588,97 @@
                                     "children": [
                                         {
                                             "geoInfo": {"postal_code": "39670", "lat": 16.863794, "lng": -99.88161400000001 },
-                                            "key": "acapulco.craigslist.com.mx",
+                                            "key": "acapulco.mx",
                                             "name": "acapulco",
                                             "url": "acapulco"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "", "lat": 26.0444446, "lng": -111.6660725 },
-                                            "key": "bajasur.craigslist.com.mx",
+                                            "key": "bajasur.mx",
                                             "name": "baja california sur",
                                             "url": "bajasur"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "31000", "lat": 28.630581, "lng": -106.0737 },
-                                            "key": "chihuahua.craigslist.com.mx",
+                                            "key": "chihuahua.mx",
                                             "name": "chihuahua",
                                             "url": "chihuahua"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "32000", "lat": 31.7388497, "lng": -106.4830782 },
-                                            "key": "juarez.craigslist.com.mx",
+                                            "key": "juarez.mx",
                                             "name": "ciudad juarez",
                                             "url": "juarez"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "44100", "lat": 20.67359, "lng": -103.343803 },
-                                            "key": "guadalajara.craigslist.com.mx",
+                                            "key": "guadalajara.mx",
                                             "name": "guadalajara",
                                             "url": "guadalajara"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "36000", "lat": 21.018111, "lng": -101.25832 },
-                                            "key": "guanajuato.craigslist.com.mx",
+                                            "key": "guanajuato.mx",
                                             "name": "guanajuato",
                                             "url": "guanajuato"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "83260", "lat": 29.07366360000001, "lng": -110.9625854 },
-                                            "key": "hermosillo.craigslist.com.mx",
+                                            "key": "hermosillo.mx",
                                             "name": "hermosillo",
                                             "url": "hermosillo"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "82158", "lat": 23.2494148, "lng": -106.4111425 },
-                                            "key": "mazatlan.craigslist.com.mx",
+                                            "key": "mazatlan.mx",
                                             "name": "mazatlan",
                                             "url": "mazatlan"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "06000", "lat": 19.4326077, "lng": -99.13320800000001 },
-                                            "key": "mexicocity.craigslist.com.mx",
+                                            "key": "mexicocity.mx",
                                             "name": "mexico city",
                                             "url": "mexicocity"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "64000", "lat": 25.6732109, "lng": -100.309201 },
-                                            "key": "monterrey.craigslist.com.mx",
+                                            "key": "monterrey.mx",
                                             "name": "monterrey",
                                             "url": "monterrey"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "68000", "lat": 17.0594169, "lng": -96.72162190000002 },
-                                            "key": "oaxaca.craigslist.com.mx",
+                                            "key": "oaxaca.mx",
                                             "name": "oaxaca",
                                             "url": "oaxaca"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "", "lat": 19.0412967, "lng": -98.20619960000001 },
-                                            "key": "puebla.craigslist.com.mx",
+                                            "key": "puebla.mx",
                                             "name": "puebla",
                                             "url": "puebla"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "48350", "lat": 20.615845, "lng": -105.230256 },
-                                            "key": "pv.craigslist.com.mx",
+                                            "key": "pv.mx",
                                             "name": "puerto vallarta",
                                             "url": "pv"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "", "lat": 32.5149469, "lng": -117.0382471 },
-                                            "key": "tijuana.craigslist.com.mx",
+                                            "key": "tijuana.mx",
                                             "name": "tijuana",
                                             "url": "tijuana"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "91918", "lat": 19.173773, "lng": -96.13422410000001 },
-                                            "key": "veracruz.craigslist.com.mx",
+                                            "key": "veracruz.mx",
                                             "name": "veracruz",
                                             "url": "veracruz"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "", "lat": 20.7098786, "lng": -89.0943377 },
-                                            "key": "yucatan.craigslist.com.mx",
+                                            "key": "yucatan.mx",
                                             "name": "yucatan",
                                             "url": "yucatan"
                                         }
@@ -6827,25 +6827,25 @@
                                     "children": [
                                         {
                                             "geoInfo": {"postal_code": "8000", "lat": -33.9248685, "lng": 18.4240553 },
-                                            "key": "capetown.craigslist.co.za",
+                                            "key": "capetown.za",
                                             "name": "cape town",
                                             "url": "capetown"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "4001", "lat": -29.857876, "lng": 31.027581 },
-                                            "key": "durban.craigslist.co.za",
+                                            "key": "durban.za",
                                             "name": "durban",
                                             "url": "durban"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "2000", "lat": -26.2041028, "lng": 28.04730510000001 },
-                                            "key": "johannesburg.craigslist.co.za",
+                                            "key": "johannesburg.za",
                                             "name": "johannesburg",
                                             "url": "johannesburg"
                                         },
                                         {
                                             "geoInfo": {"postal_code": "0084", "lat": -25.73134, "lng": 28.21837 },
-                                            "key": "pretoria.craigslist.co.za",
+                                            "key": "pretoria.za",
                                             "name": "pretoria",
                                             "url": "pretoria"
                                         }
