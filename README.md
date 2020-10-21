@@ -3,6 +3,7 @@
 ### CSmart Templates
 
 This project contains reference templates for CSmart searches found at https://csmarttemplates.github.io/
+Search templates describe everything required to load/manage information from a source into CSmart.
 
 A search tempalte describes specifies the following in JSON format:
 - User Interface descriptors for search parameters panels ("fieldLayouts")
