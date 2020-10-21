@@ -4,6 +4,7 @@
         "name":"craigslist.org",
         "subtitle":"CL Search",
         "postLink": "https://post.craigslist.org",
+        "//comments":"",
         "loader": {
             "type":"ObjectParser",
             "parser":
