@@ -9,7 +9,7 @@
             "parser":
             {
                 "finderType": "DelimitedFinder",
-                "start": "<ul class=\"rows\">",
+                "start": "<ul class=\"rows\"",
                 "end": "(Zero local results|Few local results|=\"search-legend bottom\">)",
                 "useRegex": true,                
                 "context": "list",
